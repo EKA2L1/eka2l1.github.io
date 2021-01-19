@@ -1,0 +1,21 @@
+main:
+  - title:
+      en: "Home"
+      vi: "Trang chủ"
+    url: /
+  - title:
+      en: "Download"
+      vi: "Tải xuống"
+    url: download/
+  - title:
+      en: "Screenshots"
+      vi: "Ảnh tham khảo"
+    url: screenshots/
+  - title:
+      en: "Posts"
+      vi: "Bài viết"
+    url: posts/
+  - title:
+      en: "GitHub"
+      vi: "Github"
+    url: https://github.com/EKA2L1/EKA2L1
