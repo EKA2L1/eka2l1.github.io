@@ -10,6 +10,10 @@ main:
       es: "Descargas"
     url: download/
   - title:
+      en: "Quickstart"
+      vi: "Quickstart"
+    url: quickstart/
+  - title:
       en: "Screenshots"
       vi: "Ảnh tham khảo"
       es: "Galería"
