@@ -1,4 +1,4 @@
-Las builds más recientes del emulador pueden descargarse a través de [**Github Release**](https://github.com/EKA2L1/EKA2L1/releases/tag/continous)!
+¡Las builds más recientes del emulador pueden descargarse a través de [**Github Release**](https://github.com/EKA2L1/EKA2L1/releases/tag/continous)!
 
 ![release_shot](/assets/download/release_page.png)
 
