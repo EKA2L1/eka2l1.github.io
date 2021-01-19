@@ -2,20 +2,25 @@ main:
   - title:
       en: "Home"
       vi: "Trang chủ"
+      es: "Inicio"
     url: /
   - title:
       en: "Download"
       vi: "Tải xuống"
+      es: "Descargas"
     url: download/
   - title:
       en: "Screenshots"
       vi: "Ảnh tham khảo"
+      es: "Galería"
     url: screenshots/
   - title:
       en: "Posts"
       vi: "Bài viết"
+      es: "Posts"
     url: posts/
   - title:
       en: "GitHub"
       vi: "Github"
+      es: "Github"
     url: https://github.com/EKA2L1/EKA2L1
