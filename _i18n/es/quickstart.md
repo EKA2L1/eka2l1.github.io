@@ -25,9 +25,9 @@ Por favor utilize la *Tabla de contenidos* a la derecha para ir al sitio que nec
 - **Grafícos:** Cualquier GPU compatible con **OpenGL ES 3.0** o superior
 
 ### Recomendados
-- **Sistema Operativo:** Android 7.0 62-bit (32-bit sigue en fase experimental)
+- **Sistema Operativo:** Android 7.0 64-bit (32-bit sigue en fase experimental)
 - **Procesador:** CPU ARMv8 
-- **Memoria RAM:** 2GB de RAM o más
+- **Memoria RAM:** 4GB de RAM o más
 - **Grafícos:** Cualquier GPU compatible con **OpenGL ES 3.2** o superior
 
 # Instalación
