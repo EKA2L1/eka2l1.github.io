@@ -12,6 +12,7 @@ main:
   - title:
       en: "Quickstart"
       vi: "Quickstart"
+      es: "Requisitos e instalación"
     url: quickstart/
   - title:
       en: "Screenshots"
