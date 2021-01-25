@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "32-bit Android is now supported!"
-date:   2021-01-25 23:30:00 +0700
+date:   2021-01-25 21:30:00 +0700
 categories: jekyll update
 ---
 
