@@ -7,7 +7,9 @@ categories: jekyll update
 
 The lastest version of EKA2L1 has added support for **32-bit Android** platform. Please proceed to download the APK as usual in [**Download**]({{ site.baseurl_root }}/download) section.
 
-**Please take note,** not all 32-bit Android devices can run the emulator, although the expected specs are quite low.
+**Please take note:**
+- At the moment, only S60v3 and S60v1 apps are supported.
+- Not all 32-bit Android devices can run the emulator, although the expected specs are quite low.
 Please check the *minimum requirements* for Android at [**Quickstart**]({{ site.baseurl_root }}/quickstart) page.
 
 It's recommended to use [**CPU-Z**](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z) to get your phone statistics and compare it with minimum requirements.
