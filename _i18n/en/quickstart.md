@@ -53,4 +53,4 @@ Please utilise the *Table of Contents* by the right to traverse to the section y
   
 ## Change data directory:
 - EKA2L1 try to store data within a single folder. By default it's a folder named "data" in the same directory as the executable. You can change the path through GUI in File/Preferences, or change it in **config.yml** with the key **data-storage**.
- - Note that this does not move the data folder. You have to move it yourself.
+  - Note that this does not move the data folder. You have to move it yourself.
