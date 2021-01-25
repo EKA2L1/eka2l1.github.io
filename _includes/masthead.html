@@ -15,7 +15,7 @@
 	  
         <select class="langpick" data-width="fit" style="float:right; display: inline;">
         {% for lang in site.languageNames %}
-          <option value='{{site.baseurl_root}}/{% if lang[0] != site.defaultLang %}{{ lang[0] }}{% endif %}'
+          <option value='{{site.baseurl_root}}{% if lang[0] != site.defaultLang %}/{{ lang[0] }}{% endif %}{{ page.url }}'
             {% if site.lang == lang[0] %}selected{% endif %}>{{ lang[1] }}</option>
         {% endfor %}
         </select>
