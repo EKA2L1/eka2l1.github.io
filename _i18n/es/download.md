@@ -9,7 +9,7 @@ instalando el runtime de [este link](https://support.microsoft.com/vi-vn/help/29
 
 ## Nota para Android
 
-En estos momentos, el soporte para Android **(especialmente para Android de 32-bit)** esta todavia en *fase experimental*, por lo tanto, la cantidad de apps o juegos que funcionan 
+En estos momentos, el soporte para Android **(especialmente para Android de 32-bit)** está todavia en *fase experimental*, por lo tanto, la cantidad de apps o juegos que funcionan 
 correctamente puede ser diferente (o menor) a la cantidad en PC.
 
 Cuando se encuentre en la situación donde una app o juego que normalmente funciona en la versión de PC del emulador no lo hace en la versión de Android, por favor contactar a los 
