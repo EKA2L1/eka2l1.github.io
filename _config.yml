@@ -13,6 +13,7 @@ languageNames:
   en: English
   vi: Tiếng Việt
   es: Español
+  pt-br: Português brasileiro
 
 theme: minimal-mistakes-jekyll
 plugins:
