@@ -6,13 +6,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://12z1.com"
 github_username:  EKA2L1
 
-languages: [ "en", "vi", "es" ]
+languages: [ "en", "vi", "es", "pt-br" ]
 exclude_from_localization: ["assets", "CNAME"]
 defaultLang: en
 languageNames:
   en: English
   vi: Tiếng Việt
   es: Español
+  pt-br: Português brasileiro
 
 theme: minimal-mistakes-jekyll
 plugins:

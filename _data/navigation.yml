@@ -3,29 +3,35 @@ main:
       en: "Home"
       vi: "Trang chủ"
       es: "Inicio"
+      pt-br: "início"
     url: /
   - title:
       en: "Download"
       vi: "Tải xuống"
       es: "Descargas"
+      pt-br: "Baixar"
     url: download/
   - title:
       en: "Quickstart"
       vi: "Quickstart"
       es: "Requisitos e instalación"
+      pt-br: "Requisitos e instalação"
     url: quickstart/
   - title:
       en: "Screenshots"
       vi: "Ảnh tham khảo"
       es: "Galería"
+      pt-br: "Imagens"
     url: screenshots/
   - title:
       en: "Posts"
       vi: "Bài viết"
       es: "Posts"
+      pt-br: "Posts"
     url: posts/
   - title:
       en: "GitHub"
       vi: "Github"
       es: "Github"
+      pt-br: "Github"
     url: https://github.com/EKA2L1/EKA2L1
