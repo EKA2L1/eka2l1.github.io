@@ -47,7 +47,7 @@ Utilize o *Índice* à direita para acessar a seção de que você precisa.
 - Instale um novo dispositivo através de Files/Install device
   
 ## Instalação de um novo dispositivo no EKA2L1
-- EKA2L1 tem uma GUI para instalar um novo dispositivo. Com a GUI, vá Files/Install device
+- EKA2L1 tem uma GUI para instalar um novo dispositivo. Com a GUI, vá em Files/Install device
   ![Installdevice](https://camo.githubusercontent.com/08fa49e5578f4045abc98a0cec22bd4bb8cc52480eb3ffab5ed3bee28f7b0e0c/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3536353139363435373433353539343735352f3730303235303631373233383635303937312f756e6b6e6f776e2e706e67)
 - Esta interface irá guiá-lo durante a instalação. Se uma **falha repentina** aparecer ou o **dispositivo reverter a instalação** devido a **motivos de falsificação**, **entre em contato com o desenvolvedor** para suporte e correções, se necessário.
   - Se a instalação falhar porque a **determinação da versão Symbian falhou**, você também deve entrar em contato com um desenvolvedor para ajudar o emulador a melhorar este processo
