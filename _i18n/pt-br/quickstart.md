@@ -52,6 +52,6 @@ Utilize o *Índice* à direita para acessar a seção de que você precisa.
 - Esta interface irá guiá-lo durante a instalação. Se uma **falha repentina** aparecer ou o **dispositivo reverter a instalação** devido a **motivos de falsificação**, **entre em contato com o desenvolvedor** para suporte e correções, se necessário.
   - Se a instalação falhar porque a **determinação da versão Symbian falhou**, você também deve entrar em contato com um desenvolvedor para ajudar o emulador a melhorar este processo
   
-## Alterar diretório de dados::
+## Alterar diretório de dados:
 - EKA2L1 tenta armazenar dados em uma única pasta. Por padrão, é uma pasta chamada "dados" no mesmo diretório do executável. Você pode alterar o caminho por meio da GUI File/Preferences ou alterá-lo em **config.yml** com a chave **data-storage**
   - Observe que isso **não move** a pasta de dados. Você mesmo tem que movê-la manualmente (Copiar e Colar)
