@@ -12,7 +12,7 @@ A versão mais recente do EKA2L1 adicionou suporte para a plataforma ** Android 
 - Nem todos os dispositivos Android de 32 bits podem executar o emulador, embora os requisitos especificados sejam relativamente baixos.
 Por favor, verifique os *requisitos mínimos* para Android na página [**Requisitos e instalação**]({{ site.baseurl_root }}/quickstart).
 
-É recomendado usar o aplicativo [** CPU-Z **](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z) para obter as especificações do seu dispositvo e compará-las com os requisitos mínimos.
+É recomendado usar o aplicativo [**CPU-Z**](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z) para obter as especificações do seu dispositvo e compará-las com os requisitos mínimos.
 
 ### Algumas notas extras
 
