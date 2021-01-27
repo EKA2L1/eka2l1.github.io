@@ -13,7 +13,7 @@ Utilize o *Índice* à direita para acessar a seção de que você precisa.
 
 ### Recomendado
 
-- **Sistema Operacional:** Precisa ser **de 64 bits **. Para **Windows**, é recomendado usar o *Windows 10*
+- **Sistema Operacional:** Precisa ser **de 64 bits**. Para **Windows**, é recomendado usar o *Windows 10*
 - **Processador:** Qualquer CPU Intel ou AMD com 4 núcleos ou superior
 - **Memória:** 4 GB de RAM ou mais
 - **Placa gráfica:** Qualquer GPU compatível com OpenGL 3.3 ou superior
