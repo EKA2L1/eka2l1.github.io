@@ -6,7 +6,7 @@ Utilize o *Índice* à direita para acessar a seção de que você precisa.
 
 ### Mínimo
 
-- **Sistema Operacional:** Precisa ser **de 64 bits**. Para **Windows**, você deve ter a partir do *Windows7 * ou superior
+- **Sistema Operacional:** Precisa ser **de 64 bits**. Para **Windows**, você deve ter a partir do *Windows7* ou superior
 - **Processador:** Qualquer CPU de 64 bits fabricada por volta de 2007, a partir do modelo **Core 2 Duo E4300**
 - **Memória:** 2 GB de RAM no mínimo
 - **Placa gráfica:** Qualquer GPU compatível com OpenGL 3.1 ou superior
