@@ -34,7 +34,7 @@ Utilize o *Índice* à direita para acessar a seção de que você precisa.
 - **Memória:** 4 GB de RAM ou mais
 - **Placa gráfica:** Qualquer GPU compatível com OpenGL ES 3.2 ou superior
 
-# Instalação´
+# Instalação
 ## Você precisará de:
 - ROM (De qualquer dispositivo Symbian, exemplos: N-Gage, Nokia N97, Nokia E5)
 - Os arquivos do drive Z (do mesmo dispositivo do qual a ROM foi dumpeada). Consulte a [seção](https://github.com/EKA2L1/EKA2L1/wiki/Dumping-the-ROM-and-ROFS) específica
