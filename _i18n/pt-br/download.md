@@ -9,8 +9,7 @@ a partir [desse link](https://support.microsoft.com/vi-vn/help/2977003/the-lates
 
 ## Nota para Android
 
-No momento, o suporte para Android ** (especialmente a versão de 32 bits) ** ainda está em * fase experimental *, portanto, a quantidade de aplicativos funcionando normalmente pode ser diferente (ou menor)
-que a versão para PC.
+No momento, o suporte para Android **(especialmente a versão de 32 bits)** ainda está em *fase experimental*, portanto, a quantidade de aplicativos funcionando normalmente pode ser diferente (ou menor) que a versão para PC.
 
-Quando você se deparar com uma situação em que o aplicativo executado funcionar normalmente na versão do emulador para PC, mas não na versão para Android, entre em contato com os desenvolvedores através do [Discord] (https://discord.gg/5Bm5SJ9),
-ou abra um issue no [Github] (https://github.com/EKA2L1/EKA2L1/issues).
+Quando você se deparar com uma situação em que o aplicativo executado funcionar normalmente na versão do emulador para PC, mas não na versão para Android, entre em contato com os desenvolvedores através do [Discord](https://discord.gg/5Bm5SJ9),
+ou abra um issue no [Github](https://github.com/EKA2L1/EKA2L1/issues).
