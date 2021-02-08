@@ -5,7 +5,7 @@ The newest builds can be downloaded from [**Github Release**](https://github.com
 ## Note for Windows
 
 The Windows version requires you to have installed the newest *Microsoft Visual C++*. If you encounter any errors stating that you are missing a DLL, try
-to install the runtime from [this link](https://support.microsoft.com/vi-vn/help/2977003/the-latest-supported-visual-c-downloads).
+to install the runtime from [this link](https://support.microsoft.com/en-US/help/2977003/the-latest-supported-visual-c-downloads).
 
 ## Note for Android
 
