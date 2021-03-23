@@ -2,15 +2,13 @@
 
 ![release_shot](/assets/download/release_page.png)
 
-## Note for Windows
+## Windows用户注意
 Windows版本要求您安装最新的* Microsoft Visual C ++ *。 如果遇到任何表明缺少DLL的错误，请尝试
 
 从安装运行时[this link](https://support.microsoft.com/en-US/help/2977003/the-latest-supported-visual-c-downloads).
 
-## Note for Android
+## Android用户注意
 
-At the moment, support for Android **(especially 32-bit version)** is still *in experimental phase*, therefore, the amount of apps working normally can be different (or less)
-from the PC version.
+目前, 对Android的支持 **(特别是32位)** 依然在 *试验阶段*, 因此,因此，正常运行的应用数量可能会有所不同（或更少）
 
-When you encounter a situation where the app you want to run works normally on PC version of emulator, but not on Android version, please contact the developers through [Discord](https://discord.gg/5Bm5SJ9),
-or open an issue on [Github](https://github.com/EKA2L1/EKA2L1/issues).
+当您遇到要运行的应用程序在PC版本的模拟器上正常运行但在Android版本上无法正常运行的情况时，请通过 [Discord](https://discord.gg/5Bm5SJ9),或者在 [Github](https://github.com/EKA2L1/EKA2L1/issues)提交问题.
