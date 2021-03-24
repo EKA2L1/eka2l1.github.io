@@ -5,7 +5,7 @@ main:
       es: "Inicio"
       pt-br: "início"
       ru: "Главная"
-      zh-cn"简体中文"
+      zh-cn:"简体中文"
     url: /
   - title:
       en: "Download"
@@ -13,7 +13,7 @@ main:
       es: "Descargas"
       pt-br: "Baixar"
       ru: "Скачать"
-      zh-cn"下载"
+      zh-cn:"下载"
     url: download/
   - title:
       en: "Quickstart"
@@ -21,7 +21,7 @@ main:
       es: "Requisitos e instalación"
       pt-br: "Requisitos e instalação"
       ru: "Установка"
-      zh-cn"快速开始"
+      zh-cn:"快速开始"
     url: quickstart/
   - title:
       en: "Screenshots"
@@ -29,7 +29,7 @@ main:
       es: "Galería"
       pt-br: "Imagens"
       ru: "Скриншоты"
-      zh-cn"截图"
+      zh-cn:"截图"
     url: screenshots/
   - title:
       en: "Posts"
@@ -37,7 +37,7 @@ main:
       es: "Posts"
       pt-br: "Posts"
       ru: "Блог"
-      zh-cn"帖子"
+      zh-cn:"帖子"
     url: posts/
   - title:
       en: "GitHub"
@@ -45,5 +45,5 @@ main:
       es: "Github"
       pt-br: "Github"
       ru: "GitHub"
-      zh-cn"GitHub"
+      zh-cn:"GitHub"
     url: https://github.com/EKA2L1/EKA2L1
