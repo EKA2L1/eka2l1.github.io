@@ -5,7 +5,7 @@
 ## Windows用户注意
 Windows版本要求您安装最新的* Microsoft Visual C ++ *。 如果遇到任何表明缺少DLL的错误，请尝试
 
-从安装运行时[this link](https://support.microsoft.com/en-US/help/2977003/the-latest-supported-visual-c-downloads).
+下载安装[下载链接](https://support.microsoft.com/en-US/help/2977003/the-latest-supported-visual-c-downloads).
 
 ## Android用户注意
 
