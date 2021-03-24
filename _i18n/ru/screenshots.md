@@ -1,4 +1,4 @@
-{% t global.screenshot_credit %}: **ericsonia**, **Ink321**, **agarpac**, **NTD** and **nikita36078.**
+{% t global.screenshot_credit %}: **ericsonia**, **Ink321**, **agarpac**, **NTD** и **nikita36078.**
 
 <figure class="third">
 	<img src="/assets/shots/showreel.gif">
