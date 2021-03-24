@@ -5,7 +5,7 @@ date:   2021-01-25 21:30:00 +0700
 categories: jekyll update
 ---
 
-A versão mais recente do EKA2L1 adicionou suporte para a plataforma **Android de 32 bits**. Faça o download do APK normalmente na seção [**Download**]({{ site.baseurl_root }}/download).
+A versão mais recente do EKA2L1 adicionou suporte para a plataforma **Android de 32 bits**. Faça o download do APK normalmente na seção [**Baixar**]({{ site.baseurl_root }}/download).
 
 **Por favor, leve em consideração:**
 - No momento, apenas aplicativos S60v3 e S60v1 são compatíveis.
