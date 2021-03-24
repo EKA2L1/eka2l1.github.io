@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "32-bit Android is now supported!"
+title:  "现在已经支持32位的Android系统了!"
 date:   2021-01-25 21:30:00 +0700
 categories: jekyll update
 ---
