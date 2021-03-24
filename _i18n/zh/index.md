@@ -1,5 +1,6 @@
-EKA2L1 是一个 **试验性塞班系统模拟器**, written in C++17.
+EKA2L1 是一个 **试验性塞班系统模拟器**, 以 C++17 编写.
 
-The emulator currently emulates Symbian OS's EKA1 and EKA2 behavior, and reimplement most of its critical app servers. It can already boot many EKA2's apps and games, with EKA1 being worked on at the moment.
+模拟器模拟目前Symbian操作系统的EKA1和EKA2行为，并重新实现其大部分关键应用服务器。 它已经可以启动许多EKA2的应用程序和游戏，并且目前正在开发EKA1。
+.
 
-For support, please visit our [Discord](https://discord.gg/5Bm5SJ9). Any further contact can be through our [email](mailto:cc@12z1.com).
+获取支持, 请访问我们的 [Discord](https://discord.gg/5Bm5SJ9).  可以通过我们的[电子邮箱](mailto:cc@12z1.com)获取进一步的联系.
