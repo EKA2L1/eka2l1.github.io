@@ -14,7 +14,8 @@ categories: jekyll update
 
 推荐使用 [**CPU-Z**](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z) 获取您的手机硬件信息来了解是否达到了最低要求.
 
-**小提示:**
+### 小提示
+
 在此之前，由于没有支持**32位ARM**体系结构的ARM CPU模拟器，因此不支持此功能。.
 
 我们正在使用[(Dynarmic)](https://github.com/MerryMage/Dynarmic) 的CPU模拟器，目前支持**64位ARM（AARCH64）**和**x86_64**体系结构.
