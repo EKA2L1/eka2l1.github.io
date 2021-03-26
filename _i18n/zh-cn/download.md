@@ -3,7 +3,7 @@
 ![release_shot](/assets/download/release_page.png)
 
 ## Windows用户注意
-如果系统提示缺少DLL，请尝试从这个[链接](https://support.microsoft.com/zh-CN/help/2977003/the-latest-supported-visual-c-downloads)下载安装最新的 Microsoft Visual C ++ 运行库.
+如果您的Windows系统出现缺少DLL的错误，请尝试从这个[链接](https://support.microsoft.com/zh-CN/help/2977003/the-latest-supported-visual-c-downloads)下载安装最新的 Microsoft Visual C ++ 运行库.
 
 ## Android用户注意
 
