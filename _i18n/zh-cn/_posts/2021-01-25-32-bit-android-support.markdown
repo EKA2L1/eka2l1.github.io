@@ -1,22 +1,22 @@
 ---
 layout: single
-title:  "现在已经支持32位的Android系统了!"
+title:  "已经支持32位的Android系统了!"
 date:   2021-01-25 21:30:00 +0700
 categories: jekyll update
 ---
 
-The lastest version of EKA2L1 has added support for **32-bit Android** platform. Please proceed to download the APK as usual in [**Download**]({{ site.baseurl_root }}/download) section.
+最新版本的EKA2L1增加了对 **32位 Android** 平台的支持. 请您像往常一样 [**下载APK**]({{ site.baseurl_root }}/download) .
 
-**Please take note:**
-- At the moment, only S60v3 and S60v1 apps are supported.
-- Not all 32-bit Android devices can run the emulator, although the expected specs are quite low.
-Please check the *minimum requirements* for Android at [**Quickstart**]({{ site.baseurl_root }}/quickstart) page.
+**请注意:**
+- 目前只支持S60v3和S60v1应用程序。
+- 并不是所有的32位Android设备都能运行模拟器，尽管预期的规格很低。
+要了解 *最低要求*  请转到 [**快速开始**]({{ site.baseurl_root }}/quickstart) page.
 
-It's recommended to use [**CPU-Z**](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z) to get your phone statistics and compare it with minimum requirements.
+推荐使用 [**CPU-Z**](https://play.google.com/store/apps/details?id=com.cpuid.cpu_z) 获取您的手机硬件信息来了解是否达到了最低要求.
 
-### Some small notes
+### 小提示
 
-Previously, the support was absent because there was no ARM CPU emulator present that support the **32-bit ARM** architecture.
+在此之前，由于没有支持**32位ARM**体系结构的ARM CPU模拟器，因此不支持此功能。.
 
-The CPU emulator we are using [(Dynarmic)](https://github.com/MerryMage/Dynarmic) currently on support **64-bit ARM (AArch64)** and **x86_64** architecture.
-We recently write our own CPU emulator, it's not the most optimised, but it seems to perform decently.
+我们正在使用[(Dynarmic)](https://github.com/MerryMage/Dynarmic) 的CPU模拟器，目前支持**64位ARM（AARCH64）**和**x86_64**体系结构.
+我们最近自制了CPU模拟器，它没有经过优化，但运行效果很好。

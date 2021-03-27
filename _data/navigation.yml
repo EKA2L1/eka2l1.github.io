@@ -5,7 +5,7 @@ main:
       es: "Inicio"
       pt-br: "início"
       ru: "Главная"
-      zh-cn: "简体中文"
+      zh-cn: "首页"
     url: /
   - title:
       en: "Download"
