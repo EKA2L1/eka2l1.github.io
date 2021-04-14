@@ -2,7 +2,7 @@
 
 ![release_shot](/assets/download/release_page.png)
 
-¡El emulador tmabien esta disponible para Android en **Google Play Store**!
+¡El emulador también esta disponible para Android en **Google Play Store**!
 
 [![Play Store Badge](/assets/download/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.github.eka2l1)
 
