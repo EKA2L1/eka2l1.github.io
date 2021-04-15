@@ -6,7 +6,7 @@ categories: update android playstore
 ---
 
 A versão para a Google Play Store do emulador foi aprovada e publicada pela **Play Software**. Aqui está o [link de Download](https://play.google.com/store/apps/details?id=com.github.eka2l1).
-Também está disponível na seção [**Baixar**]({{ site.baseurl_root }}/download) do website.
+Também está disponível na seção [Baixar](https://12z1.com/pt-br/download/) do website.
 
 Se você não está interessado nas mudanças mais recentes e imediatas, nem gosta de baixar e atualizar frequentemente o aplicativo APK no Github, esta versão do Google Play Store será uma maneira mais estável e confortável de atualizar seu emulador. Esperamos que você continue dando suporte ao emulador.
 
