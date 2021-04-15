@@ -2,6 +2,10 @@ As builds mais recentes podem ser baixadas pelo [**Github Release**](https://git
 
 ![release_shot](/assets/download/release_page.png)
 
+O emulador também está disponível na **Google Play Store**!
+
+[![Play Store Badge](/assets/download/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.github.eka2l1)
+
 ## Nota para Windows
 
 A versão para Windows requer a versão mais recente do Microsoft Visual C ++ instalada. Se houver algum erro referente a uma DLL ausente, tente instalar o runtime
