@@ -2,7 +2,7 @@
 
 layout: single
 
-title:  "Google Play商店版发布！"
+title:  "Google Play商店版发布了！"
 
 date:   2021-04-14 12:00:00 +0700
 
