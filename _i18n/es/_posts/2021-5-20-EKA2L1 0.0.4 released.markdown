@@ -9,7 +9,7 @@ EKA2L1 ha alcanzado la versión 0.0.4 y ha sido actualizada en Google Play Store
 
 ## El proceso para instalar dispositivos ha sido modificado
 
-Han habido un montón de comentarios acerca de problemas al momento de averiguar como se instala un dispositivo. Por ejemplo, en la pantalla inicial del emulador, el no saber que dispositivos instalar o cual método utilizar. Muchos usuarios abandonan el emulador en estos pasos, ya que la mayoría de usuarios de Android son solo consumidores normales y no investigan más haya tal y como lo hacen los usuarios de computadora.
+Han habido un montón de comentarios acerca de problemas al momento de averiguar como se instala un dispositivo. Por ejemplo, en la pantalla inicial del emulador, el no saber que dispositivos instalar o cual método utilizar. Muchos usuarios abandonan el emulador en estos pasos, ya que la mayoría de usuarios de Android son solo consumidores normales y no investigan más haya como lo hacen los usuarios de computadora.
 
 Como resultado, hemos ajustado el proceso de instalación de dispositivos. Nótese que esto no puede ser desactivado.
 - Sabemos que la mayoría de personas son entusiastas de consolas, no de dispositivos Symbian, por lo que para ellos el tener dos archivos diferentes o algo como una raw dump puede ser un poco confuso. Por lo que para dispositivos **S60v1**, como *N-Gage*, ahora **solo se requiere** de una **System ROMS** para su instalación. Esperamos que esto facilite el proceso de instalación.
