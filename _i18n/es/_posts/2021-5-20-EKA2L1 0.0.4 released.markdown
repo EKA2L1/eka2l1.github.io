@@ -1,0 +1,107 @@
+---
+layout: single
+title:  "¡Versión 0.0.4 de EKA2L1 publicada!"
+date:   2021-05-20 9:00:00 +0700
+categories: update android playstore
+---
+
+EKA2L1 ha alcanzado la versión 0.0.4 y ha sido actualizada en Google Play Store. 
+
+## El proceso para instalar dispositivos ha sido modificado
+
+Han habido un montón de comentarios acerca de problemas al momento de averiguar como se instala un dispositivo. Por ejemplo, en la pantalla inicial del emulador, el no saber que dispositivos instalar o cual método utilizar. Muchos usuarios abandonan el emulador en estos pasos, ya que la mayoría de usuarios de Android son solo consumidores normales y no investigan más haya como lo hacen los usuarios de computadora.
+
+Como resultado, hemos ajustado el proceso de instalación de dispositivos. Nótese que esto no puede ser desactivado.
+- Sabemos que la mayoría de personas son entusiastas de consolas, no de dispositivos Symbian, por lo que para ellos el tener dos archivos diferentes o algo como una raw dump puede ser un poco confuso. Por lo que para dispositivos **S60v1**, como *N-Gage*, ahora **solo se requiere** de una **System ROMS** para su instalación. Esperamos que esto facilite el proceso de instalación.
+- Para dispositivos S60v2, hay procesos de transición que involucran ROFS en los sistemas, por lo que todavia se requerirá utilizar RPKG.
+- Para dispositivos S60v3, S60v5 y S^3, ahora se permitira la opción de **instalar utilizando firmwares**. Esto es mas conocido por las personas, y por lo general será la opción recomendada. Solamente se requerira proveer de la **dirección al archivo VPL** para su instalación. **Nótese** que esto no funciona para algunos firmware de los últimos dispositivos S60v2, dada las diferencias en la posición de la información en la ROM.
+
+Acerca de cuales dispositivos instalar, hemos añadido una opción expandible en la que puedes hacer click, y te recomendará que dispositivos instalar y cual método utilizar.
+
+Algunas capturas de pantalla de la nueva pantalla de instalación:
+
+<figure class="">
+	<img src="https://cdn.discordapp.com/attachments/786228834638626867/844785034178986004/Screenshot_20210520-105346_EKA2L1.jpg">
+	<figcaption>Pantalla de instalación de dispositivo en Android</figcaption>
+</figure>
+
+<figure class="">
+	<img src="https://user-images.githubusercontent.com/25717050/118917060-445be380-b95a-11eb-8a70-6c4c8bb71578.png">
+	<figcaption>Pantalla de instalación de dispositivo en PC</figcaption>
+</figure>
+
+Cuando se detecta que la ROM introducida no es S60v1, la opción de introducir RPKG sera obligatoria. Gracias a los usuarios en Play Store y en Discord por expresar sus problemas.
+
+## Se ha añadido soporte a S60v2
+
+Esto ha sido solicitado por una gran cantidad de personas. El emulador ha implementado algunas partes de sistemas S60v2, desafortunadamente no todas, y una gran cantidad de aplicaciones y juegos todavia tienen una gran cantidad de bugs o ni siquiera abren. Sin embargo, la compatibilidad ha mejorado.
+
+S60v2 tiene 3 feature packs, en los cuales se encuentran las transition stages de los días de legacy EPOC. Esto incluye el intento de remover la estructura tipo folder del sistema, remover la busqueda de archivos DLL tipo-Windows, remover el apprun, y modificación de ROMs como la resolución de pantalla que esta hard-coded dentro de las ROM headers Y así, implementar S60v2 esta siendo bastante divertido.
+
+Compresión de PETRAN DLLs y EXEs también estan presente en un montón de aplicaciones. Algunas funciones que todavia no estan funcionando correctamente, incluyendo juegos que utilizan Direct Screen Acces (DSA).
+
+Algunas capturas de pantalla de juegos funcionando ahora mismo en el emulador, utilizando un dump del dispositivo N70:
+
+<figure class="third">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg">
+	<figcaption>Imagenes proporcionadas por ericsonia e Ink321</figcaption>
+</figure>
+
+<figure class="third">
+	<img src="https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&height=593">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg">
+	<figcaption>Imagenes proporcionadas por ericsonia e Ink321</figcaption>
+</figure>
+
+## Añadiendo soporte para S60v5 en 32-bits
+
+S60v5 y S^3 requiere de heavy VFP operations, por lo que no fueron implementadas en el emulador de 32-bit JIT anteriormente. Recientemente tocamos este apartado denuevo, desde que el host no utiliza registros VFP para nada, así que tiramos a la basura todo el register back, pero todavia mantenemos un seguimiento de cuales registros estan siendo cargados o escritos.
+
+El rendimiento obtenido en 32-bit JIT es en realidad, el mismo que obtendrias en un telefono Symbian real. No creo que haya expectativas altas para amateurs como nosotros... Pero esperamos que puedas disfrutar los buenos viejos tiempos en nuevos dispositivos Android. No hay mucho más de que hablar acerca de esto.
+
+
+## Otros pequeños ajustes
+
+Anteriormente no han habido dumps de dispositivos Unicode, pero recientemente se nos ha proporcionado de una ROM de un N70 chino, y no funciona muy bien, por el pequeño detalle de que no muestra ningún carácter en pantalla. Estamos trabajando en ello, hemos tratado de cargar carácteres Unicode, pero sin almacenar ninguna coordenada de información en el atlas. Arreglar este problema ha logrado que un tipo pueda jugar Pocket Kingdom en chino, LOL.
+
+<figure class="half">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/841236525442400256/Screenshot_20210510_165245_com.github.eka2l1.jpg">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/841206165320237126/unknown.png">
+	<figcaption>La historia parece que ya es capaz de mostrarse en pantalla, también puedes jugar Card Decks</figcaption>
+</figure>
+
+Otras cosas solicitadas, incluyen algunos juegos que no pueden leer el IMEI del emulador. Este IMEI es generado aleatoriamente en linea, LOL. Pero no debería haber nada malo con el.
+
+Para obtener el IMEI, los juegos deben obtener la información del telefono utilizando una API, la cual requiere que tu escribas el nombre del captador de la información del telefono (esto se crea desde una DLL). Pero algunos juegos antiguos algunas veces hardcoded el nombre del captador ya sea como "Calypso" para S60v1 (este es el nombre en clave para Nokia 7650), o como "DefaultPhone" en S60v2. No cargamos esos modulos por obvias razones, eso es obtener cosas desde el driver. Por lo que tenemos que falsificar esos nombres dependiendo de la versión del OS...
+
+<figure class="half">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png">
+	<figcaption>Ahora puedes jugar Legacy... Leer el IMEI desde X-plore también funciona</figcaption>
+</figure>
+
+Lo último por mencionar es que, algunos juegos tienen algunas race conditions, que ni siquiera se activan porque la forma en la que el OS programa los thread. Despues de que un thread es creado y resumido, el kernel inmediatamente lo reprograma, lo cual podría hacer que los child thread corran primero. Esto crea algunas situaciones donde el parent thread accede a la información por parte del child thread que solo es creada cuando el child thread corre primero. El emulador ha sido corregido para seguir este comportamiento, lo cual resuelve crasheos en algunos juegos.
+
+<figure class="half">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840298370576810045/78.png">
+	<figcaption> Spider Man: Toxic City y Virtous Devil Saga ahora funcionan correctamente</figcaption>
+</figure>
+  
+También hay algunos arreglos menores que mejoran la compatibilidad con aplicaciones S60v3 y S60v5, pero no los mencionaremos aquí.
+
+## Metas para la 0.0.5
+  
+Esperamos implementar el soporto para el servicio N-Gage (usualmente llamado N-Gage 2.0) pronto. Se ha trabajado anteriormente en la rama ng2, pero es un trabajo bastante preliminar y solamente funciona con un juego, y solo fuciona para instalarlo.
+
+
+![image](https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png)
+  
+Tambien queremos arreglar algunos problemas de archivos que actualmente tardan una eternidad en Android 11, o que sencillamente no funcionan en absoluto. Un parche sera creado cuando encontremos algo de tiempo.
+
+## Notas finales
+
+La versión de PC tendra los mismos cambios de calidad de vida que la version de Android, esto esta siendo implementado ahora mismo. Pero para Android, podrás encontrar la versión mas estable del emulador en [Play Store](https://play.google.com/store/apps/details?id=com.github.eka2l1). ¡Esperamos que pases un buen rato con nuestro emulador!
