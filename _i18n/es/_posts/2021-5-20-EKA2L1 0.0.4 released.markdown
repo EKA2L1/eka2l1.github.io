@@ -73,7 +73,7 @@ Anteriormente no han habido dumps de dispositivos Unicode, pero recientemente se
 	<figcaption>La historia parece que ya es capaz de mostrarse en pantalla, también puedes jugar Card Decks</figcaption>
 </figure>
 
-Otras cosas solciitadas, incluyen algunos juegos que no pueden leer el IMEI del emulador. Este IMEI es generado aleatoriamente en linea, LOL. Pero no debería haber nada malo con el.
+Otras cosas solicitadas, incluyen algunos juegos que no pueden leer el IMEI del emulador. Este IMEI es generado aleatoriamente en linea, LOL. Pero no debería haber nada malo con el.
 
 Para obtener el IMEI, los juegos deben obtener la información del telefono utilizando una API, la cual requiere que tu escribas el nombre del captador de la información del telefono (esto se crea desde una DLL). Pero algunos juegos antiguos algunas veces hardcoded el nombre del captador ya sea como "Calysp" para S60v1 (este es el nombre en clave para Nokia 7650), o como "DefaultPhone" en S60v2. Nosotros no cargamos esos modulos por obvias razones, eso es obtener cosas desde el driver. Por lo nosotros tenemos que falsificar esos nombres dependiendo de la versión del OS...
 
