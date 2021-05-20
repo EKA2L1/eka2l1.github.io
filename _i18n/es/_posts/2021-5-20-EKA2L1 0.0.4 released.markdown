@@ -60,7 +60,7 @@ Algunas capturas de pantalla de juegos funcionando ahora mismo en el emulador, u
 
 S60v5 y S^3 requiere de heavy VFP operations, por lo que no fueron implementadas en el emulador de 32-bit JIT anteriormente. Recientemente tocamos este apartado denuevo, desde que el host no utiliza registros VFP para nada, así que tiramos a la basura todo el register back, pero todavia mantenemos un seguimiento de cuales registros estan siendo cargados o escritos.
 
-El rendimiento obtenido en 32-bit JIT es en realidad, el mismo que obtendrias en un telefono Symbian real. No creo que haya expectativas altas para amteurs como nosotros... Pero esperamos que puedas disfrutar los buenos viejos tiempos en nuevos dispositivos Android. No hay mucho más de que hablar acerca de esto.
+El rendimiento obtenido en 32-bit JIT es en realidad, el mismo que obtendrias en un telefono Symbian real. No creo que haya expectativas altas para amateurs como nosotros... Pero esperamos que puedas disfrutar los buenos viejos tiempos en nuevos dispositivos Android. No hay mucho más de que hablar acerca de esto.
 
 
 ## Otros pequeños ajustes
@@ -75,7 +75,7 @@ Anteriormente no han habido dumps de dispositivos Unicode, pero recientemente se
 
 Otras cosas solicitadas, incluyen algunos juegos que no pueden leer el IMEI del emulador. Este IMEI es generado aleatoriamente en linea, LOL. Pero no debería haber nada malo con el.
 
-Para obtener el IMEI, los juegos deben obtener la información del telefono utilizando una API, la cual requiere que tu escribas el nombre del captador de la información del telefono (esto se crea desde una DLL). Pero algunos juegos antiguos algunas veces hardcoded el nombre del captador ya sea como "Calypso" para S60v1 (este es el nombre en clave para Nokia 7650), o como "DefaultPhone" en S60v2. Nosotros no cargamos esos modulos por obvias razones, eso es obtener cosas desde el driver. Por lo nosotros tenemos que falsificar esos nombres dependiendo de la versión del OS...
+Para obtener el IMEI, los juegos deben obtener la información del telefono utilizando una API, la cual requiere que tu escribas el nombre del captador de la información del telefono (esto se crea desde una DLL). Pero algunos juegos antiguos algunas veces hardcoded el nombre del captador ya sea como "Calypso" para S60v1 (este es el nombre en clave para Nokia 7650), o como "DefaultPhone" en S60v2. No cargamos esos modulos por obvias razones, eso es obtener cosas desde el driver. Por lo que tenemos que falsificar esos nombres dependiendo de la versión del OS...
 
 <figure class="half">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png">
@@ -100,7 +100,7 @@ Esperamos implementar el soporto para el servicio N-Gage (usualmente llamado N-G
 
 ![image](https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png)
   
-Tambien queremos arreglar algunos problemas de archivos que tardan una eternidad en Android 11 actualmente, o que sencillamente no funcionan en absoluto. Un parche sera creado cuando encontremos algo de tiempo.
+Tambien queremos arreglar algunos problemas de archivos que actualmente tardan una eternidad en Android 11, o que sencillamente no funcionan en absoluto. Un parche sera creado cuando encontremos algo de tiempo.
 
 ## Notas finales
 
