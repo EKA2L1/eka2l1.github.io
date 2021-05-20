@@ -13,7 +13,7 @@ Han habido un montón de comentarios acerca de problemas al momento de averiguar
 
 Como resultado, hemos ajustado el proceso de instalación de dispositivos. Nótese que esto no puede ser desactivado.
 - Sabemos que la mayoría de personas son entusiastas de consolas, no de dispositivos Symbian, por lo que para ellos el tener dos archivos diferentes o algo como una raw dump puede ser un poco confuso. Por lo que para dispositivos **S60v1**, como *N-Gage*, ahora **solo se requiere** de una **System ROMS** para su instalación. Esperamos que esto facilite el proceso de instalación.
-- Para dispositivos S60v2, hay procesos de transición que involucran ROFS en los sistemas, por lo que todavia se requerira utilizar RPKG.
+- Para dispositivos S60v2, hay procesos de transición que involucran ROFS en los sistemas, por lo que todavia se requerirá utilizar RPKG.
 - Para dispositivos S60v3, S60v5 y S^3, ahora se permitira la opción de **instalar utilizando firmwares**. Esto es mas conocido por las personas, y por lo general será la opción recomendada. Solamente se requerira proveer de la **dirección al archivo VPL** para su instalación. **Nótese** que esto no funciona para algunos firmware de los últimos dispositivos S60v2, dada las diferencias en la posición de la información en la ROM.
 
 Acerca de cuales dispositivos instalar, hemos añadido una opción expandible en la que puedes hacer click, y te recomendará que dispositivos instalar y cual método utilizar.
