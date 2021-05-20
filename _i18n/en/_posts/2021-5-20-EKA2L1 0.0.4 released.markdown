@@ -80,7 +80,7 @@ To get the IMEI, games must open phone information using an API, which requires 
 <figure class="half">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png">
-	<figcaption>You can play Legacy now... And reading IMEI from X-plore also works/figcaption>
+	<figcaption>You can play Legacy now... And reading IMEI from X-plore also works</figcaption>
 </figure>
   
 Last thing to mention is that, some games have some race conditons, that does not ever trigger because of the way OS schedules thread. After a thread is created and resumed, the kernel will immediate reschedule, which may make child thread runs first. This creates some situations where the parent thread access data by the child thread that is only created when the child thread runs first. The emulator is corrected to follow this behaviour, which fixed crash in some games.
