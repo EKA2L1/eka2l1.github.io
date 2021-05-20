@@ -83,7 +83,7 @@ Para obtener el IMEI, los juegos deben obtener la información del telefono util
 	<figcaption>Ahora puedes jugar Legacy... Leer el IMEI desde X-plore también funciona</figcaption>
 </figure>
 
-Lo último por mencionar es que, algunos juegos tienen algunas race conditions, que ni siquiera se activan porque la forma en la que el OS programa los thread. Despues de que un thread es creado y resumido, el kernel inmediatamente lo reprograma, lo cual podría hacer que los child thread corran primero. Esto crea algunas sitauciones donde el parent thread accede a la información por parte del child thread que solo es creada cuando el child thread corre primero. El emulador ha sido corregido para seguir este comportamiento, lo cual resuelve crasheos en algunos juegos.
+Lo último por mencionar es que, algunos juegos tienen algunas race conditions, que ni siquiera se activan porque la forma en la que el OS programa los thread. Despues de que un thread es creado y resumido, el kernel inmediatamente lo reprograma, lo cual podría hacer que los child thread corran primero. Esto crea algunas situaciones donde el parent thread accede a la información por parte del child thread que solo es creada cuando el child thread corre primero. El emulador ha sido corregido para seguir este comportamiento, lo cual resuelve crasheos en algunos juegos.
 
 <figure class="half">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg">
