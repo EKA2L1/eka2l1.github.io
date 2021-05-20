@@ -30,7 +30,7 @@ Algunas capturas de pantalla de la nueva pantalla de instalación:
 	<figcaption>Pantalla de instalación de dispositivo en PC</figcaption>
 </figure>
 
-Cuando se detecta que la ROM introducida no es S60v1, la opción de introducir RPKG sera obligatoría. Gracias a los usuarios en Play Store y en Discord por expresar sus problemas.
+Cuando se detecta que la ROM introducida no es S60v1, la opción de introducir RPKG sera obligatoria. Gracias a los usuarios en Play Store y en Discord por expresar sus problemas.
 
 ## Se ha añadido soporte a S60v2
 
