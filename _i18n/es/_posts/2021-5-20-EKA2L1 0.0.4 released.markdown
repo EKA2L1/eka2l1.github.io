@@ -36,7 +36,7 @@ Cuando se detecta que la ROM introducida no es S60v1, la opción de introducir R
 
 Esto ha sido solicitado por una gran cantidad de personas. El emulador ha implementado algunas partes de sistemas S60v2, desafortunadamente no todas, y una gran cantidad de aplicaciones y juegos todavia tienen una gran cantidad de bugs o ni siquiera abren. Sin embargo, la compatibilidad ha mejorado.
 
-S60v2 tiene 3 feature packs, en los cuales se encuentran las transition stages de los días de legacy EPOC. Esto incluye el intentoo de remover la estructura tipo folder del sistema, remover la busqueda de archivos DLL tipo-Windows, remover el apprun, y modificación de ROMs como la resolución de pantalla que esta hard-coded dentro de las ROM headers Y así, implementar S60v2 esta siendo bastante divertido.
+S60v2 tiene 3 feature packs, en los cuales se encuentran las transition stages de los días de legacy EPOC. Esto incluye el intento de remover la estructura tipo folder del sistema, remover la busqueda de archivos DLL tipo-Windows, remover el apprun, y modificación de ROMs como la resolución de pantalla que esta hard-coded dentro de las ROM headers Y así, implementar S60v2 esta siendo bastante divertido.
 
 Compresión de PETRAN DLLs y EXEs también estan presente en un montón de aplicaciones. Algunas funciones que todavia no estan funcionando correctamente, incluyendo juegos que utilizan Direct Screen Acces (DSA).
 
