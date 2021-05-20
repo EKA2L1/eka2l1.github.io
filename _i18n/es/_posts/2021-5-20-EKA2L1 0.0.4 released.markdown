@@ -91,7 +91,7 @@ Lo último por mencionar es que, algunos juegos tienen algunas race conditions, 
 	<figcaption> Spider Man: Toxic City y Virtous Devil Saga ahora funcionan correctamente</figcaption>
 </figure>
   
-También hay algunos arreglos menores que mejoran la compatibilidad con aplicaciones S60v3 y S60v5, pero no las mencionaremos aquí.
+También hay algunos arreglos menores que mejoran la compatibilidad con aplicaciones S60v3 y S60v5, pero no los mencionaremos aquí.
 
 ## Metas para la 0.0.5
   
