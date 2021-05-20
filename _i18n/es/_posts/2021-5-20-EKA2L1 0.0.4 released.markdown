@@ -32,31 +32,31 @@ Algunas capturas de pantalla de la nueva pantalla de instalación:
 
 Cuando se detecta que la ROM introducida no es S60v1, la opción de introducir RPKG sera obligatoría. Gracias a los usuarios en Play Store y en Discord por expresar sus problemas.
 
-## Add fundamental support for S60v2
+## Se ha añadido soporte a S60v2
 
-This is requested by a lot of people. The emulator implemented some parts of the S60v2 systems, but unfortunately not all, and a lot of apps and games are still heavily bugged or not launching at all. However, the compatibilities did improved.
+Esto ha sido solicitado por una gran cantidad de personas. El emulador ha implementado algunas partes de sistemas S60v2, desafortunadamente no todas, y una gran cantidad de aplicaciones y juegos todavia tienen una gran cantidad de bugs o ni siquiera abren. Sin embargo, la compatibilidad ha mejorado.
 
-The S60v2 has three feature packs, in which features the transition stages from legacy EPOC days. This including the attempt of the system folder structure removal, the removal of Windows-like DLL searchings, apprun removal, ROM changes like hard-coded the screen resolution inside ROM headers. As such, implementing S60v2 is very fun.
+S60v2 tiene 3 feature packs, en los cuales se encuentran las transition stages de los días de legacy EPOC. Esto incluye el intentoo de remover la estructura tipo folder del sistema, remover la busqueda de archivos DLL tipo-Windows, remover el apprun, y modificación de ROMs como la resolución de pantalla que esta hard-coded dentro de las ROM headers Y así, implementar S60v2 esta siendo bastante divertido.
 
-Compression of PETRAN DLLs and EXEs is also presented in a lot of applications. Some features that are still not working properly including games that use Direct Screen Access (DSA) properly.
+Compresión de PETRAN DLLs y EXEs también estan presente en un montón de aplicaciones. Algunas funciones que todavia no estan funcionando correctamente, incluyendo juegos que utilizan Direct Screen Acces (DSA).
 
-Here are some screenshots of games currently working on the emulator, using N70 device dump.
+Algunas capturas de pantalla de juegos funcionando ahora mismo en el emulador, utilizando un dump del dispositivo N70:
 
 <figure class="third">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg">
-	<figcaption>Images provided by ericsonia and Ink321</figcaption>
+	<figcaption>Imagenes proporcionadas por ericsonia e Ink321</figcaption>
 </figure>
 
 <figure class="third">
 	<img src="https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&height=593">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png">
 	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg">
-	<figcaption>Images provided by ericsonia and Ink321</figcaption>
+	<figcaption>Imagenes proporcionadas por ericsonia e Ink321</figcaption>
 </figure>
 
-## Adding S60v5 support on 32-bit
+## Añadiendo soporte para S60v5 en 32-bits
 
 S60v5 and S^3 requires heavy VFP operations, so it was not implemented in emulator 32-bit JIT before. Recently we touch it again, since the host doesn't use VFP registers at all, we trash the whole register bank, but still keep track of what registers are being loaded/written.
 
