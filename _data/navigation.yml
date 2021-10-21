@@ -40,6 +40,9 @@ main:
       zh-cn: "帖子"
     url: posts/
   - title:
+      en: "Wiki"
+    url: https://eka2l1.miraheze.org/wiki/Main_Page
+  - title:
       en: "GitHub"
       vi: "Github"
       es: "Github"
