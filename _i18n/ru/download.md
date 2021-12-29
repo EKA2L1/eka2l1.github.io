@@ -2,6 +2,10 @@
 
 ![release_shot](/assets/download/release_page.png)
 
+Эмулятор также доступен для Android в **Google Play Store**!
+
+[![Play Store Badge](/assets/download/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.github.eka2l1)
+
 ## Примечание для Windows
 
 Для работы эмулятора требуется последняя версия *Microsoft Visual C++*. Если вы столкнетесь с ошибками, в которых говорится, что вам не хватает библиотеки DLL, попробуйте
