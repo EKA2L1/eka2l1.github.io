@@ -5,7 +5,7 @@ date:   2021-04-14 12:00:00 +0700
 categories: update android playstore
 ---
 
-Версия эмулятора для Google Play Store была одобрена и опубликована **Play Software**. [Ссылка для скачивания] (https://play.google.com/store/apps/details?id=com.github.eka2l1).
+Версия эмулятора для Google Play Store была одобрена и опубликована **Play Software**. [Ссылка для скачивания](https://play.google.com/store/apps/details?id=com.github.eka2l1).
 Соответственно изменится и раздел «Скачать» на сайте.
 
 Если вы не фанат передовых изменений и регулярных загрузок и переустановок APK из Github, эту версию в Google Play Store можно рассматривать как стабильный канал выпуска для эмулятора.
