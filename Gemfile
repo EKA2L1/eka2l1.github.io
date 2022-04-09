@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.2"
+gem "jekyll", "~> 4.2.0"
 gem "rake", "~> 10.1.1"
 gem "minimal-mistakes-jekyll"
 gem "jekyll-multiple-languages-plugin"
