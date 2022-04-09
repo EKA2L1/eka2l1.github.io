@@ -20,8 +20,7 @@
         <ul class="navbar-nav mr-auto">
                 {%- for link in site.data.navigation.main -%}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% if site.defaultLang != site.lang %}{% unless (link.url contains '://') %}/{{site.lang}}{% endunless %}
-                    {% endif %}{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>
+                    <a class="nav-link" href="{% if site.defaultLang != site.lang %}{% unless (link.url contains '://') %}/{{site.lang}}{% endunless %}{% endif %}{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>
                     {% if link.title[site.lang] %}
                         {{ link.title[site.lang] }}
                     {% else %}
