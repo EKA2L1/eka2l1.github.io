@@ -1,5 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/b0040e9e6a6db92b5c252acee3891874?family=Nokia+Pure+Text);
-
 .dark-theme {
     --background-color: #000000;
     --text-color: #dfddddd2;
@@ -20,6 +18,11 @@
     --border-pagination-color: #4d829c;
     --text-color-disabled: #6a6262;
     --toggle-background-color: #cccccc;
+}
+
+@font-face {
+    font-family: "Nokia Pure Text";
+    src: url("/assets/fonts/NokiaPureText-Regular.ttf");
 }
 
 body {
