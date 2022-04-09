@@ -171,6 +171,7 @@ a:link.disabled {
 header {
     display: block;
     margin-left: 1rem;
+    margin-bottom: 2rem; 
 }
 
 .fa-bars {
