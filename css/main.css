@@ -162,6 +162,17 @@ a:link.disabled {
     margin-right: 0.5rem;
 }
 
+.archive__subtitle, .entries-list {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+}
+
+header {
+    display: block;
+    margin-left: 1rem;
+}
+
 .fa-bars {
     color: var(--text-color);
 }
