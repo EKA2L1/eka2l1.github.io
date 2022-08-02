@@ -15,7 +15,7 @@ main:
       pt-br: "Baixar"
       ru: "Скачать"
       zh-cn: "下载"
-      it: "Scaricare"
+      it: "Scarica"
     url: download/
   - title:
       en: "Quickstart"
