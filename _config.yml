@@ -1,9 +1,9 @@
-title: EKA2L1 - Experimental Symbian OS Emulator
-email: cc@12z1.com
+title: EKA2L1 - Symbian OS Emulator/N-Gage emulator
+email: cc@12l1.com
 description:
-  An Experimental Symbian OS Emulator
+  A Symbian OS Emulator/N-Gage emulator
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://12z1.com"
+url: "https://12l1.com"
 github_username:  EKA2L1
 
 languages: [ "en", "vi", "es", "pt-br", "ru", "zh-cn", "it" ]
@@ -36,7 +36,7 @@ footer:
       url: "https://www.youtube.com/channel/UCCdPQT6Le2xw_z9cutkVwyA"
     - label: Mail
       icon: "fas fa-envelope"
-      url: "mailto:cc@12z1.com"
+      url: "mailto:cc@12l1.com"
     - label: Website source
       icon: "fa fa-globe"
       url: "https://github.com/EKA2L1/eka2l1.github.io"
