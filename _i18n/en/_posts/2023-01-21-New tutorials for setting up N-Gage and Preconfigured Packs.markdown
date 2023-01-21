@@ -1,0 +1,20 @@
+---
+layout: single
+title:  "New video tutorials for setting up the emulator for N-Gage and using Preconfigured Packs"
+date:   2023-01-21 23:57:00 +0700
+categories: jekyll update
+---
+
+The emulator has changed very much in the last 2 years since its boom over N-Gage popularity, with some more quality-of-life changes to make using EKA2L1 as a N-Gage emulator easier than before.
+
+Many tutorials on Youtube are not as up-to-date as before since there's no incentive to renew it. And there are also many people that find difficulties in the aspect of installing N-Gage games into the emulator and don't want to join the Discord server.
+
+Understanding the struggle, I have tried to make 2 specific **tutorials** to **set up the emulator for N-Gage emulation** purpose, for desktop and Android version of the emulator. In addition, there's one another tutorial for installing **BLZ games**, and one for **installing the preconfigured packs**.
+
+Here is the [playlist](https://www.youtube.com/watch?v=rFUlsSGkRjc&list=PLkrpMo4_xadtJ_Kqvc5BSTSi39ollsAbR)
+
+I hope it is helpful and hearable.
+
+Happy Lunar New Year!
+新年快乐！
+Chúc mừng năm mới!
