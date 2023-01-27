@@ -1,0 +1,157 @@
+---
+
+tata letak: tunggal
+
+judul: "EKA2L1 versi 0.0.4 dirilis!"
+
+tanggal: 20-05-2021 9:00:00 +0700
+
+kategori: perbarui android playstore
+
+toc: true
+
+---
+
+EKA2L1 telah ditingkatkan ke versi 0.0.4 dan diperbarui di Google Play Store.
+
+## Menyesuaikan metode pemasangan perangkat
+
+Ada umpan balik tentang berusaha dalam proses mencari tahu apa yang harus dilakukan. Misalnya, saat menghadapi layar penginstalan, perangkat apa yang harus diinstal, metode penginstalan apa. Banyak pengguna berhenti pada langkah-langkah ini, dan banyak pengguna Android hanyalah konsumen biasa dan tidak terlalu terlihat seperti pengguna PC.
+
+Hasilnya, kami menyesuaikan proses pemasangan perangkat. Perhatikan bahwa itu tidak dapat dihapus sama sekali.
+
+- Kami tahu banyak orang adalah penggemar konsol, bukan penggemar Symbian, jadi bagi mereka memiliki dua file atau sesuatu seperti raw dump bisa sedikit sulit. Jadi untuk perangkat **S60v1**, seperti *N-Gage*, Anda sekarang **hanya diminta** untuk menyediakan **System ROMS** untuk penginstalan. Kami harap ini memudahkan proses instalasi.
+
+- Untuk perangkat S60v2, ada proses transisi yang juga melibatkan ROFS di sistem Anda, jadi tetap harus menggunakan RPKG untuk itu.
+
+- Untuk perangkat S60v3, S60v5 dan S^3, kami memberi Anda opsi untuk **menginstal menggunakan firmware**. Ini lebih dikenal luas di sekitar orang, dan harus direkomendasikan. Anda hanya perlu **menyediakan path ke file VPL** untuk instalasi. *Perhatikan* bahwa ini tidak bekerja dengan beberapa firmware S60v2 terbaru, karena perbedaan posisi data ROM.
+
+Tentang perangkat apa yang akan dipasang, kami telah menambahkan bagian yang dapat diperluas yang dapat Anda klik, yang akan merekomendasikan perangkat untuk dipasang dan metode mana yang akan digunakan untuk perangkat tersebut.
+
+Berikut adalah gambar dari layar instalasi baru:
+
+<figure class="">
+
+	<img src="https://cdn.discordapp.com/attachments/786228834638626867/844785034178986004/Screenshot_20210520-105346_EKA2L1.jpg">
+
+	<figcaption>Layar penginstalan perangkat Android</figcaption>
+
+</figure>
+
+<figure class="">
+
+	<img src="https://user-images.githubusercontent.com/25717050/118917060-445be380-b95a-11eb-8a70-6c4c8bb71578.png">
+
+	<figcaption>Layar penginstalan perangkat PC</figcaption>
+
+</figure>
+
+Ketika ROM terdeteksi bukan S60v1, kolom RPKG akan diminta. Terima kasih kepada pengguna di Play Store dan di Discord karena telah meluapkan kerja keras mereka.
+
+## Tambahkan dukungan fundamental untuk S60v2
+
+Ini yang diminta oleh banyak orang. Emulator mengimplementasikan beberapa bagian dari sistem S60v2, tetapi sayangnya tidak semua, dan banyak aplikasi dan game yang masih bermasalah atau tidak diluncurkan sama sekali. Namun, kompatibilitasnya meningkat.
+
+S60v2 memiliki tiga paket fitur, yang menampilkan tahapan transisi dari hari-hari EPOC sebelumnya. Ini termasuk upaya penghapusan struktur folder sistem, penghapusan pencarian DLL seperti Windows, penghapusan apprun, perubahan ROM seperti kode keras resolusi layar di dalam header ROM. Dengan demikian, mengimplementasikan S60v2 sangat menyenangkan.
+
+Kompresi PETRAN DLL dan EXE juga disajikan di banyak aplikasi. Beberapa fitur yang masih belum berjalan dengan baik termasuk game yang menggunakan Direct Screen Access (DSA) dengan baik.
+
+Berikut adalah beberapa tangkapan layar dari game yang saat ini bekerja di emulator, menggunakan dump perangkat N70.
+
+<figure class="third">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg">
+
+<figcaption>Gambar disediakan oleh ericsonia dan Ink321</figcaption>
+
+</gambar>
+
+<figure class="third">
+
+<img src="https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&height=593">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg">
+
+<figcaption>Gambar disediakan oleh ericsonia dan Ink321</figcaption>
+
+</gambar>
+
+## Menambahkan dukungan S60v5 pada 32-bit
+
+S60v5 dan S^3 memerlukan operasi VFP yang berat, sehingga tidak diterapkan di emulator JIT 32-bit sebelumnya. Baru-baru ini kami menyentuhnya lagi, karena host sama sekali tidak menggunakan register VFP, kami membuang seluruh bank register, tetapi tetap melacak register apa yang sedang dimuat/ditulis.
+
+Performa yang didapat dengan JIT 32-bit sebenarnya sama dengan ponsel asli. Saya tidak berpikir ada banyak harapan untuk ameturers seperti kami... Tapi kami harap Anda dapat menikmati aplikasi masa lalu yang baik di ponsel Android baru. Tidak banyak yang bisa dibicarakan tentang ini.
+
+## Perbaikan kecil lainnya
+
+Tidak ada dump perangkat unicode yang pernah ada sebelumnya, tetapi baru-baru ini kami diberi ROM Cina N70, dan itu tidak berfungsi dengan baik, karena tidak menampilkan apa pun untuk dibaca. Saat menggalinya, kami mencoba memuat karakter Unicode, tetapi tidak menyimpan informasi koordinatnya di tekstur font atlas sama sekali. Jadi memperbaiki ini membuat seseorang bisa memainkan Pocket Kingdom dalam bahasa Cina, LOL.
+
+<figure class="half">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/841236525442400256/Screenshot_20210510_165245_com.github.eka2l1.jpg">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/841206165320237126/unknown.png">
+
+<figcaption>Cerita sepertinya sudah bisa ditampilkan sekarang, kamu juga bisa memainkan Card Deck</figcaption>
+
+</gambar>
+
+Hal-hal lain yang diminta, termasuk beberapa game yang sama sekali tidak dapat membaca IMEI emulator. IMEI ini dibuat secara acak secara online, LOL. Tapi seharusnya tidak ada yang salah dengan itu.
+
+Untuk mendapatkan IMEI, game harus membuka informasi ponsel menggunakan API, yang mengharuskan Anda memberikan nama pengambil informasi ponsel (ini diambil dari DLL). Tapi game-game lama ini terkadang hanya meng-hardcode nama pengambil itu menjadi "Calypso" untuk S60v1 (ini adalah nama kode Nokia 7650), atau "DefaultPhone" pada S60v2. Kami tidak memuat modul ini karena alasan yang jelas, yaitu mendapatkan sesuatu dari driver. Jadi kita harus memalsukan nama-nama itu tergantung pada versi OS...
+
+  
+
+<figure class="half">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png">
+
+<figcaption>Anda dapat memainkan Legacy sekarang... Dan membaca IMEI dari X-plore juga berfungsi</figcaption>
+
+</gambar>
+
+  
+
+Hal terakhir yang perlu disebutkan adalah bahwa, beberapa game memiliki beberapa kondisi balapan, yang tidak pernah terpicu karena cara OS menjadwalkan utas. Setelah utas dibuat dan dilanjutkan, kernel akan segera menjadwal ulang, yang mungkin membuat utas anak berjalan terlebih dahulu. Ini menciptakan beberapa situasi di mana utas induk mengakses data oleh utas anak yang hanya dibuat saat utas anak dijalankan pertama kali. Emulator dikoreksi untuk mengikuti perilaku ini, yang memperbaiki error di beberapa game.
+
+<figure class="half">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg">
+
+<img src="https://cdn.discordapp.com/attachments/703563521379663883/840298370576810045/78.png">
+
+<figcaption>Spider Man: Toxic City dan Virtuous Devil Saga sekarang berfungsi dengan baik</figcaption>
+
+</gambar>
+
+  
+
+Ada juga beberapa perbaikan kecil yang meningkatkan lebih banyak kompatibilitas dengan aplikasi S60v3 dan S60v5, tetapi kami tidak akan menyebutkannya di sini.
+
+  
+
+## Target untuk 0.0.5
+
+  
+
+Kami berharap dapat segera mengimplementasikan dukungan layanan N-Gage (biasanya disebut N-Gage 2.0). Ada pekerjaan di branch ng2 sebelumnya, tetapi sangat hacky dan hanya bekerja dengan satu game, dan itu hanya menyebutkan pemasangannya.
+
+![gambar](https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png)
+
+  
+
+Kami juga ingin memperbaiki masalah operasi file yang mengambil enternity di Android 11 saat ini, atau hampir tidak berfungsi sama sekali. Perbaikan akan dikeluarkan saat kami menemukan waktu.
+
+## Catatan penutup
+
+  
+
+Versi PC akan memiliki perubahan kualitas hidup yang sama dengan Android, ini sedang diterapkan saat ini. Namun untuk Android, Anda dapat menemukan emulator versi stabil di [Play Store](https://play.google.com/store/apps/details?id=com.github.eka2l1). Semoga Anda bersenang-senang dengan emulator.
