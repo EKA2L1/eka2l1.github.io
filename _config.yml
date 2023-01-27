@@ -16,6 +16,7 @@ languageNames:
   es: Español
   pt-br: Português
   ru: Русский
+  id: Indonesia
 
 theme: minimal-mistakes-jekyll
 plugins:
