@@ -10,4 +10,4 @@ kategori: pembaruan jekyll
 
 ---
 
-Ini adalah situs web kami sekarang. Anda dapat mendengar pengumuman baru di sini!
+Ini adalah situs web kami sekarang. Anda dapat melihat pengumuman baru di sini!
