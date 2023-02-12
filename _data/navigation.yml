@@ -7,6 +7,7 @@ main:
       ru: "Главная"
       zh-cn: "首页"
       id: "Beranda"
+      it: "Home"
     url: /
   - title:
       en: "Download"
@@ -16,6 +17,7 @@ main:
       ru: "Скачать"
       zh-cn: "下载"
       id: "Unduh"
+      it: "Scarica"
     url: download/
   - title:
       en: "Quickstart"
@@ -25,6 +27,7 @@ main:
       ru: "Установка"
       zh-cn: "快速开始"
       id: "Panduan Persyaratan dan Pemasangan"
+      it: "Guida all'uso"
     url: quickstart/
   - title:
       en: "Screenshots"
@@ -34,6 +37,7 @@ main:
       ru: "Скриншоты"
       zh-cn: "截图"
       id: "Pratinjau Screenshot"
+      it: "Immagini"
     url: screenshots/
   - title:
       en: "Posts"
@@ -43,9 +47,15 @@ main:
       ru: "Блог"
       zh-cn: "帖子"
       id: "Postingan"
+      it: "Post"
     url: posts/
   - title:
+      en: "Documents"
+      it: "Documentazione"
+    url: docs/
+  - title:
       en: "Wiki"
+      it: "Wiki"
     url: https://eka2l1.miraheze.org/wiki/Main_Page
   - title:
       en: "GitHub"
@@ -55,4 +65,5 @@ main:
       ru: "GitHub"
       zh-cn: "GitHub"
       id: "GitHub"
+      it: "GitHub"
     url: https://github.com/EKA2L1/EKA2L1

@@ -3,6 +3,7 @@ layout: single
 title:  "EKA2L1 version 0.0.4 released!"
 date:   2021-05-20 9:00:00 +0700
 categories: update android playstore
+toc: true
 ---
 
 EKA2L1 has been bumped up to version 0.0.4 and is updated on Google Play Store.
