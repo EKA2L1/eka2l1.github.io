@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="id"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://12l1.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://12l1.com/" rel="alternate" type="text/html" hreflang="id" /><updated>2023-08-08T09:23:19+00:00</updated><id>https://12l1.com/feed.xml</id><title type="html">EKA2L1 - Symbian OS Emulator/N-Gage emulator</title><subtitle>A Symbian OS Emulator/N-Gage emulator</subtitle><entry><title type="html">New tutorials for setting up n Gage and preconfigured packs</title><link href="https://12l1.com/id/2023/01/21/New-tutorials-for-setting-up-N-Gage-and-Preconfigured-Packs.html" rel="alternate" type="text/html" title="New tutorials for setting up n Gage and preconfigured packs" /><published>2023-01-21T00:00:00+00:00</published><updated>2023-01-21T00:00:00+00:00</updated><id>https://12l1.com/id/2023/01/21/New%20tutorials%20for%20setting%20up%20N-Gage%20and%20Preconfigured%20Packs</id><content type="html" xml:base="https://12l1.com/id/2023/01/21/New-tutorials-for-setting-up-N-Gage-and-Preconfigured-Packs.html">&lt;p&gt;Emulator telah banyak berubah dalam 2 tahun terakhir sejak boomingnya atas popularitas N-Gage, dengan beberapa perubahan quality-of-life yang lebih banyak untuk membuat penggunaan EKA2L1 sebagai emulator N-Gage lebih mudah dari sebelumnya.&lt;/p&gt;
+
+&lt;p&gt;Banyak tutorial di Youtube yang tidak diperbarui seperti sebelumnya karena tidak ada insentif untuk memperbaruinya. Dan banyak juga orang yang merasa kesulitan dalam aspek penginstalan game N-Gage ke dalam emulator dan tidak ingin bergabung dengan server Discord.&lt;/p&gt;
+
+&lt;p&gt;Memahami perjuangannya, saya telah mencoba membuat 2 &lt;strong&gt;tutorial&lt;/strong&gt; khusus untuk &lt;strong&gt;menyiapkan emulator untuk tujuan emulasi N-Gage&lt;/strong&gt;, untuk emulator versi desktop dan Android. Selain itu, ada satu lagi tutorial untuk menginstal &lt;strong&gt;game BLZ&lt;/strong&gt;, dan satu lagi untuk &lt;strong&gt;menginstal paket yang telah dikonfigurasi sebelumnya&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Disini &lt;a href=&quot;https://www.youtube.com/watch?v=rFUlsSGkRjc&amp;amp;list=PLkrpMo4_xadtJ_Kqvc5BSTSi39ollsAbR&quot;&gt;playlist/daftar putarnya&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Semoga bermanfaat dan dapat didengarkan.&lt;/p&gt;
+
+&lt;p&gt;Selamat Tahun Baru Imlek!&lt;/p&gt;
+
+&lt;p&gt;Happy Lunar New Year!&lt;/p&gt;
+
+&lt;p&gt;新年快乐！&lt;/p&gt;
+
+&lt;p&gt;Chúc mừng năm mới!&lt;/p&gt;</content><author><name></name></author><summary type="html">Emulator telah banyak berubah dalam 2 tahun terakhir sejak boomingnya atas popularitas N-Gage, dengan beberapa perubahan quality-of-life yang lebih banyak untuk membuat penggunaan EKA2L1 sebagai emulator N-Gage lebih mudah dari sebelumnya.</summary></entry><entry><title type="html">Lua Script Api Documentated</title><link href="https://12l1.com/id/2021/10/30/Lua-script-API-documentated.html" rel="alternate" type="text/html" title="Lua Script Api Documentated" /><published>2021-10-30T00:00:00+00:00</published><updated>2021-10-30T00:00:00+00:00</updated><id>https://12l1.com/id/2021/10/30/Lua-script-API-documentated</id><content type="html" xml:base="https://12l1.com/id/2021/10/30/Lua-script-API-documentated.html">&lt;p&gt;API skrip Lua lebih didokumentasikan, untuk setiap individu yang ingin menulis skrip untuk debugging, menganalisis atau patching aplikasi/permainan tertentu.&lt;/p&gt;
+
+&lt;p&gt;Tautan ke dokumentasi API dapat ditemukan &lt;a href=&quot;https://12z1.com/docs/topics/scriptingnote.md.html&quot;&gt;di sini&lt;/a&gt;, beserta beberapa catatan kecil tentang skrip dan proses debug dengan GDB.&lt;/p&gt;
+
+&lt;p&gt;Terima kasih sudah membaca!&lt;/p&gt;</content><author><name></name></author><summary type="html">API skrip Lua lebih didokumentasikan, untuk setiap individu yang ingin menulis skrip untuk debugging, menganalisis atau patching aplikasi/permainan tertentu.</summary></entry><entry><title type="html">Eka2l1 0.0.4 released</title><link href="https://12l1.com/id/2021/05/20/EKA2L1-0.0.4-released.html" rel="alternate" type="text/html" title="Eka2l1 0.0.4 released" /><published>2021-05-20T00:00:00+00:00</published><updated>2021-05-20T00:00:00+00:00</updated><id>https://12l1.com/id/2021/05/20/EKA2L1%200.0.4%20released</id><content type="html" xml:base="https://12l1.com/id/2021/05/20/EKA2L1-0.0.4-released.html">&lt;p&gt;EKA2L1 telah ditingkatkan ke versi 0.0.4 dan diperbarui di Google Play Store.&lt;/p&gt;
+
+&lt;h2 id=&quot;menyesuaikan-metode-pemasangan-perangkat&quot;&gt;Menyesuaikan metode pemasangan perangkat&lt;/h2&gt;
+
+&lt;p&gt;Ada umpan balik tentang berusaha dalam proses mencari tahu apa yang harus dilakukan. Misalnya, saat menghadapi layar penginstalan, perangkat apa yang harus diinstal, metode penginstalan apa. Banyak pengguna berhenti pada langkah-langkah ini, dan banyak pengguna Android hanyalah konsumen biasa dan tidak terlalu terlihat seperti pengguna PC.&lt;/p&gt;
+
+&lt;p&gt;Hasilnya, kami menyesuaikan proses pemasangan perangkat. Perhatikan bahwa itu tidak dapat dihapus sama sekali.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kami tahu banyak orang adalah penggemar konsol, bukan penggemar Symbian, jadi bagi mereka memiliki dua file atau sesuatu seperti raw dump bisa sedikit sulit. Jadi untuk perangkat &lt;strong&gt;S60v1&lt;/strong&gt;, seperti &lt;em&gt;N-Gage&lt;/em&gt;, Anda sekarang &lt;strong&gt;hanya diminta&lt;/strong&gt; untuk menyediakan &lt;strong&gt;System ROMS&lt;/strong&gt; untuk penginstalan. Kami harap ini memudahkan proses instalasi.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Untuk perangkat S60v2, ada proses transisi yang juga melibatkan ROFS di sistem Anda, jadi tetap harus menggunakan RPKG untuk itu.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Untuk perangkat S60v3, S60v5 dan S^3, kami memberi Anda opsi untuk &lt;strong&gt;menginstal menggunakan firmware&lt;/strong&gt;. Ini lebih dikenal luas di sekitar orang, dan harus direkomendasikan. Anda hanya perlu &lt;strong&gt;menyediakan path ke file VPL&lt;/strong&gt; untuk instalasi. &lt;em&gt;Perhatikan&lt;/em&gt; bahwa ini tidak bekerja dengan beberapa firmware S60v2 terbaru, karena perbedaan posisi data ROM.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tentang perangkat apa yang akan dipasang, kami telah menambahkan bagian yang dapat diperluas yang dapat Anda klik, yang akan merekomendasikan perangkat untuk dipasang dan metode mana yang akan digunakan untuk perangkat tersebut.&lt;/p&gt;
+
+&lt;p&gt;Berikut adalah gambar dari layar instalasi baru:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/786228834638626867/844785034178986004/Screenshot_20210520-105346_EKA2L1.jpg&quot; /&gt;
+
+	&lt;figcaption&gt;Layar penginstalan perangkat Android&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+
+	&lt;img src=&quot;https://user-images.githubusercontent.com/25717050/118917060-445be380-b95a-11eb-8a70-6c4c8bb71578.png&quot; /&gt;
+
+	&lt;figcaption&gt;Layar penginstalan perangkat PC&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Ketika ROM terdeteksi bukan S60v1, kolom RPKG akan diminta. Terima kasih kepada pengguna di Play Store dan di Discord karena telah meluapkan kerja keras mereka.&lt;/p&gt;
+
+&lt;h2 id=&quot;tambahkan-dukungan-fundamental-untuk-s60v2&quot;&gt;Tambahkan dukungan fundamental untuk S60v2&lt;/h2&gt;
+
+&lt;p&gt;Ini yang diminta oleh banyak orang. Emulator mengimplementasikan beberapa bagian dari sistem S60v2, tetapi sayangnya tidak semua, dan banyak aplikasi dan game yang masih bermasalah atau tidak diluncurkan sama sekali. Namun, kompatibilitasnya meningkat.&lt;/p&gt;
+
+&lt;p&gt;S60v2 memiliki tiga paket fitur, yang menampilkan tahapan transisi dari hari-hari EPOC sebelumnya. Ini termasuk upaya penghapusan struktur folder sistem, penghapusan pencarian DLL seperti Windows, penghapusan apprun, perubahan ROM seperti kode keras resolusi layar di dalam header ROM. Dengan demikian, mengimplementasikan S60v2 sangat menyenangkan.&lt;/p&gt;
+
+&lt;p&gt;Kompresi PETRAN DLL dan EXE juga disajikan di banyak aplikasi. Beberapa fitur yang masih belum berjalan dengan baik termasuk game yang menggunakan Direct Screen Access (DSA) dengan baik.&lt;/p&gt;
+
+&lt;p&gt;Berikut adalah beberapa tangkapan layar dari game yang saat ini bekerja di emulator, menggunakan dump perangkat N70.&lt;/p&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg&quot; /&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png&quot; /&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg&quot; /&gt;
+
+&lt;figcaption&gt;Gambar disediakan oleh ericsonia dan Ink321&lt;/figcaption&gt;
+
+&amp;lt;/gambar&amp;gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+
+&lt;img src=&quot;https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&amp;amp;height=593&quot; /&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png&quot; /&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg&quot; /&gt;
+
+&lt;figcaption&gt;Gambar disediakan oleh ericsonia dan Ink321&lt;/figcaption&gt;
+
+&amp;lt;/gambar&amp;gt;
+
+## Menambahkan dukungan S60v5 pada 32-bit
+
+S60v5 dan S^3 memerlukan operasi VFP yang berat, sehingga tidak diterapkan di emulator JIT 32-bit sebelumnya. Baru-baru ini kami menyentuhnya lagi, karena host sama sekali tidak menggunakan register VFP, kami membuang seluruh bank register, tetapi tetap melacak register apa yang sedang dimuat/ditulis.
+
+Performa yang didapat dengan JIT 32-bit sebenarnya sama dengan ponsel asli. Saya tidak berpikir ada banyak harapan untuk ameturers seperti kami... Tapi kami harap Anda dapat menikmati aplikasi masa lalu yang baik di ponsel Android baru. Tidak banyak yang bisa dibicarakan tentang ini.
+
+## Perbaikan kecil lainnya
+
+Tidak ada dump perangkat unicode yang pernah ada sebelumnya, tetapi baru-baru ini kami diberi ROM Cina N70, dan itu tidak berfungsi dengan baik, karena tidak menampilkan apa pun untuk dibaca. Saat menggalinya, kami mencoba memuat karakter Unicode, tetapi tidak menyimpan informasi koordinatnya di tekstur font atlas sama sekali. Jadi memperbaiki ini membuat seseorang bisa memainkan Pocket Kingdom dalam bahasa Cina, LOL.
+
+&lt;figure class=&quot;half&quot;&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841236525442400256/Screenshot_20210510_165245_com.github.eka2l1.jpg&quot; /&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841206165320237126/unknown.png&quot; /&gt;
+
+&lt;figcaption&gt;Cerita sepertinya sudah bisa ditampilkan sekarang, kamu juga bisa memainkan Card Deck&lt;/figcaption&gt;
+
+&amp;lt;/gambar&amp;gt;
+
+Hal-hal lain yang diminta, termasuk beberapa game yang sama sekali tidak dapat membaca IMEI emulator. IMEI ini dibuat secara acak secara online, LOL. Tapi seharusnya tidak ada yang salah dengan itu.
+
+Untuk mendapatkan IMEI, game harus membuka informasi ponsel menggunakan API, yang mengharuskan Anda memberikan nama pengambil informasi ponsel (ini diambil dari DLL). Tapi game-game lama ini terkadang hanya meng-hardcode nama pengambil itu menjadi &quot;Calypso&quot; untuk S60v1 (ini adalah nama kode Nokia 7650), atau &quot;DefaultPhone&quot; pada S60v2. Kami tidak memuat modul ini karena alasan yang jelas, yaitu mendapatkan sesuatu dari driver. Jadi kita harus memalsukan nama-nama itu tergantung pada versi OS...
+
+  
+
+&lt;figure class=&quot;half&quot;&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png&quot; /&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png&quot; /&gt;
+
+&lt;figcaption&gt;Anda dapat memainkan Legacy sekarang... Dan membaca IMEI dari X-plore juga berfungsi&lt;/figcaption&gt;
+
+&amp;lt;/gambar&amp;gt;
+
+  
+
+Hal terakhir yang perlu disebutkan adalah bahwa, beberapa game memiliki beberapa kondisi balapan, yang tidak pernah terpicu karena cara OS menjadwalkan utas. Setelah utas dibuat dan dilanjutkan, kernel akan segera menjadwal ulang, yang mungkin membuat utas anak berjalan terlebih dahulu. Ini menciptakan beberapa situasi di mana utas induk mengakses data oleh utas anak yang hanya dibuat saat utas anak dijalankan pertama kali. Emulator dikoreksi untuk mengikuti perilaku ini, yang memperbaiki error di beberapa game.
+
+&lt;figure class=&quot;half&quot;&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg&quot; /&gt;
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840298370576810045/78.png&quot; /&gt;
+
+&lt;figcaption&gt;Spider Man: Toxic City dan Virtuous Devil Saga sekarang berfungsi dengan baik&lt;/figcaption&gt;
+
+&amp;lt;/gambar&amp;gt;
+
+  
+
+Ada juga beberapa perbaikan kecil yang meningkatkan lebih banyak kompatibilitas dengan aplikasi S60v3 dan S60v5, tetapi kami tidak akan menyebutkannya di sini.
+
+  
+
+## Target untuk 0.0.5
+
+  
+
+Kami berharap dapat segera mengimplementasikan dukungan layanan N-Gage (biasanya disebut N-Gage 2.0). Ada pekerjaan di branch ng2 sebelumnya, tetapi sangat hacky dan hanya bekerja dengan satu game, dan itu hanya menyebutkan pemasangannya.
+
+![gambar](https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png)
+
+  
+
+Kami juga ingin memperbaiki masalah operasi file yang mengambil enternity di Android 11 saat ini, atau hampir tidak berfungsi sama sekali. Perbaikan akan dikeluarkan saat kami menemukan waktu.
+
+## Catatan penutup
+
+  
+
+Versi PC akan memiliki perubahan kualitas hidup yang sama dengan Android, ini sedang diterapkan saat ini. Namun untuk Android, Anda dapat menemukan emulator versi stabil di [Play Store](https://play.google.com/store/apps/details?id=com.github.eka2l1). Semoga Anda bersenang-senang dengan emulator.
+&lt;/figure&gt;&lt;/figure&gt;&lt;/figure&gt;&lt;/figure&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">EKA2L1 telah ditingkatkan ke versi 0.0.4 dan diperbarui di Google Play Store.</summary></entry><entry><title type="html">Google Play Store Version Published</title><link href="https://12l1.com/id/2021/04/14/Google-Play-Store-version-published.html" rel="alternate" type="text/html" title="Google Play Store Version Published" /><published>2021-04-14T00:00:00+00:00</published><updated>2021-04-14T00:00:00+00:00</updated><id>https://12l1.com/id/2021/04/14/Google-Play-Store-version-published</id><content type="html" xml:base="https://12l1.com/id/2021/04/14/Google-Play-Store-version-published.html">&lt;p&gt;Emulator versi Google Play Store telah disetujui dan dipublikasikan oleh &lt;strong&gt;Play Software&lt;/strong&gt;. Berikut adalah &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.eka2l1&quot;&gt;Link download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bagian Unduh situs web akan diubah sesuai dengan itu.&lt;/p&gt;
+
+&lt;p&gt;Jika Anda tidak suka perubahan mutakhir dan secara teratur mengunduh lalu menginstal ulang APK dari Github lagi, versi ini di Google Play Store dapat dilihat sebagai saluran rilis stabil untuk emulator.&lt;/p&gt;
+
+&lt;p&gt;Kami harap Anda akan terus mendukung emulator.&lt;/p&gt;
+
+&lt;p&gt;Versi di Play Store didasarkan pada komit &lt;a href=&quot;https://github.com/EKA2L1/EKA2L1/commit/5f1c68345e0ae4c8a84006fe86056a4fbb832c22&quot;&gt;5f1c683&lt;/a&gt; di branch &lt;em&gt;Master&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Emulator versi Google Play Store telah disetujui dan dipublikasikan oleh Play Software. Berikut adalah Link download.</summary></entry><entry><title type="html">32 Bit Android Support</title><link href="https://12l1.com/id/2021/01/25/32-bit-android-support.html" rel="alternate" type="text/html" title="32 Bit Android Support" /><published>2021-01-25T00:00:00+00:00</published><updated>2021-01-25T00:00:00+00:00</updated><id>https://12l1.com/id/2021/01/25/32-bit-android-support</id><content type="html" xml:base="https://12l1.com/id/2021/01/25/32-bit-android-support.html">&lt;p&gt;Versi terbaru EKA2L1 telah menambahkan dukungan untuk platform &lt;strong&gt;32-bit Android&lt;/strong&gt;. Lanjutkan untuk mengunduh APK seperti biasa di bagian &lt;a href=&quot;/download&quot;&gt;&lt;strong&gt;Download&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mohon dicatat:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Saat ini, hanya aplikasi S60v3 dan S60v1 yang didukung.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tidak semua perangkat Android 32-bit dapat menjalankan emulator, meskipun spesifikasi yang diharapkan cukup rendah.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Periksa &lt;em&gt;persyaratan minimum&lt;/em&gt; untuk Android di halaman &lt;a href=&quot;/quickstart&quot;&gt;&lt;strong&gt;Quickstart&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sebaiknya gunakan &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.cpuid.cpu_z&quot;&gt;&lt;strong&gt;CPU-Z&lt;/strong&gt;&lt;/a&gt; untuk mendapatkan statistik ponsel Anda dan membandingkannya dengan persyaratan minimum.&lt;/p&gt;
+
+&lt;h3 id=&quot;beberapa-catatan-kecil&quot;&gt;Beberapa catatan kecil&lt;/h3&gt;
+
+&lt;p&gt;Sebelumnya, dukungan tidak ada karena tidak ada emulator CPU ARM yang mendukung arsitektur &lt;strong&gt;32-bit ARM&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Emulator CPU yang kami gunakan &lt;a href=&quot;https://github.com/MerryMage/Dynarmic&quot;&gt;(Dynarmic)&lt;/a&gt; saat ini mendukung arsitektur &lt;strong&gt;64-bit ARM (AArch64)&lt;/strong&gt; dan &lt;strong&gt;x86_64&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kami baru-baru ini menulis emulator CPU kami sendiri, ini bukan yang paling dioptimalkan, tetapi tampaknya berfungsi dengan baik.&lt;/p&gt;</content><author><name></name></author><summary type="html">Versi terbaru EKA2L1 telah menambahkan dukungan untuk platform 32-bit Android. Lanjutkan untuk mengunduh APK seperti biasa di bagian Download.</summary></entry><entry><title type="html">Translator_welcome</title><link href="https://12l1.com/id/2021/01/25/translator_welcome.html" rel="alternate" type="text/html" title="Translator_welcome" /><published>2021-01-25T00:00:00+00:00</published><updated>2021-01-25T00:00:00+00:00</updated><id>https://12l1.com/id/2021/01/25/translator_welcome</id><content type="html" xml:base="https://12l1.com/id/2021/01/25/translator_welcome.html">&lt;p&gt;Situs web menyambut orang untuk menerjemahkan kontennya ke bahasa Anda. Untuk melakukannya, buka &lt;a href=&quot;https://github.com/EKA2L1/eka2l1.github.io&quot;&gt;&lt;strong&gt;kode sumber situs&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;dan ikuti teks yang tertulis di README.&lt;/p&gt;</content><author><name></name></author><summary type="html">Situs web menyambut orang untuk menerjemahkan kontennya ke bahasa Anda. Untuk melakukannya, buka kode sumber situs</summary></entry><entry><title type="html">New Website</title><link href="https://12l1.com/id/2021/01/19/new-website.html" rel="alternate" type="text/html" title="New Website" /><published>2021-01-19T00:00:00+00:00</published><updated>2021-01-19T00:00:00+00:00</updated><id>https://12l1.com/id/2021/01/19/new-website</id><content type="html" xml:base="https://12l1.com/id/2021/01/19/new-website.html">&lt;p&gt;Ini adalah situs web kami sekarang. Anda dapat melihat pengumuman baru di sini!&lt;/p&gt;</content><author><name></name></author><summary type="html">Ini adalah situs web kami sekarang. Anda dapat melihat pengumuman baru di sini!</summary></entry></feed>

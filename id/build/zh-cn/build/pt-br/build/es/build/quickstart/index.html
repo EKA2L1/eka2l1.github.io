@@ -1,0 +1,681 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <script>
+    let isLightSaved = localStorage.getItem('isThemeLight');
+    if (isLightSaved != null && isLightSaved != undefined) {
+        document.documentElement.className = (isLightSaved == "true") ? "light-theme" : "dark-theme";
+    }
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="/css/main.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3203591900745886" crossorigin="anonymous"></script>
+
+<meta name="author" content="EKA2L1">
+<meta name="copyright" content="EKA2L1">
+<meta name="description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:title" content="An experimental Symbian OS Emulator/N-Gage emulator">
+<meta property="og:description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:image" content="/assets/main/duck_tank.png">
+<meta property="og:url" content="/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EKA2L1 - A Symbian OS/N-Gage emulator">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/assets/main/duck_tank.png"></link>
+
+
+<title>Quickstart - EKA2L1 - Symbian OS Emulator/N-Gage emulator</title>
+
+
+<script>
+    function setTheme(themeLight) {
+      localStorage.setItem('isThemeLight', themeLight);
+      document.documentElement.className = themeLight ? 'light-theme' : 'dark-theme';
+      $('#toggle-checkbox').prop('checked', themeLight);
+    }
+    $(function(){
+        $(document).on('change', '.langpick', function(obj) {
+            obj.preventDefault();
+            window.location = $(this).find('option:selected').val();
+        });
+        $('#toggle-checkbox').change(function(evt) {
+          setTheme(evt.target.checked);
+        })
+        let isLightSaved = localStorage.getItem('isThemeLight');
+        let darkScheme = null;
+        if (window.matchMedia) {
+          darkScheme = window.matchMedia('(prefer-color-scheme: dark)');
+        }
+        if (isLightSaved == null || isLightSaved == undefined) {
+          if (darkScheme && darkScheme.matches) {
+            setTheme(false);
+          } else {
+            setTheme(true);
+          }
+        } else {
+          setTheme(isLightSaved == "true");
+        }
+        if (darkScheme) {
+          try {
+            darkScheme.addEventListener('change', event => {
+              setTheme(event.matches ? false : true);
+            });
+          } catch (e) {
+            darkScheme.addListener(event => {  
+              setTheme(event.matches ? false : true);
+            });
+          }
+        }
+    });
+</script>
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <nav class="navbar navbar-dark bg-faded justify-content-center sticky-top navbar-expand-lg">
+  <div class="container pl-3">
+    <div class="d-inline col-md-4 col-sm-8 justify-content-left">
+      <a class="navbar-brand d-inline" href="/">
+          <img class="brand-logo lazy" src="/assets/main/duck_tank.png">EKA2L1</img>
+      </a>
+    
+      <select class="langpick col-md-3" style="margin-left: 2px"; data-width="fit">
+        
+          <option value='/quickstart/'
+            selected>English</option>
+        
+          <option value='/zh-cn/quickstart/'
+            >简体中文</option>
+        
+          <option value='/vi/quickstart/'
+            >Tiếng Việt</option>
+        
+          <option value='/es/quickstart/'
+            >Español</option>
+        
+          <option value='/pt-br/quickstart/'
+            >Português</option>
+        
+          <option value='/ru/quickstart/'
+            >Русский</option>
+        
+          <option value='/id/quickstart/'
+            >Indonesia</option>
+        
+          <option value='/it/quickstart/'
+            >Italiano</option>
+        
+      </select>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Expand">
+        <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"><li class="nav-item">
+                    <a class="nav-link" href="/">
+                    
+                        Home
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/download/">
+                    
+                        Download
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/quickstart/">
+                    
+                        Quickstart
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/screenshots/">
+                    
+                        Screenshots
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/posts/">
+                    
+                        Posts
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/docs/">
+                    
+                        Documents
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://eka2l1.miraheze.org/wiki/Main_Page">
+                    
+                        Wiki
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://github.com/EKA2L1/EKA2L1">
+                    
+                        GitHub
+                    </a>
+                </li></ul>
+
+        <div class="navbar-divider d-none d-lg-block">&nbsp;</div>
+        <ul class="navbar-nav nav-right justify-content-end">
+          <li class="nav-item nav-link d-flex align-items-center">
+            <input type="checkbox" class="toggle-checkbox" id="toggle-checkbox" autocompleted>
+            <label for="toggle-checkbox" class="toggle-label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <span class="toggle-label-ball"></span>
+            </label>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container mt-3 d-block flex-grow-1">
+        
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Quickstart">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://12l1.com/quickstart/" class="u-url" itemprop="url">Quickstart
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <div class="container d-block">
+            <div class="row justify-content-left">
+                <!--I can't find order-sm!!!!! It simply does not exist online :o-->
+                <div class="col-md-3 col-sm-12 order-md-2">
+                    <aside class="sidebar__right sticky">
+                        <nav class="toc">
+                            <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+                            <ul class="toc__menu">
+  <li><a href="#requirements">Requirements</a>
+    <ul>
+      <li><a href="#for-pc-version">For PC version:</a>
+        <ul>
+          <li><a href="#minimum">Minimum</a></li>
+          <li><a href="#recommended">Recommended</a></li>
+        </ul>
+      </li>
+      <li><a href="#for-android-version">For Android version:</a>
+        <ul>
+          <li><a href="#minimum-1">Minimum</a></li>
+          <li><a href="#recommended-1">Recommended</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#setup">Setup</a>
+    <ul>
+      <li><a href="#files-to-prepare">Files to prepare</a>
+        <ul>
+          <li><a href="#for-s60v1-and-s60v2-devices-n-gage-n70-etc">For S60v1 and S60v2 devices (N-Gage, N70, etc…)</a></li>
+          <li><a href="#for-s60v3-and-upper-5320-5800-n97-n-gage-20-compatible-devices-etc">For S60v3 and upper (5320, 5800, N97, N-Gage 2.0 compatible devices, etc…)</a></li>
+        </ul>
+      </li>
+      <li><a href="#install-a-device">Install a device</a>
+        <ul>
+          <li><a href="#for-pc-windows-macos-linux">For PC (Windows, MacOS, Linux)</a></li>
+          <li><a href="#for-android">For Android</a></li>
+        </ul>
+      </li>
+      <li><a href="#install-a-package-sis">Install a package (SIS)</a>
+        <ul>
+          <li><a href="#big-note">Big note</a></li>
+          <li><a href="#for-pc">For PC</a></li>
+          <li><a href="#for-android-1">For Android</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#managing-devices">Managing devices</a>
+    <ul>
+      <li><a href="#for-pc-windows-macos-linux-1">For PC (Windows, MacOS, Linux)</a></li>
+      <li><a href="#for-android-2">For Android</a></li>
+    </ul>
+  </li>
+  <li><a href="#change-data-directory">Change data directory</a></li>
+  <li><a href="#more-questions">More questions</a>
+    <ul>
+      <li><a href="#where-can-i-find-more-guides">Where can I find more guides?</a></li>
+      <li><a href="#i-cant-get-a-romrpkg-or-i-cant-install-always-fail">I can’t get a ROM/RPKG or I can’t install, always fail!</a></li>
+      <li><a href="#do-you-have-videos-visualise-step-by-step">Do you have videos visualise step by step?</a></li>
+    </ul>
+  </li>
+</ul>
+
+                        </nav>
+                    </aside>
+                </div>
+                <div class="col-md-9 col-sm-12 order-md-1 pe-md-5">
+                    <p>Please utilise the <em>Table of Contents</em> by the right to traverse to the section you need.</p>
+
+<h1 id="requirements">Requirements</h1>
+
+<h2 id="for-pc-version">For PC version:</h2>
+
+<h3 id="minimum">Minimum</h3>
+
+<ul>
+  <li><strong>OS:</strong> Using a <strong>64-bit OS</strong>. For <strong>Windows</strong>, you must have from <em>Windows 7</em> and upper</li>
+  <li><strong>Processor:</strong> Any 64-bit CPU from around 2007, starting from <strong>Core 2 Duo E4300</strong></li>
+  <li><strong>Memory:</strong> 2GB of RAM at minimum</li>
+  <li><strong>Graphics card:</strong> Any OpenGL 3.1 compatible GPU or greater.</li>
+</ul>
+
+<h3 id="recommended">Recommended</h3>
+
+<ul>
+  <li><strong>OS:</strong> Using a <strong>64-bit OS</strong>. For <strong>Windows</strong>, it’s recommended to use <em>Windows 10</em></li>
+  <li><strong>Processor:</strong> Any Intel or AMD CPU with 4 cores and upper</li>
+  <li><strong>Memory:</strong> 4GB of RAM or more</li>
+  <li><strong>Graphics card:</strong> Any OpenGL 3.3 compatible GPU or greater.</li>
+</ul>
+
+<h2 id="for-android-version">For Android version:</h2>
+
+<h3 id="minimum-1">Minimum</h3>
+
+<ul>
+  <li><strong>OS:</strong> Android 5.0 32-bit</li>
+  <li><strong>Processor:</strong> Any ARMv7 CPU or upper. <strong>ARMv6 and down are not supported!</strong></li>
+  <li><strong>Memory:</strong> 2GB of RAM at minimum</li>
+  <li><strong>Graphics card:</strong> Any OpenGL ES 3.0 compatible GPU or greater</li>
+</ul>
+
+<h3 id="recommended-1">Recommended</h3>
+<ul>
+  <li><strong>OS:</strong> Android 7.0 64-bit (32-bit is experimental)</li>
+  <li><strong>Processor:</strong> An ARMv8 CPU</li>
+  <li><strong>Memory:</strong> 4GB of RAM or more</li>
+  <li><strong>Graphics card:</strong> Any OpenGL ES 3.2 compatible GPU or greater</li>
+</ul>
+
+<h1 id="setup">Setup</h1>
+
+<h2 id="files-to-prepare">Files to prepare</h2>
+
+<h3 id="for-s60v1-and-s60v2-devices-n-gage-n70-etc">For S60v1 and S60v2 devices (N-Gage, N70, etc…)</h3>
+<ul>
+  <li>The ROM of the device</li>
+  <li>The RPKG file
+    <ul>
+      <li>This is a custom container of the Z drive (the same device as where the ROM was dumped). See <a href="https://github.com/EKA2L1/EKA2L1/wiki/Dumping-the-ROM-and-ROFS">Dumping section on Wiki</a> to find out how to dump it.</li>
+      <li>The file may only be needed with S60v2 devices. The emulator will asks for it during the installation if it detects only ROM alone is not enough.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="for-s60v3-and-upper-5320-5800-n97-n-gage-20-compatible-devices-etc">For S60v3 and upper (5320, 5800, N97, N-Gage 2.0 compatible devices, etc…)</h3>
+
+<p>There are two options that you can choose:</p>
+
+<ul>
+  <li>ROM and RPKG of the device (same as S60v1 and S60v2)</li>
+  <li>A firmware of the target device. <strong>Make sure</strong> the firmware you got also has a VPL file along with it.</li>
+</ul>
+
+<p>At the moment, for users only interested in N-Gage 2.0, Nokia 5320 device is the most maintained and supported device for this purpose.</p>
+
+<h2 id="install-a-device">Install a device</h2>
+
+<ul>
+  <li>First, build or <a href="https://12z1.com/download/">download</a> EKA2L1 for the target platform you want to run the emulator on.</li>
+</ul>
+
+<h3 id="for-pc-windows-macos-linux">For PC (Windows, MacOS, Linux)</h3>
+
+<ul>
+  <li>Launch the emulator with command line option <strong>–help</strong> if you want to interact through command lines and need list of commands.</li>
+  <li>To install a new device, please go to <em>File/Install/Device</em>, or follow the dialog that ask you to install a device appears on first run of the emulator.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog.png" alt="The device install dialog" /><figcaption>
+      The device install dialog
+
+    </figcaption></figure>
+
+<ul>
+  <li>In this dialog:
+    <ul>
+      <li>If you have prepared a ROM (and RPKG if needed), choose the <strong>Device dump</strong> installation method, and click the first <em>Browse</em> to select the ROM you have prepared. If the emulator detects that the ROM is not enough alone, a RPKG file browser will appear.</li>
+    </ul>
+    <figure class="">
+<img src="/assets/quickstart/en/device_dialog_with_rpkg.png" alt="The RPKG field appears with 5320 ROM selected" /><figcaption>
+    The RPKG field appears with 5320 ROM selected
+
+  </figcaption></figure>
+
+    <ul>
+      <li>If you have prepared a firmware, choose the <strong>Firmware (VPL)</strong> installation method. The ROM label will be renamed to VPL, and then you can click <em>Browse</em> to choose the VPL that came along with the firmware.</li>
+    </ul>
+    <figure class="">
+<img src="/assets/quickstart/en/device_dialog_vpl.png" alt="The VPL install dialog" /><figcaption>
+    The VPL install dialog
+
+  </figcaption></figure>
+
+    <ul>
+      <li><strong>Note</strong>: It’s recommended that your path does not contain Unicode or other special characters, the developers are trying to make the emulator more compatible with Unicode paths, but for now the emulator will not work properly with them.</li>
+    </ul>
+  </li>
+  <li>After you have filled all the paths, press <em>Install</em>. If you want to cancel the installation, you can press the <em>Cancel</em> button next to <em>Install</em>.
+    <ul>
+      <li>For <strong>Device dump</strong> installation method, you can wait for the progress bar to be completed and a success dialog to pop up.</li>
+      <li>For <strong>Firmware (VPL)</strong> method, you may need to choose a firmware variant. This usually is related to region of the device and its style (black or red), and should not matter much on the emulator. After that is the same process as <strong>Device dump</strong>.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog_install_success.png" alt="Installation success dialog" /><figcaption>
+      Installation success dialog
+
+    </figcaption></figure>
+
+<ul>
+  <li>If you meets the dialog above, then that means you are done installing a device.</li>
+</ul>
+
+<h3 id="for-android">For Android</h3>
+
+<ul>
+  <li>First run of the emulator should show you a dialog that requests you to install a device. Press the <em>Install</em> dialog, to quickly get to the <strong>Device manager</strong>.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_device_install_request.jpg" alt="The request install dialog" /><figcaption>
+      The request install dialog
+
+    </figcaption></figure>
+
+<ul>
+  <li>If the dialog does not appear, press the three dots at the top right of your screen, and select <strong>Devices</strong>.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_devices_activity.jpg" alt="Android devices screen" /><figcaption>
+      Android devices screen
+
+    </figcaption></figure>
+
+<ul>
+  <li>In this screen:
+    <ul>
+      <li>
+        <p>If you have prepared a ROM (and RPKG if needed), choose the <strong>Device dump</strong> installation method, and press on the <em>ROM</em> button to select the ROM you have prepared. If the emulator detects that the ROM is not enough alone, a RPKG file browser will appear.</p>
+      </li>
+      <li>
+        <p>If you have prepared a firmware, choose the <strong>Firmware (VPL)</strong> installation method. The ROM button will be renamed to VPL, and then you can click on the <em>VPL</em> button to choose the VPL that came along with the firmware.</p>
+      </li>
+    </ul>
+
+    <figure class="">
+<img src="/assets/quickstart/en/android_device_all_choosen.jpg" alt="All file paths are filled" /><figcaption>
+    All file paths are filled
+
+  </figcaption></figure>
+  </li>
+  <li>After you have filled all the paths, press <em>Install</em>. You can only cancel this operation by exiting the app, and no need further action until a small toast notification tells you that the installation is success or encounters failures.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_new_device_appears.jpg" alt="New device appeared after installation" /><figcaption>
+      New device appeared after installation
+
+    </figcaption></figure>
+
+<ul>
+  <li><strong>Note</strong>: For Android 11 and upper, the emulator may experiences a huge slow down on device installation, because of the restriction Google applied on files outside of application’s private folder (file operations are really slow). We are still coming up with a suitable solution for the emulator.</li>
+</ul>
+
+<p>If you have encountered failure during the installation, please visit the <a href="https://discord.gg/5Bm5SJ9">Discord</a> server to receive support.</p>
+
+<h2 id="install-a-package-sis">Install a package (SIS)</h2>
+
+<h3 id="big-note">Big note</h3>
+
+<ul>
+  <li>
+    <p>Please note that it’s very recommended to install a device first and change to the target device you want to install the SIS on, before proceeding this steps.</p>
+
+    <ul>
+      <li>This is crucial for packages like N-Gage 2.0, where it depends on the current active device to extract suitable game configurations file.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="for-pc">For PC</h3>
+
+<ul>
+  <li>Go to <em>File/Install/Package</em> and choose the SIS you want to install.</li>
+</ul>
+
+<h3 id="for-android-1">For Android</h3>
+
+<ul>
+  <li>Press on the <strong>big green <code class="language-plaintext highlighter-rouge">+</code> button</strong> on the bottom right of the main (app list) screen and choose the SIS you want to install.</li>
+</ul>
+
+<h1 id="managing-devices">Managing devices</h1>
+
+<p>The emulator allows the users to install multiple devices, and also supports switching between devices. This is neccessary if you want to use applications on different platforms <em>(S60v1, S60v3)</em>, without the need for a new instance of emulator with new instance of data folder.</p>
+
+<h2 id="for-pc-windows-macos-linux-1">For PC (Windows, MacOS, Linux)</h2>
+
+<p>Go to <em>File/Settings</em>, and choose on the <em>System</em> tab. The <em>Devices</em> section list all of the installed devices.</p>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_manager.png" alt="Device manager section" /><figcaption>
+      Device manager section
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Press on the combobox and choose the device you want to run. The changes will be applied immediately.</p>
+  </li>
+  <li>
+    <p>You can also rename device for easier management. Press the <strong>Rename</strong> button and enter the new name in the small input dialog.</p>
+  </li>
+  <li>
+    <p>Use <strong>Rescan devices</strong> to detect installed devices that does not appear in the combobox.</p>
+  </li>
+  <li>
+    <p>Use <strong>Validate current device</strong> for emulator to detect any errors in the device and correct them, in order to make the device runnable on the platform. If the device still does not run, then it means it’s either not supported yet or there is another error, you can contact us for more information.</p>
+  </li>
+</ul>
+
+<h2 id="for-android-2">For Android</h2>
+
+<p>The previous screen where you installed devices on is also the device manager screen. Let’s take a look at it again.</p>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_new_device_appears.jpg" alt="Device screen" /><figcaption>
+      Device screen
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Press on the red circled combo and choose the device you want to run. The changes will be applied immediately.</p>
+  </li>
+  <li>
+    <p>You can also rename device for easier management. Press the <strong>Rename</strong> button and enter the new name in the small input dialog.</p>
+  </li>
+  <li>
+    <p>Currently there’s no rescan or button to validate a device like on PC.</p>
+  </li>
+</ul>
+
+<h1 id="change-data-directory">Change data directory</h1>
+
+<p><strong>Note:</strong> This is only supported on PC. Any faults produced by doing this on Android will not be supported by us.</p>
+
+<p>By default, EKA2L1 stores the data in a <strong>data</strong> folder, sitting at the same location as where the executable <em>(eka2l1_qt.exe)</em>. However, if the space is tight or you simply want to move it to more persistent location, you can do that by following these steps:</p>
+
+<ol>
+  <li>
+    <p>Move the current data folder to your preferred location. <strong>Make sure</strong> the emulator is closed.</p>
+  </li>
+  <li>
+    <p>Change the stored data path of the emulator.</p>
+
+    <ul>
+      <li>With the UI: Go to <em>File/Settings/General</em>. You will see the <strong>Data</strong> section appears on the top, press the <strong>Browse</strong> button to select new location, and then the emulator is requested to be restared. After that, your data storage path is completely changed.</li>
+    </ul>
+
+    <figure class="">
+  <img src="/assets/quickstart/en/change_data_folder_pc.png" alt="Data setting section" /><figcaption>
+   Data setting
+
+ </figcaption></figure>
+
+    <ul>
+      <li>With <em>config.yml</em> file: This file sits at the same folder as the EKA2L1 executable. Modify the <em>data-storage</em> variable in the YAML to the new data path you preferred.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="more-questions">More questions</h1>
+
+<h2 id="where-can-i-find-more-guides">Where can I find more guides?</h2>
+
+<p>This guide only serves as a quickstart, and will not provide more details on further specific usages. Please visit the <a href="https://eka2l1.miraheze.org/wiki/Main_Page">emulator wiki</a> for more guides and information.</p>
+
+<h2 id="i-cant-get-a-romrpkg-or-i-cant-install-always-fail">I can’t get a ROM/RPKG or I can’t install, always fail!</h2>
+
+<p>It’s recommended to visit the <a href="https://discord.gg/5Bm5SJ9">Discord</a> for support.</p>
+
+<p>You can use a preconfigured pack following the instruction on the <a href="https://eka2l1.miraheze.org/wiki/How_To_Use_The_Preconfigured_Pack">wiki</a>, however it’s very large, if you only need to play a specific game/app, install device individually follow the step upper.</p>
+
+<h2 id="do-you-have-videos-visualise-step-by-step">Do you have videos visualise step by step?</h2>
+
+<p>We don’t have, but there are a lot of videos that have made perfect instructions. It’s very recommended to do a search on Youtube for these videos, since we admit that the emulator setup is quite hard.</p>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+      </div>
+
+      <footer class="container mt-3">
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+         <div class="row pt-2 d-flex pb-4 ms-1">
+   <div class="col-md-6 col-sm-12 d-flex">
+      <p><b>&copy; 2023 EKA2L1. Powered by <a href="https://jekyllrb.com" rel="nofollow"> Jekyll</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://mdbootstrap.com/" rel="nofollow">MDBootstrap</a></b></p>
+   </div>
+   <div class="col-md-6 col-sm-12 d-flex justify-content-md-end icons">
+      <strong></strong>
+
+      
+        
+          
+            <a href="https://github.com/eka2l1/eka2l1" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-fw fa-github" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://discord.gg/5Bm5SJ9" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-discord" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://www.youtube.com/channel/UCCdPQT6Le2xw_z9cutkVwyA" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-youtube" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="mailto:cc@12l1.com" rel="nofollow noopener noreferrer"><i class="footer-icon fas fa-envelope" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://github.com/EKA2L1/eka2l1.github.io" rel="nofollow noopener noreferrer"><i class="footer-icon fa fa-globe" aria-hidden="true"></i></a>
+          
+        
+      
+    
+      <a href="/feed.xml"><i class="footer-icon fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
+   </div>
+</div>
+      </footer>
+
+      
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

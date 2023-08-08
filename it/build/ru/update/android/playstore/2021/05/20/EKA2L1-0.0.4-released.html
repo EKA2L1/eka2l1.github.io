@@ -1,0 +1,444 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <script>
+    let isLightSaved = localStorage.getItem('isThemeLight');
+    if (isLightSaved != null && isLightSaved != undefined) {
+        document.documentElement.className = (isLightSaved == "true") ? "light-theme" : "dark-theme";
+    }
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="/css/main.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3203591900745886" crossorigin="anonymous"></script>
+
+<meta name="author" content="EKA2L1">
+<meta name="copyright" content="EKA2L1">
+<meta name="description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:title" content="An experimental Symbian OS Emulator/N-Gage emulator">
+<meta property="og:description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:image" content="/assets/main/duck_tank.png">
+<meta property="og:url" content="/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EKA2L1 - A Symbian OS/N-Gage emulator">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/assets/main/duck_tank.png"></link>
+
+
+<title>Выпущена версия EKA2L1 0.0.4! - EKA2L1 - Symbian OS Emulator/N-Gage emulator</title>
+
+
+<script>
+    function setTheme(themeLight) {
+      localStorage.setItem('isThemeLight', themeLight);
+      document.documentElement.className = themeLight ? 'light-theme' : 'dark-theme';
+      $('#toggle-checkbox').prop('checked', themeLight);
+    }
+    $(function(){
+        $(document).on('change', '.langpick', function(obj) {
+            obj.preventDefault();
+            window.location = $(this).find('option:selected').val();
+        });
+        $('#toggle-checkbox').change(function(evt) {
+          setTheme(evt.target.checked);
+        })
+        let isLightSaved = localStorage.getItem('isThemeLight');
+        let darkScheme = null;
+        if (window.matchMedia) {
+          darkScheme = window.matchMedia('(prefer-color-scheme: dark)');
+        }
+        if (isLightSaved == null || isLightSaved == undefined) {
+          if (darkScheme && darkScheme.matches) {
+            setTheme(false);
+          } else {
+            setTheme(true);
+          }
+        } else {
+          setTheme(isLightSaved == "true");
+        }
+        if (darkScheme) {
+          try {
+            darkScheme.addEventListener('change', event => {
+              setTheme(event.matches ? false : true);
+            });
+          } catch (e) {
+            darkScheme.addListener(event => {  
+              setTheme(event.matches ? false : true);
+            });
+          }
+        }
+    });
+</script>
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <nav class="navbar navbar-dark bg-faded justify-content-center sticky-top navbar-expand-lg">
+  <div class="container pl-3">
+    <div class="d-inline col-md-4 col-sm-8 justify-content-left">
+      <a class="navbar-brand d-inline" href="/ru">
+          <img class="brand-logo lazy" src="/assets/main/duck_tank.png">EKA2L1</img>
+      </a>
+    
+      <select class="langpick col-md-3" style="margin-left: 2px"; data-width="fit">
+        
+          <option value='/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            >English</option>
+        
+          <option value='/zh-cn/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            >简体中文</option>
+        
+          <option value='/vi/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            >Tiếng Việt</option>
+        
+          <option value='/es/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            >Español</option>
+        
+          <option value='/pt-br/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            >Português</option>
+        
+          <option value='/ru/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            selected>Русский</option>
+        
+          <option value='/id/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            >Indonesia</option>
+        
+          <option value='/it/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html'
+            >Italiano</option>
+        
+      </select>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Expand">
+        <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"><li class="nav-item">
+                    <a class="nav-link" href="/ru/">
+                    
+                        Главная
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/download/">
+                    
+                        Скачать
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/quickstart/">
+                    
+                        Установка
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/screenshots/">
+                    
+                        Скриншоты
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/posts/">
+                    
+                        Блог
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/docs/">
+                    
+                        Documents
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://eka2l1.miraheze.org/wiki/Main_Page">
+                    
+                        Wiki
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://github.com/EKA2L1/EKA2L1">
+                    
+                        GitHub
+                    </a>
+                </li></ul>
+
+        <div class="navbar-divider d-none d-lg-block">&nbsp;</div>
+        <ul class="navbar-nav nav-right justify-content-end">
+          <li class="nav-item nav-link d-flex align-items-center">
+            <input type="checkbox" class="toggle-checkbox" id="toggle-checkbox" autocompleted>
+            <label for="toggle-checkbox" class="toggle-label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <span class="toggle-label-ball"></span>
+            </label>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container mt-3 d-block flex-grow-1">
+        
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Выпущена версия EKA2L1 0.0.4!">
+    <meta itemprop="description" content="EKA2L1 обновлен до версии 0.0.4.">
+    <meta itemprop="datePublished" content="2021-05-20T02:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://12l1.com/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html" class="u-url" itemprop="url">Выпущена версия EKA2L1 0.0.4!
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <div class="container d-block">
+            <div class="row justify-content-left">
+                <!--I can't find order-sm!!!!! It simply does not exist online :o-->
+                <div class="col-md-3 col-sm-12 order-md-2">
+                    <aside class="sidebar__right ">
+                        <nav class="toc">
+                            <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+                            <ul class="toc__menu">
+  <li><a href="#коррректировка-способов-установки-устройства">Коррректировка способов установки устройства</a></li>
+  <li><a href="#добавлена-фундаментальная-поддержка-s60v2">Добавлена фундаментальная поддержка S60v2</a></li>
+  <li><a href="#добавлена-поддержка-s60v5-для-32-битной-версии">Добавлена поддержка S60v5 для 32-битной версии</a></li>
+  <li><a href="#другие-мелкие-исправления">Другие мелкие исправления</a></li>
+  <li><a href="#цели-для-005">Цели для 0.0.5</a></li>
+  <li><a href="#заключительные-примечания">Заключительные примечания</a></li>
+</ul>
+
+                        </nav>
+                    </aside>
+                </div>
+                <div class="col-md-9 col-sm-12 order-md-1 pe-md-5">
+                    <p>EKA2L1 обновлен до версии 0.0.4.</p>
+
+<h2 id="коррректировка-способов-установки-устройства">Коррректировка способов установки устройства</h2>
+
+<p>Нами было получено множество отзывов о проблемах при использовании эмулятора. Например, если смотреть на экран установки, какое устройство следует установить, каким методом его установить. Многие пользователи останавливаются на этих шагах.</p>
+
+<p>По результатам мы скорректировали процесс установки устройства. Учтите, что его вообще нельзя удалить.</p>
+
+<ul>
+  <li>
+    <p>Мы знаем, что многие люди - любители консолей, а не Symbian, поэтому для них наличие двух файлов или чего-то вроде сырого дампа может быть небольшой проблемой. Таким образом, для устройств <strong>S60v1</strong>, таких как <em>N-Gage</em>, вам для установки теперь <strong>требуется только</strong> предоставить <strong>системные ROMы</strong>. Мы надеемся, что это упростит процесс установки.</p>
+  </li>
+  <li>Для устройств S60v2 используется процесс обработки, который также включает в себя ROFS в ваших системах, поэтому для него по-прежнему необходимо использовать RPKG.</li>
+  <li>Для устройств S60v3, S60v5 и S^3 мы предоставили вам возможность <strong>установки с помощью прошивок</strong>, что гораздо проще для большинства пользователей. Вам нужно всего лишь <strong>указать путь к файлу VPL</strong> для установки. <em>Обратите внимание</em>, что этот способ не работает с некоторыми поздними прошивками S60v2 из-за различий в позиционировании данных ROM.</li>
+</ul>
+
+<p>Какие устройства устанавливать - мы добавили расширяемый раздел, на который вы можете щелкнуть, в нем будут указаны устройства для установки и какие методы для них используются.</p>
+
+<p>Изображения нового экрана установки:</p>
+
+<figure class="">
+	<img src="https://cdn.discordapp.com/attachments/786228834638626867/844785034178986004/Screenshot_20210520-105346_EKA2L1.jpg" />
+	<figcaption>Экран установки устройства на Android</figcaption>
+</figure>
+
+<figure class="">
+	<img src="https://user-images.githubusercontent.com/25717050/118917060-445be380-b95a-11eb-8a70-6c4c8bb71578.png" />
+	<figcaption>Экран установки устройства на ПК</figcaption>
+</figure>
+
+<p>Если обнаруживается, что ROM не является S60v1, будет запрошено поле RPKG. Спасибо пользователям Play Store и Discord за их отзывы.</p>
+
+<h2 id="добавлена-фундаментальная-поддержка-s60v2">Добавлена фундаментальная поддержка S60v2</h2>
+
+<p>Об этом просило много людей. Эмулятор реализовал некоторые части систем S60v2, но, к сожалению, не все, и многие приложения и игры по-прежнему работают с ошибками или вообще не запускаются. Однако совместимость улучшилась.</p>
+
+<p>S60v2 имеет три пакета функций, в которых представлены этапы перехода от EPOC. Они включают в себя попытку удаления структуры системных папок, удаление Windows-подобных поисков DLL, удаление приложений, изменения ROM, такие как жестко запрограммированное разрешение экрана внутри заголовков ROM. Таким образом, реализация S60v2 оказалась очень увлекательной.</p>
+
+<p>Сжатие файлов DLL и EXE PETRAN также присутствует во многих приложениях. Некоторые функции все еще не работают должным образом, включая игры, которые правильно используют прямой доступ к экрану (DSA).</p>
+
+<p>Вот несколько скриншотов игр, которые сейчас работают на эмуляторе, используя дамп устройства N70.</p>
+
+<figure class="third">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg" />
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png" />
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg" />
+	<figcaption>Изображения предоставлены ericsonia и Ink321</figcaption>
+</figure>
+
+<figure class="third">
+	<img src="https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&amp;height=593" />
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png" />
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg" />
+	<figcaption>Изображения предоставлены ericsonia и Ink321</figcaption>
+</figure>
+
+<h2 id="добавлена-поддержка-s60v5-для-32-битной-версии">Добавлена поддержка S60v5 для 32-битной версии</h2>
+
+<p>S60v5 и S^3 требуют тяжелых операций VFP, поэтому раньше они не были реализованы в 32-битном JIT эмулятора. Недавно мы вернулись к этой теме, поскольку хост вообще не использует регистры VFP, мы уничтожаем весь банк регистров, но все равно отслеживаем, какие регистры загружаются/записываются.</p>
+
+<p>Производительность 32-битного JIT фактически такая же, как и на реальном телефоне. Я не думаю, что у таких энтузиастов, как мы, были большие ожидания… Но мы надеемся, что вы сможете насладиться старыми добрыми приложениями на новом телефоне Android. Больше об этом и сказать нечего.</p>
+
+<h2 id="другие-мелкие-исправления">Другие мелкие исправления</h2>
+
+<p>Раньше не существовало дампов устройств с юникодом, но недавно нам дали китайские ROMы N70, и он работает не очень хорошо из-за того, что не отображает ничего для чтения. Копаясь в нем, мы пытались загрузить символы Unicode, но вообще не нашли информацию об их координатах в атласе текстур шрифта. Так что этот фикс позволил парню сыграть в Pocket Kingdom на китайском языке, лол.</p>
+
+<figure class="half">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/841236525442400256/Screenshot_20210510_165245_com.github.eka2l1.jpg" />
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/841206165320237126/unknown.png" />
+	<figcaption>Кажется, история теперь может отображаться, вы также можете поиграть в Card Decks</figcaption>
+</figure>
+
+<p>Другие запрошенные вещи включают игры, которые вообще не могут читать IMEI эмулятора. Этот IMEI генерируется случайным образом, лол. Но в этом не должно быть ничего плохого.</p>
+
+<p>Чтобы получить IMEI, игры должны открыть информацию о телефоне с помощью API, который требует, чтобы вы указали имя получателя информации о телефоне (экземпляр создается из библиотеки DLL). Но эти старые игры иногда просто жестко программировали это имя получателя либо на «Calypso» для S60v1 (это кодовое имя Nokia 7650), либо на «DefaultPhone» на S60v2. Мы не загружаем эти модули по очевидной причине, что они получают информацию от драйвера. Таким образом, мы должны подделывать эти имена в зависимости от версии ОС…</p>
+
+<figure class="half">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png" />
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png" />
+	<figcaption>Теперь вы можете играть в Legacy... И чтение IMEI из X-plore тоже работает</figcaption>
+</figure>
+
+<p>И последнее, о чем следует упомянуть, это то, что в некоторых играх наблюдается состояние гонки - они никогда не запускаются из-за того, как ОС планирует потоки. После того, как поток будет создан и возобновлен, ядро ​​немедленно изменит расписание, что может привести к запуску дочернего потока. Это приводит к ситуациям, когда родительский поток обращается к данным дочернего потока, который создается только тогда, когда дочерний поток запускается первым. Эмулятор исправлен, чтобы следовать этому поведению, что устраняет сбои в некоторых играх.</p>
+
+<figure class="half">
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg" />
+	<img src="https://cdn.discordapp.com/attachments/703563521379663883/840298370576810045/78.png" />
+	<figcaption>Spider Man: Toxic City и Virtuous Devil Saga теперь работают нормально</figcaption>
+</figure>
+
+<p>Есть также несколько небольших исправлений, которые улучшают совместимость с приложениями S60v3 и S60v5, но мы не будем их здесь упоминать.</p>
+
+<h2 id="цели-для-005">Цели для 0.0.5</h2>
+
+<p>Мы надеемся в ближайшее время реализовать поддержку сервисов N-Gage (люди обычно называли это N-Gage 2.0). Раньше в ветке ng2 были наработки, но они очень костыльные и работают только с одной игрой, и это только речь об ее установке.</p>
+
+<p><img src="https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png" alt="image" /></p>
+
+<p>Мы также хотим исправить проблемы с файловыми операциями, которые в настоящее время становятся вечными на Android 11 или почти не работают. Исправление будет выпущено, когда мы найдем время.</p>
+
+<h2 id="заключительные-примечания">Заключительные примечания</h2>
+
+<p>Версия для ПК будет иметь те же улучшения, что и Android, в настоящее время это реализуется. Но для Android вы можете найти стабильную версию эмулятора в <a href="https://play.google.com/store/apps/details?id=com.github.eka2l1">Play Store</a>. Надеюсь, вы хорошо проведете время с эмулятором.</p>
+
+                </div>
+            </div>
+        </div>
+        
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-05-20T02:00:00+00:00">May 20, 2021</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/update/android/playstore/2021/04/14/Google-Play-Store-version-published.html" class="pagination--pager" title="Эмулятор опубликован в Google Play Store!
+">Previous</a>
+    
+    
+      <a href="/update/scripting/2021/10/30/Lua-script-API-documentated.html" class="pagination--pager" title="Обновлена документация для API скриптов Lua
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+      </div>
+
+      <footer class="container mt-3">
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+         <div class="row pt-2 d-flex pb-4 ms-1">
+   <div class="col-md-6 col-sm-12 d-flex">
+      <p><b>&copy; 2023 EKA2L1. Powered by <a href="https://jekyllrb.com" rel="nofollow"> Jekyll</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://mdbootstrap.com/" rel="nofollow">MDBootstrap</a></b></p>
+   </div>
+   <div class="col-md-6 col-sm-12 d-flex justify-content-md-end icons">
+      <strong></strong>
+
+      
+        
+          
+            <a href="https://github.com/eka2l1/eka2l1" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-fw fa-github" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://discord.gg/5Bm5SJ9" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-discord" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://www.youtube.com/channel/UCCdPQT6Le2xw_z9cutkVwyA" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-youtube" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="mailto:cc@12l1.com" rel="nofollow noopener noreferrer"><i class="footer-icon fas fa-envelope" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://github.com/EKA2L1/eka2l1.github.io" rel="nofollow noopener noreferrer"><i class="footer-icon fa fa-globe" aria-hidden="true"></i></a>
+          
+        
+      
+    
+      <a href="/feed.xml"><i class="footer-icon fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
+   </div>
+</div>
+      </footer>
+
+      
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

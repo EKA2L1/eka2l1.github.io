@@ -1,0 +1,737 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <script>
+    let isLightSaved = localStorage.getItem('isThemeLight');
+    if (isLightSaved != null && isLightSaved != undefined) {
+        document.documentElement.className = (isLightSaved == "true") ? "light-theme" : "dark-theme";
+    }
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="/css/main.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3203591900745886" crossorigin="anonymous"></script>
+
+<meta name="author" content="EKA2L1">
+<meta name="copyright" content="EKA2L1">
+<meta name="description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:title" content="An experimental Symbian OS Emulator/N-Gage emulator">
+<meta property="og:description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:image" content="/assets/main/duck_tank.png">
+<meta property="og:url" content="/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EKA2L1 - A Symbian OS/N-Gage emulator">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/assets/main/duck_tank.png"></link>
+
+
+<title>Quickstart - EKA2L1 - Symbian OS Emulator/N-Gage emulator</title>
+
+
+<script>
+    function setTheme(themeLight) {
+      localStorage.setItem('isThemeLight', themeLight);
+      document.documentElement.className = themeLight ? 'light-theme' : 'dark-theme';
+      $('#toggle-checkbox').prop('checked', themeLight);
+    }
+    $(function(){
+        $(document).on('change', '.langpick', function(obj) {
+            obj.preventDefault();
+            window.location = $(this).find('option:selected').val();
+        });
+        $('#toggle-checkbox').change(function(evt) {
+          setTheme(evt.target.checked);
+        })
+        let isLightSaved = localStorage.getItem('isThemeLight');
+        let darkScheme = null;
+        if (window.matchMedia) {
+          darkScheme = window.matchMedia('(prefer-color-scheme: dark)');
+        }
+        if (isLightSaved == null || isLightSaved == undefined) {
+          if (darkScheme && darkScheme.matches) {
+            setTheme(false);
+          } else {
+            setTheme(true);
+          }
+        } else {
+          setTheme(isLightSaved == "true");
+        }
+        if (darkScheme) {
+          try {
+            darkScheme.addEventListener('change', event => {
+              setTheme(event.matches ? false : true);
+            });
+          } catch (e) {
+            darkScheme.addListener(event => {  
+              setTheme(event.matches ? false : true);
+            });
+          }
+        }
+    });
+</script>
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <nav class="navbar navbar-dark bg-faded justify-content-center sticky-top navbar-expand-lg">
+  <div class="container pl-3">
+    <div class="d-inline col-md-4 col-sm-8 justify-content-left">
+      <a class="navbar-brand d-inline" href="/id">
+          <img class="brand-logo lazy" src="/assets/main/duck_tank.png">EKA2L1</img>
+      </a>
+    
+      <select class="langpick col-md-3" style="margin-left: 2px"; data-width="fit">
+        
+          <option value='/quickstart/'
+            >English</option>
+        
+          <option value='/zh-cn/quickstart/'
+            >简体中文</option>
+        
+          <option value='/vi/quickstart/'
+            >Tiếng Việt</option>
+        
+          <option value='/es/quickstart/'
+            >Español</option>
+        
+          <option value='/pt-br/quickstart/'
+            >Português</option>
+        
+          <option value='/ru/quickstart/'
+            >Русский</option>
+        
+          <option value='/id/quickstart/'
+            selected>Indonesia</option>
+        
+          <option value='/it/quickstart/'
+            >Italiano</option>
+        
+      </select>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Expand">
+        <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"><li class="nav-item">
+                    <a class="nav-link" href="/id/">
+                    
+                        Beranda
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/id/download/">
+                    
+                        Unduh
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/id/quickstart/">
+                    
+                        Panduan Persyaratan dan Pemasangan
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/id/screenshots/">
+                    
+                        Pratinjau Screenshot
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/id/posts/">
+                    
+                        Postingan
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/id/docs/">
+                    
+                        Documents
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://eka2l1.miraheze.org/wiki/Main_Page">
+                    
+                        Wiki
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://github.com/EKA2L1/EKA2L1">
+                    
+                        GitHub
+                    </a>
+                </li></ul>
+
+        <div class="navbar-divider d-none d-lg-block">&nbsp;</div>
+        <ul class="navbar-nav nav-right justify-content-end">
+          <li class="nav-item nav-link d-flex align-items-center">
+            <input type="checkbox" class="toggle-checkbox" id="toggle-checkbox" autocompleted>
+            <label for="toggle-checkbox" class="toggle-label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <span class="toggle-label-ball"></span>
+            </label>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container mt-3 d-block flex-grow-1">
+        
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Quickstart">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://12l1.com/quickstart/" class="u-url" itemprop="url">Quickstart
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <div class="container d-block">
+            <div class="row justify-content-left">
+                <!--I can't find order-sm!!!!! It simply does not exist online :o-->
+                <div class="col-md-3 col-sm-12 order-md-2">
+                    <aside class="sidebar__right sticky">
+                        <nav class="toc">
+                            <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+                            <ul class="toc__menu">
+  <li><a href="#persyaratan">Persyaratan</a>
+    <ul>
+      <li><a href="#untuk-versi-pc">Untuk versi PC:</a>
+        <ul>
+          <li><a href="#minimal">Minimal</a></li>
+          <li><a href="#direkomendasikan">Direkomendasikan</a></li>
+        </ul>
+      </li>
+      <li><a href="#untuk-versi-android">Untuk versi Android:</a>
+        <ul>
+          <li><a href="#minimal-1">Minimal</a></li>
+          <li><a href="#direkomendasikan-1">Direkomendasikan</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#persiapan">Persiapan</a>
+    <ul>
+      <li><a href="#berkas-yang-harus-disiapkan">Berkas yang harus disiapkan</a>
+        <ul>
+          <li><a href="#untuk-perangkat-s60v1-dan-s60v2-n-gage-n70-dll">Untuk perangkat S60v1 dan S60v2 (N-Gage, N70, dll…)</a></li>
+          <li><a href="#untuk-s60v3-dan-yang-lebih-tinggi-perangkat-yang-kompatibel-dengan-5320-5800-n97-n-gage-20-dll">Untuk S60v3 dan yang lebih tinggi (perangkat yang kompatibel dengan 5320, 5800, N97, N-Gage 2.0, dll…)</a></li>
+        </ul>
+      </li>
+      <li><a href="#instal-perangkat">Instal perangkat</a>
+        <ul>
+          <li><a href="#untuk-pc-windows-macos-linux">Untuk PC (Windows, MacOS, Linux)</a></li>
+          <li><a href="#untuk-android">Untuk Android</a></li>
+        </ul>
+      </li>
+      <li><a href="#instal-paket-sis">Instal paket (SIS)</a>
+        <ul>
+          <li><a href="#catatan-penting">Catatan penting</a></li>
+          <li><a href="#untuk-komputer">Untuk Komputer</a></li>
+          <li><a href="#untuk-android-1">Untuk Android</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#mengelola-perangkat">Mengelola perangkat</a>
+    <ul>
+      <li><a href="#untuk-pc-windows-macos-linux-1">Untuk PC (Windows, MacOS, Linux)</a></li>
+      <li><a href="#untuk-android-2">Untuk Android</a></li>
+    </ul>
+  </li>
+  <li><a href="#ubah-direktori-data">Ubah direktori data</a></li>
+  <li><a href="#lebih-banyak-pertanyaan">Lebih banyak pertanyaan</a>
+    <ul>
+      <li><a href="#di-mana-saya-dapat-menemukan-lebih-banyak-panduan">Di mana saya dapat menemukan lebih banyak panduan?</a></li>
+      <li><a href="#saya-tidak-bisa-mendapatkan-romrpkg-atau-saya-tidak-bisa-menginstal-selalu-gagal">Saya tidak bisa mendapatkan ROM/RPKG atau saya tidak bisa menginstal, selalu gagal!</a></li>
+      <li><a href="#apakah-anda-memiliki-video-yang-divisualisasikan-langkah-demi-langkah">Apakah Anda memiliki video yang divisualisasikan langkah demi langkah?</a></li>
+    </ul>
+  </li>
+</ul>
+
+                        </nav>
+                    </aside>
+                </div>
+                <div class="col-md-9 col-sm-12 order-md-1 pe-md-5">
+                    <p>Silakan gunakan <em>Daftar Isi</em> untuk menelusuri bagian yang Anda butuhkan.</p>
+
+<h1 id="persyaratan">Persyaratan</h1>
+
+<h2 id="untuk-versi-pc">Untuk versi PC:</h2>
+
+<h3 id="minimal">Minimal</h3>
+
+<ul>
+  <li>
+    <p><strong>OS:</strong> Menggunakan <strong>64-bit OS</strong>. Untuk <strong>Windows</strong>, Anda harus menggunakan dari <em>Windows 7</em> ke atas</p>
+  </li>
+  <li>
+    <p><strong>Prosesor:</strong> CPU 64-bit apa pun dari sekitar tahun 2007, mulai dari <strong>Core 2 Duo E4300</strong></p>
+  </li>
+  <li>
+    <p><strong>Memori:</strong> RAM minimal 2GB</p>
+  </li>
+  <li>
+    <p><strong>Kartu grafik:</strong> Semua GPU yang kompatibel dengan OpenGL 3.1 atau lebih tinggi.</p>
+  </li>
+</ul>
+
+<h3 id="direkomendasikan">Direkomendasikan</h3>
+
+<ul>
+  <li>
+    <p><strong>OS:</strong> Menggunakan <strong>64-bit OS</strong>. Untuk <strong>Windows</strong>, disarankan untuk menggunakan <em>Windows 10</em></p>
+  </li>
+  <li>
+    <p><strong>Prosesor:</strong> CPU Intel atau AMD apa pun dengan 4 inti ke atas</p>
+  </li>
+  <li>
+    <p><strong>Memori:</strong> RAM 4GB atau lebih</p>
+  </li>
+  <li>
+    <p><strong>Kartu grafis:</strong> Semua GPU yang kompatibel dengan OpenGL 3.3 atau lebih tinggi.</p>
+  </li>
+</ul>
+
+<h2 id="untuk-versi-android">Untuk versi Android:</h2>
+
+<h3 id="minimal-1">Minimal</h3>
+
+<ul>
+  <li>
+    <p><strong>OS:</strong> Android 5.0 32-bit</p>
+  </li>
+  <li>
+    <p><strong>Prosesor:</strong> CPU ARMv7 atau yang lebih tinggi. <strong>ARMv6 dan ke bawah tidak didukung!</strong></p>
+  </li>
+  <li>
+    <p><strong>Memori:</strong> RAM minimal 2GB</p>
+  </li>
+  <li>
+    <p><strong>Kartu grafis:</strong> Semua GPU yang kompatibel dengan OpenGL ES 3.0 atau lebih tinggi</p>
+  </li>
+</ul>
+
+<h3 id="direkomendasikan-1">Direkomendasikan</h3>
+
+<ul>
+  <li>
+    <p><strong>OS:</strong> Android 7.0 64-bit (32-bit bersifat eksperimental)</p>
+  </li>
+  <li>
+    <p><strong>Prosesor:</strong> CPU ARMv8</p>
+  </li>
+  <li>
+    <p><strong>Memori:</strong> RAM 4GB atau lebih</p>
+  </li>
+  <li>
+    <p><strong>Kartu grafis:</strong> Semua GPU yang kompatibel dengan OpenGL ES 3.2 atau lebih tinggi</p>
+  </li>
+</ul>
+
+<h1 id="persiapan">Persiapan</h1>
+
+<h2 id="berkas-yang-harus-disiapkan">Berkas yang harus disiapkan</h2>
+
+<h3 id="untuk-perangkat-s60v1-dan-s60v2-n-gage-n70-dll">Untuk perangkat S60v1 dan S60v2 (N-Gage, N70, dll…)</h3>
+
+<ul>
+  <li>
+    <p>ROM perangkat</p>
+  </li>
+  <li>
+    <p>Berkas RPKG</p>
+  </li>
+  <li>
+    <p>Ini adalah wadah khusus dari drive Z (perangkat yang sama dengan tempat ROM didumping). Lihat <a href="https://github.com/EKA2L1/EKA2L1/wiki/Dumping-the-ROM-and-ROFS">bagian Dumping di Wiki</a> untuk mengetahui cara dumping-nya</p>
+  </li>
+  <li>
+    <p>File mungkin hanya diperlukan dengan perangkat S60v2. Emulator akan menanyakannya saat instalasi jika hanya mendeteksi ROM saja tidak cukup.</p>
+  </li>
+</ul>
+
+<h3 id="untuk-s60v3-dan-yang-lebih-tinggi-perangkat-yang-kompatibel-dengan-5320-5800-n97-n-gage-20-dll">Untuk S60v3 dan yang lebih tinggi (perangkat yang kompatibel dengan 5320, 5800, N97, N-Gage 2.0, dll…)</h3>
+
+<p>Ada dua opsi yang bisa Anda pilih:</p>
+
+<ul>
+  <li>
+    <p>ROM dan RPKG perangkat (sama seperti S60v1 dan S60v2)</p>
+  </li>
+  <li>
+    <p>Sebuah firmware dari perangkat target. <strong>Pastikan</strong> firmware yang Anda dapatkan juga memiliki file VPL.</p>
+  </li>
+</ul>
+
+<p>Saat ini, untuk pengguna yang hanya tertarik dengan N-Gage 2.0, perangkat Nokia 5320 adalah perangkat yang paling terjaga dan didukung untuk pilihan ini.</p>
+
+<h2 id="instal-perangkat">Instal perangkat</h2>
+
+<ul>
+  <li>Pertama, buat atau <a href="https://12z1.com/download/">unduh</a> EKA2L1 untuk platform target Anda ingin menjalankan emulator.</li>
+</ul>
+
+<h3 id="untuk-pc-windows-macos-linux">Untuk PC (Windows, MacOS, Linux)</h3>
+
+<ul>
+  <li>
+    <p>Luncurkan emulator dengan opsi command line <strong>–help</strong> jika Anda ingin berinteraksi melalui command line dan memerlukan list of command.</p>
+  </li>
+  <li>
+    <p>Untuk menginstal perangkat baru, buka <em>File/Instal/Perangkat</em>, atau ikuti dialog yang meminta Anda untuk menginstal perangkat yang muncul saat pertama kali menjalankan emulator.</p>
+  </li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog.png" alt="Dialog pemasangan perangkat" /><figcaption>
+      Dialog pemasangan perangkat
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Dalam dialog ini:</p>
+  </li>
+  <li>
+    <p>Jika sudah menyiapkan ROM (dan RPKG jika diperlukan), pilih metode instalasi <strong>Device dump</strong>, dan klik <em>Telusur</em> pertama untuk memilih ROM yang sudah disiapkan. Jika emulator mendeteksi bahwa ROM tidak cukup, browser file RPKG akan muncul.</p>
+  </li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog_with_rpkg.png" alt="Bidang RPKG muncul dengan 5320 ROM dipilih" /><figcaption>
+      Bidang RPKG muncul dengan 5320 ROM dipilih
+
+    </figcaption></figure>
+
+<ul>
+  <li>Jika sudah menyiapkan firmware, pilih metode instalasi <strong>Firmware (VPL)</strong>. Label ROM akan diubah namanya menjadi VPL, lalu Anda dapat mengeklik <em>Telusur</em> untuk memilih VPL yang disertakan dengan firmware.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog_vpl.png" alt="Dialog pemasangan VPL" /><figcaption>
+      Dialog pemasangan VPL
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p><strong>Catatan</strong>: Sebaiknya path/jalur Anda tidak berisi Unicode atau karakter khusus lainnya, pengembang mencoba membuat emulator lebih kompatibel dengan jalur Unicode, tetapi untuk saat ini emulator tidak akan berfungsi dengan baik dengan jalur tersebut.</p>
+  </li>
+  <li>
+    <p>Setelah Anda mengisi semua path/jalur, tekan <em>Install</em>. Jika Anda ingin membatalkan penginstalan, Anda dapat menekan tombol <em>Batal</em> di sebelah <em>Install</em>.</p>
+  </li>
+  <li>
+    <p>Untuk metode penginstalan <strong>Device dump</strong>, Anda dapat menunggu bilah progres selesai dan dialog sukses muncul.</p>
+  </li>
+  <li>
+    <p>Untuk metode <strong>Firmware (VPL)</strong>, Anda mungkin perlu memilih varian firmware. Ini biasanya terkait dengan wilayah/region perangkat dan variasi style-nya (hitam atau merah), dan seharusnya tidak terlalu menjadi masalah pada emulator. Setelah itu prosesnya sama dengan <strong>Device dump</strong>.</p>
+  </li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog_install_success.png" alt="Dialog sukses pemasangan" /><figcaption>
+      Dialog sukses pemasangan
+
+    </figcaption></figure>
+
+<ul>
+  <li>Jika Anda melihat dengan dialog di atas, maka itu berarti Anda telah selesai menginstal perangkat.</li>
+</ul>
+
+<h3 id="untuk-android">Untuk Android</h3>
+
+<ul>
+  <li>Emulator yang dijalankan pertama kali akan menampilkan dialog yang meminta Anda untuk memasang perangkat. Tekan dialog <em>Instal</em>, untuk membuka <strong>Pengelola perangkat</strong> dengan cepat.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_device_install_request.jpg" alt="Dialog pemasangan permintaan" /><figcaption>
+      Dialog pemasangan permintaan
+
+    </figcaption></figure>
+
+<ul>
+  <li>Jika dialog tidak muncul, tekan tiga titik di kanan atas layar Anda, lalu pilih <strong>Devices</strong>.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_devices_activity.jpg" alt="Layar perangkat Android" /><figcaption>
+      Layar perangkat Android
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Di layar ini:</p>
+  </li>
+  <li>
+    <p>Jika Anda telah menyiapkan ROM (dan RPKG jika diperlukan), pilih metode instalasi <strong>Device dump</strong>, dan tekan tombol <em>ROM</em> untuk memilih ROM yang telah Anda siapkan. Jika emulator mendeteksi bahwa ROM tidak cukup, browser file RPKG akan muncul.</p>
+  </li>
+  <li>
+    <p>Jika sudah menyiapkan firmware, pilih metode instalasi <strong>Firmware (VPL)</strong>. Tombol ROM akan diganti namanya menjadi VPL, lalu Anda dapat mengklik tombol <em>VPL</em> untuk memilih VPL yang disertakan dengan firmware.</p>
+  </li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_device_all_choosen.jpg" alt="Semua jalur file terisi" /><figcaption>
+      Semua jalur file terisi
+
+    </figcaption></figure>
+
+<ul>
+  <li>Setelah Anda mengisi semua jalur, tekan <em>Install</em>. Anda hanya dapat membatalkan operasi ini dengan keluar dari aplikasi, dan tidak perlu tindakan lebih lanjut sampai pemberitahuan bersulang kecil memberi tahu Anda bahwa penginstalan berhasil atau mengalami kegagalan.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_new_device_appears.jpg" alt="Perangkat baru muncul setelah pemasangan" /><figcaption>
+      Perangkat baru muncul setelah pemasangan
+
+    </figcaption></figure>
+
+<ul>
+  <li><strong>Catatan</strong>: Untuk Android 11 dan yang lebih baru, emulator mungkin mengalami pelambatan besar pada penginstalan perangkat, karena pembatasan yang diterapkan Google pada file di luar folder pribadi aplikasi (operasi file sangat lambat). Kami masih menemukan solusi yang cocok untuk emulator.</li>
+</ul>
+
+<p>Jika Anda mengalami kegagalan selama penginstalan, silakan kunjungi server <a href="https://discord.gg/5Bm5SJ9">Discord</a> untuk menerima dukungan.</p>
+
+<h2 id="instal-paket-sis">Instal paket (SIS)</h2>
+
+<h3 id="catatan-penting">Catatan penting</h3>
+
+<ul>
+  <li>
+    <p>Harap dicatat bahwa sangat disarankan untuk menginstal perangkat/device terlebih dahulu dan mengubah ke perangkat/device target tempat Anda ingin menginstal SIS, sebelum melanjutkan langkah ini.</p>
+  </li>
+  <li>
+    <p>Ini sangat penting untuk paket seperti N-Gage 2.0, yang bergantung pada perangkat aktif saat ini untuk mengekstrak file konfigurasi game yang sesuai.</p>
+  </li>
+</ul>
+
+<h3 id="untuk-komputer">Untuk Komputer</h3>
+
+<ul>
+  <li>Buka <em>File/Instal/Paket</em> dan pilih SIS yang ingin Anda instal.</li>
+</ul>
+
+<h3 id="untuk-android-1">Untuk Android</h3>
+
+<ul>
+  <li>Tekan tombol <strong>big green <code class="language-plaintext highlighter-rouge">+</code> button</strong> di kanan bawah layar utama (daftar aplikasi) dan pilih SIS yang ingin Anda pasang.</li>
+</ul>
+
+<h1 id="mengelola-perangkat">Mengelola perangkat</h1>
+
+<p>Emulator memungkinkan pengguna untuk menginstal beberapa perangkat, dan juga mendukung peralihan antar perangkat. Ini diperlukan jika Anda ingin menggunakan aplikasi pada platform yang berbeda <em>(S60v1, S60v3)</em>, tanpa memerlukan instance emulator baru dengan folder data instance baru.</p>
+
+<h2 id="untuk-pc-windows-macos-linux-1">Untuk PC (Windows, MacOS, Linux)</h2>
+
+<p>Buka <em>File/Settings</em>, dan pilih tab <em>System</em>. Bagian <em>Perangkat</em> mencantumkan semua perangkat yang terpasang.</p>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_manager.png" alt="Bagian pengelola perangkat" /><figcaption>
+      Bagian pengelola perangkat
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Tekan pada kotak kombo dan pilih perangkat yang ingin Anda jalankan. Perubahan akan segera diterapkan.</p>
+  </li>
+  <li>
+    <p>Anda juga dapat mengganti nama perangkat untuk manajemen yang lebih mudah. Tekan tombol <strong>Ubah nama</strong> dan masukkan nama baru di dialog input kecil.</p>
+  </li>
+  <li>
+    <p>Gunakan <strong>Pindai ulang perangkat</strong> untuk mendeteksi perangkat terpasang yang tidak muncul di kotak kombo.</p>
+  </li>
+  <li>
+    <p>Gunakan <strong>Validasi perangkat saat ini</strong> untuk emulator untuk mendeteksi kesalahan apa pun pada perangkat dan memperbaikinya, agar perangkat dapat dijalankan di platform. Jika perangkat masih tidak berjalan, berarti belum didukung atau ada kesalahan lain, Anda dapat menghubungi kami untuk informasi lebih lanjut.</p>
+  </li>
+</ul>
+
+<h2 id="untuk-android-2">Untuk Android</h2>
+
+<p>Layar sebelumnya tempat Anda memasang perangkat juga merupakan layar pengelola perangkat. Mari kita lihat lagi.</p>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_new_device_appears.jpg" alt="Layar perangkat" /><figcaption>
+      Layar perangkat
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Tekan kombo yang dilingkari merah dan pilih perangkat yang ingin Anda jalankan. Perubahan akan segera diterapkan.</p>
+  </li>
+  <li>
+    <p>Anda juga dapat mengganti nama perangkat untuk manajemen yang lebih mudah. Tekan tombol <strong>Ubah nama</strong> dan masukkan nama baru di dialog input kecil.</p>
+  </li>
+  <li>
+    <p>Saat ini tidak ada pindai ulang atau tombol untuk memvalidasi perangkat seperti di PC.</p>
+  </li>
+</ul>
+
+<h1 id="ubah-direktori-data">Ubah direktori data</h1>
+
+<p><strong>Catatan:</strong> Ini hanya didukung di PC. Kesalahan apa pun yang dihasilkan dengan melakukan ini di Android tidak akan didukung oleh kami.</p>
+
+<p>Secara default, EKA2L1 menyimpan data dalam folder <strong>data</strong>, berada di lokasi yang sama dengan <em>(eka2l1_qt.exe)</em> yang dapat dieksekusi. Namun, jika ruang penyimpanannya tidak cukup atau Anda hanya ingin memindahkannya ke lokasi yang lebih persisten, Anda dapat melakukannya dengan mengikuti langkah-langkah berikut:</p>
+
+<ol>
+  <li>
+    <p>Pindahkan folder data saat ini ke lokasi pilihan Anda. <strong>Pastikan</strong> emulator ditutup.</p>
+  </li>
+  <li>
+    <p>Ubah jalur data emulator yang tersimpan.</p>
+  </li>
+</ol>
+
+<ul>
+  <li>Dengan UI: Buka <em>File/Pengaturan/Umum</em>. Anda akan melihat bagian <strong>Data</strong> muncul di atas, tekan tombol <strong>Telusur</strong> untuk memilih lokasi baru, lalu emulator diminta untuk di-restart. Setelah itu, jalur penyimpanan data Anda berubah total.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/change_data_folder_pc.png" alt="Bagian pengaturan data" /><figcaption>
+      Pengaturan data
+
+    </figcaption></figure>
+
+<ul>
+  <li>Dengan file <em>config.yml</em>: File ini berada di folder yang sama dengan file EKA2L1 dapat dieksekusi. Ubah variabel <em>penyimpanan data</em> di YAML ke jalur data baru yang Anda inginkan.</li>
+</ul>
+
+<h1 id="lebih-banyak-pertanyaan">Lebih banyak pertanyaan</h1>
+
+<h2 id="di-mana-saya-dapat-menemukan-lebih-banyak-panduan">Di mana saya dapat menemukan lebih banyak panduan?</h2>
+
+<p>Panduan ini hanya berfungsi sebagai panduan memulai, dan tidak akan memberikan detail lebih lanjut tentang penggunaan spesifik lebih lanjut. Kunjungi <a href="https://eka2l1.miraheze.org/wiki/Main_Page">wiki emulator</a> untuk panduan dan informasi lebih lanjut.</p>
+
+<h2 id="saya-tidak-bisa-mendapatkan-romrpkg-atau-saya-tidak-bisa-menginstal-selalu-gagal">Saya tidak bisa mendapatkan ROM/RPKG atau saya tidak bisa menginstal, selalu gagal!</h2>
+
+<p>Sebaiknya kunjungi <a href="https://discord.gg/5Bm5SJ9">Discord</a> untuk mendapatkan dukungan.</p>
+
+<p>Anda dapat menggunakan paket prakonfigurasi mengikuti instruksi di <a href="https://eka2l1.miraheze.org/wiki/How_To_Use_The_Preconfigured_Pack">wiki</a>, namun paket ini sangat besar, jika Anda hanya perlu memainkan game/aplikasi tertentu, instal perangkat satu per satu ikuti langkah di atas.</p>
+
+<h2 id="apakah-anda-memiliki-video-yang-divisualisasikan-langkah-demi-langkah">Apakah Anda memiliki video yang divisualisasikan langkah demi langkah?</h2>
+
+<p>Kami tidak punya, tapi ada banyak video yang membuat instruksi sempurna. Sangat disarankan untuk melakukan pencarian di Youtube untuk video-video ini, karena kami akui pengaturan emulatornya cukup sulit.</p>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+      </div>
+
+      <footer class="container mt-3">
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+         <div class="row pt-2 d-flex pb-4 ms-1">
+   <div class="col-md-6 col-sm-12 d-flex">
+      <p><b>&copy; 2023 EKA2L1. Powered by <a href="https://jekyllrb.com" rel="nofollow"> Jekyll</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://mdbootstrap.com/" rel="nofollow">MDBootstrap</a></b></p>
+   </div>
+   <div class="col-md-6 col-sm-12 d-flex justify-content-md-end icons">
+      <strong></strong>
+
+      
+        
+          
+            <a href="https://github.com/eka2l1/eka2l1" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-fw fa-github" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://discord.gg/5Bm5SJ9" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-discord" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://www.youtube.com/channel/UCCdPQT6Le2xw_z9cutkVwyA" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-youtube" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="mailto:cc@12l1.com" rel="nofollow noopener noreferrer"><i class="footer-icon fas fa-envelope" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://github.com/EKA2L1/eka2l1.github.io" rel="nofollow noopener noreferrer"><i class="footer-icon fa fa-globe" aria-hidden="true"></i></a>
+          
+        
+      
+    
+      <a href="/feed.xml"><i class="footer-icon fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
+   </div>
+</div>
+      </footer>
+
+      
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

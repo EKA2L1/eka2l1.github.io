@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://12l1.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://12l1.com/" rel="alternate" type="text/html" hreflang="es" /><updated>2023-08-08T09:23:11+00:00</updated><id>https://12l1.com/feed.xml</id><title type="html">EKA2L1 - Symbian OS Emulator/N-Gage emulator</title><subtitle>A Symbian OS Emulator/N-Gage emulator</subtitle><entry><title type="html">¡Versión 0.0.4 de EKA2L1 publicada!</title><link href="https://12l1.com/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html" rel="alternate" type="text/html" title="¡Versión 0.0.4 de EKA2L1 publicada!" /><published>2021-05-20T02:00:00+00:00</published><updated>2021-05-20T02:00:00+00:00</updated><id>https://12l1.com/update/android/playstore/2021/05/20/EKA2L1%200.0.4%20released</id><content type="html" xml:base="https://12l1.com/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html">&lt;p&gt;EKA2L1 ha alcanzado la versión 0.0.4 y ha sido actualizada en Google Play Store.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-proceso-para-instalar-dispositivos-ha-sido-modificado&quot;&gt;El proceso para instalar dispositivos ha sido modificado&lt;/h2&gt;
+
+&lt;p&gt;Han habido un montón de comentarios acerca de problemas al momento de averiguar como se instala un dispositivo. Por ejemplo, en la pantalla inicial del emulador, el no saber que dispositivos instalar o cual método utilizar. Muchos usuarios abandonan el emulador en estos pasos, ya que la mayoría de usuarios de Android son solo consumidores normales y no investigan más haya como lo hacen los usuarios de computadora.&lt;/p&gt;
+
+&lt;p&gt;Como resultado, hemos ajustado el proceso de instalación de dispositivos. Nótese que esto no puede ser desactivado.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sabemos que la mayoría de personas son entusiastas de consolas, no de dispositivos Symbian, por lo que para ellos el tener dos archivos diferentes o algo como una raw dump puede ser un poco confuso. Por lo que para dispositivos &lt;strong&gt;S60v1&lt;/strong&gt;, como &lt;em&gt;N-Gage&lt;/em&gt;, ahora &lt;strong&gt;solo se requiere&lt;/strong&gt; de una &lt;strong&gt;System ROMS&lt;/strong&gt; para su instalación. Esperamos que esto facilite el proceso de instalación.&lt;/li&gt;
+  &lt;li&gt;Para dispositivos S60v2, hay procesos de transición que involucran ROFS en los sistemas, por lo que todavia se requerirá utilizar RPKG.&lt;/li&gt;
+  &lt;li&gt;Para dispositivos S60v3, S60v5 y S^3, ahora se permitira la opción de &lt;strong&gt;instalar utilizando firmwares&lt;/strong&gt;. Esto es mas conocido por las personas, y por lo general será la opción recomendada. Solamente se requerira proveer de la &lt;strong&gt;dirección al archivo VPL&lt;/strong&gt; para su instalación. &lt;strong&gt;Nótese&lt;/strong&gt; que esto no funciona para algunos firmware de los últimos dispositivos S60v2, dada las diferencias en la posición de la información en la ROM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Acerca de cuales dispositivos instalar, hemos añadido una opción expandible en la que puedes hacer click, y te recomendará que dispositivos instalar y cual método utilizar.&lt;/p&gt;
+
+&lt;p&gt;Algunas capturas de pantalla de la nueva pantalla de instalación:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/786228834638626867/844785034178986004/Screenshot_20210520-105346_EKA2L1.jpg&quot; /&gt;
+	&lt;figcaption&gt;Pantalla de instalación de dispositivo en Android&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/25717050/118917060-445be380-b95a-11eb-8a70-6c4c8bb71578.png&quot; /&gt;
+	&lt;figcaption&gt;Pantalla de instalación de dispositivo en PC&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Cuando se detecta que la ROM introducida no es S60v1, la opción de introducir RPKG sera obligatoria. Gracias a los usuarios en Play Store y en Discord por expresar sus problemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;se-ha-añadido-soporte-a-s60v2&quot;&gt;Se ha añadido soporte a S60v2&lt;/h2&gt;
+
+&lt;p&gt;Esto ha sido solicitado por una gran cantidad de personas. El emulador ha implementado algunas partes de sistemas S60v2, desafortunadamente no todas, y una gran cantidad de aplicaciones y juegos todavia tienen una gran cantidad de bugs o ni siquiera abren. Sin embargo, la compatibilidad ha mejorado.&lt;/p&gt;
+
+&lt;p&gt;S60v2 tiene 3 feature packs, en los cuales se encuentran las transition stages de los días de legacy EPOC. Esto incluye el intento de remover la estructura tipo folder del sistema, remover la busqueda de archivos DLL tipo-Windows, remover el apprun, y modificación de ROMs como la resolución de pantalla que esta hard-coded dentro de las ROM headers Y así, implementar S60v2 esta siendo bastante divertido.&lt;/p&gt;
+
+&lt;p&gt;Compresión de PETRAN DLLs y EXEs también estan presente en un montón de aplicaciones. Algunas funciones que todavia no estan funcionando correctamente, incluyendo juegos que utilizan Direct Screen Acces (DSA).&lt;/p&gt;
+
+&lt;p&gt;Algunas capturas de pantalla de juegos funcionando ahora mismo en el emulador, utilizando un dump del dispositivo N70:&lt;/p&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg&quot; /&gt;
+	&lt;figcaption&gt;Imagenes proporcionadas por ericsonia e Ink321&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;img src=&quot;https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&amp;amp;height=593&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg&quot; /&gt;
+	&lt;figcaption&gt;Imagenes proporcionadas por ericsonia e Ink321&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;añadiendo-soporte-para-s60v5-en-32-bits&quot;&gt;Añadiendo soporte para S60v5 en 32-bits&lt;/h2&gt;
+
+&lt;p&gt;S60v5 y S^3 requiere de heavy VFP operations, por lo que no fueron implementadas en el emulador de 32-bit JIT anteriormente. Recientemente tocamos este apartado denuevo, desde que el host no utiliza registros VFP para nada, así que tiramos a la basura todo el register back, pero todavia mantenemos un seguimiento de cuales registros estan siendo cargados o escritos.&lt;/p&gt;
+
+&lt;p&gt;El rendimiento obtenido en 32-bit JIT es en realidad, el mismo que obtendrias en un telefono Symbian real. No creo que haya expectativas altas para amateurs como nosotros… Pero esperamos que puedas disfrutar los buenos viejos tiempos en nuevos dispositivos Android. No hay mucho más de que hablar acerca de esto.&lt;/p&gt;
+
+&lt;h2 id=&quot;otros-pequeños-ajustes&quot;&gt;Otros pequeños ajustes&lt;/h2&gt;
+
+&lt;p&gt;Anteriormente no han habido dumps de dispositivos Unicode, pero recientemente se nos ha proporcionado de una ROM de un N70 chino, y no funciona muy bien, por el pequeño detalle de que no muestra ningún carácter en pantalla. Estamos trabajando en ello, hemos tratado de cargar carácteres Unicode, pero sin almacenar ninguna coordenada de información en el atlas. Arreglar este problema ha logrado que un tipo pueda jugar Pocket Kingdom en chino, LOL.&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841236525442400256/Screenshot_20210510_165245_com.github.eka2l1.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841206165320237126/unknown.png&quot; /&gt;
+	&lt;figcaption&gt;La historia parece que ya es capaz de mostrarse en pantalla, también puedes jugar Card Decks&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Otras cosas solicitadas, incluyen algunos juegos que no pueden leer el IMEI del emulador. Este IMEI es generado aleatoriamente en linea, LOL. Pero no debería haber nada malo con el.&lt;/p&gt;
+
+&lt;p&gt;Para obtener el IMEI, los juegos deben obtener la información del telefono utilizando una API, la cual requiere que tu escribas el nombre del captador de la información del telefono (esto se crea desde una DLL). Pero algunos juegos antiguos algunas veces hardcoded el nombre del captador ya sea como “Calypso” para S60v1 (este es el nombre en clave para Nokia 7650), o como “DefaultPhone” en S60v2. No cargamos esos modulos por obvias razones, eso es obtener cosas desde el driver. Por lo que tenemos que falsificar esos nombres dependiendo de la versión del OS…&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png&quot; /&gt;
+	&lt;figcaption&gt;Ahora puedes jugar Legacy... Leer el IMEI desde X-plore también funciona&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Lo último por mencionar es que, algunos juegos tienen algunas race conditions, que ni siquiera se activan porque la forma en la que el OS programa los thread. Despues de que un thread es creado y resumido, el kernel inmediatamente lo reprograma, lo cual podría hacer que los child thread corran primero. Esto crea algunas situaciones donde el parent thread accede a la información por parte del child thread que solo es creada cuando el child thread corre primero. El emulador ha sido corregido para seguir este comportamiento, lo cual resuelve crasheos en algunos juegos.&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840298370576810045/78.png&quot; /&gt;
+	&lt;figcaption&gt; Spider Man: Toxic City y Virtous Devil Saga ahora funcionan correctamente&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;También hay algunos arreglos menores que mejoran la compatibilidad con aplicaciones S60v3 y S60v5, pero no los mencionaremos aquí.&lt;/p&gt;
+
+&lt;h2 id=&quot;metas-para-la-005&quot;&gt;Metas para la 0.0.5&lt;/h2&gt;
+
+&lt;p&gt;Esperamos implementar el soporto para el servicio N-Gage (usualmente llamado N-Gage 2.0) pronto. Se ha trabajado anteriormente en la rama ng2, pero es un trabajo bastante preliminar y solamente funciona con un juego, y solo fuciona para instalarlo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tambien queremos arreglar algunos problemas de archivos que actualmente tardan una eternidad en Android 11, o que sencillamente no funcionan en absoluto. Un parche sera creado cuando encontremos algo de tiempo.&lt;/p&gt;
+
+&lt;h2 id=&quot;notas-finales&quot;&gt;Notas finales&lt;/h2&gt;
+
+&lt;p&gt;La versión de PC tendra los mismos cambios de calidad de vida que la version de Android, esto esta siendo implementado ahora mismo. Pero para Android, podrás encontrar la versión mas estable del emulador en &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.eka2l1&quot;&gt;Play Store&lt;/a&gt;. ¡Esperamos que pases un buen rato con nuestro emulador!&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="android" /><category term="playstore" /><summary type="html">EKA2L1 ha alcanzado la versión 0.0.4 y ha sido actualizada en Google Play Store.</summary></entry><entry><title type="html">¡Versión de Google Play Store publicada!</title><link href="https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published.html" rel="alternate" type="text/html" title="¡Versión de Google Play Store publicada!" /><published>2021-04-14T05:00:00+00:00</published><updated>2021-04-14T05:00:00+00:00</updated><id>https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published</id><content type="html" xml:base="https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published.html">&lt;p&gt;La versión de Google Play Store de este emulador ha sido aprovada y esta publicada por &lt;strong&gt;Play Software&lt;/strong&gt;. El link de descarga es &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.eka2l1&quot;&gt;link de descarga&lt;/a&gt;. La sección de descargas del sitio web ha sido modificada acorde a esto.&lt;/p&gt;
+
+&lt;p&gt;Si no estas interesado en los cambios más recientes e inmediatos, ni te gusta descargar y actualizar frecuentemente la aplicación APK desde Github, entonces esta versión 
+de Google Play Store será una manera más estable y comoda de actualizar tu emulador. Esperamos que sigas apoyando el emulador.&lt;/p&gt;
+
+&lt;p&gt;Esta versión de la Play Store esta basada en la versión &lt;a href=&quot;https://github.com/EKA2L1/EKA2L1/commit/5f1c68345e0ae4c8a84006fe86056a4fbb832c22&quot;&gt;5f1c683&lt;/a&gt; de la rama &lt;em&gt;Master&lt;/em&gt; del Github
+del emulador.&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="android" /><category term="playstore" /><summary type="html">La versión de Google Play Store de este emulador ha sido aprovada y esta publicada por Play Software. El link de descarga es link de descarga. La sección de descargas del sitio web ha sido modificada acorde a esto.</summary></entry><entry><title type="html">¡Ahora Android de 32-bit es soportado!</title><link href="https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support.html" rel="alternate" type="text/html" title="¡Ahora Android de 32-bit es soportado!" /><published>2021-01-25T14:30:00+00:00</published><updated>2021-01-25T14:30:00+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support.html">&lt;p&gt;La última versión de EKA2L1 ha agregado soporte para &lt;strong&gt;Android de 32 bits&lt;/strong&gt;. Puede descargar la APK como de costumbre en la sección &lt;a href=&quot;/download&quot;&gt;&lt;strong&gt;Descargas&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Por favor tome en cuenta:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Por el momento, solo aplicaciones de S60v3 y S60v1 estan soportadas.&lt;/li&gt;
+  &lt;li&gt;No todos los dispositivos Android de 32-bit soportan el emulador, aunque los requisitos sean relativamente bajos.
+Por favor cheque los &lt;em&gt;requisitos mínimos&lt;/em&gt; para android en la sección &lt;a href=&quot;/quickstart&quot;&gt;&lt;strong&gt;Requisitos e instalación&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Se recomienda utilizar &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.cpuid.cpu_z&quot;&gt;&lt;strong&gt;CPU-Z&lt;/strong&gt;&lt;/a&gt; para ver las espeficicaciones de su telefono móvil y compararlas con los
+requisitos mínimos.&lt;/p&gt;
+
+&lt;h3 id=&quot;algunas-notas-extra&quot;&gt;Algunas notas extra&lt;/h3&gt;
+
+&lt;p&gt;Previamente, no había soporte porque no había un emulador de ARM CPU que soportara la arquitectura de &lt;strong&gt;32-bit ARM&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;El emulador de CPU &lt;a href=&quot;https://github.com/MerryMage/Dynarmic&quot;&gt;(Dynarmic)&lt;/a&gt; que estamos utilizando actualmente soporta las arquitecturas de 
+&lt;strong&gt;64-bit ARM (AArch64)&lt;/strong&gt; y &lt;strong&gt;x86_64&lt;/strong&gt;.
+De manera reciente creamos nuestro propio emulador de CPU, y aunque no esta muy optimizado, parece que funciona decentemente.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">La última versión de EKA2L1 ha agregado soporte para Android de 32 bits. Puede descargar la APK como de costumbre en la sección Descargas.</summary></entry><entry><title type="html">¡Traductores, son bienvenidos!</title><link href="https://12l1.com/jekyll/update/2021/01/25/translator_welcome.html" rel="alternate" type="text/html" title="¡Traductores, son bienvenidos!" /><published>2021-01-25T14:30:00+00:00</published><updated>2021-01-25T14:30:00+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/25/translator_welcome</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/25/translator_welcome.html">&lt;p&gt;El sitio web le da la bienvenida a cualquier persona que quiera traducir el contenido a su lenguaje. Para hacer esto, visite el 
+&lt;a href=&quot;https://github.com/EKA2L1/eka2l1.github.io&quot;&gt;&lt;strong&gt;codigo fuente del sitio web&lt;/strong&gt;&lt;/a&gt; y siga las instrucciones escritas en README.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">El sitio web le da la bienvenida a cualquier persona que quiera traducir el contenido a su lenguaje. Para hacer esto, visite el codigo fuente del sitio web y siga las instrucciones escritas en README.</summary></entry><entry><title type="html">¡Nuevo sitio web!</title><link href="https://12l1.com/jekyll/update/2021/01/19/new-website.html" rel="alternate" type="text/html" title="¡Nuevo sitio web!" /><published>2021-01-19T10:30:52+00:00</published><updated>2021-01-19T10:30:52+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/19/new-website</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/19/new-website.html">&lt;p&gt;Ahora este es nuestro sitio web. ¡Aquí podras enterarte de todos los nuevos anuncios!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Ahora este es nuestro sitio web. ¡Aquí podras enterarte de todos los nuevos anuncios!</summary></entry></feed>

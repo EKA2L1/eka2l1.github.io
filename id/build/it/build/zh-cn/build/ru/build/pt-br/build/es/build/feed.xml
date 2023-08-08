@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://12l1.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://12l1.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-08-08T09:23:10+00:00</updated><id>https://12l1.com/feed.xml</id><title type="html">EKA2L1 - Symbian OS Emulator/N-Gage emulator</title><subtitle>A Symbian OS Emulator/N-Gage emulator</subtitle><entry><title type="html">New video tutorials for setting up the emulator for N-Gage and using Preconfigured Packs</title><link href="https://12l1.com/jekyll/update/2023/01/21/New-tutorials-for-setting-up-N-Gage-and-Preconfigured-Packs.html" rel="alternate" type="text/html" title="New video tutorials for setting up the emulator for N-Gage and using Preconfigured Packs" /><published>2023-01-21T16:57:00+00:00</published><updated>2023-01-21T16:57:00+00:00</updated><id>https://12l1.com/jekyll/update/2023/01/21/New%20tutorials%20for%20setting%20up%20N-Gage%20and%20Preconfigured%20Packs</id><content type="html" xml:base="https://12l1.com/jekyll/update/2023/01/21/New-tutorials-for-setting-up-N-Gage-and-Preconfigured-Packs.html">&lt;p&gt;The emulator has changed very much in the last 2 years since its boom over N-Gage popularity, with some more quality-of-life changes to make using EKA2L1 as a N-Gage emulator easier than before.&lt;/p&gt;
+
+&lt;p&gt;Many tutorials on Youtube are not as up-to-date as before since there’s no incentive to renew it. And there are also many people that find difficulties in the aspect of installing N-Gage games into the emulator and don’t want to join the Discord server.&lt;/p&gt;
+
+&lt;p&gt;Understanding the struggle, I have tried to make 2 specific &lt;strong&gt;tutorials&lt;/strong&gt; to &lt;strong&gt;set up the emulator for N-Gage emulation&lt;/strong&gt; purpose, for desktop and Android version of the emulator. In addition, there’s one another tutorial for installing &lt;strong&gt;BLZ games&lt;/strong&gt;, and one for &lt;strong&gt;installing the preconfigured packs&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is the &lt;a href=&quot;https://www.youtube.com/watch?v=rFUlsSGkRjc&amp;amp;list=PLkrpMo4_xadtJ_Kqvc5BSTSi39ollsAbR&quot;&gt;playlist&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope it is helpful and hearable.&lt;/p&gt;
+
+&lt;p&gt;Happy Lunar New Year!
+新年快乐！
+Chúc mừng năm mới!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">The emulator has changed very much in the last 2 years since its boom over N-Gage popularity, with some more quality-of-life changes to make using EKA2L1 as a N-Gage emulator easier than before.</summary></entry><entry><title type="html">Lua scripting API documentation updated</title><link href="https://12l1.com/update/scripting/2021/10/30/Lua-script-API-documentated.html" rel="alternate" type="text/html" title="Lua scripting API documentation updated" /><published>2021-10-30T00:00:00+00:00</published><updated>2021-10-30T00:00:00+00:00</updated><id>https://12l1.com/update/scripting/2021/10/30/Lua-script-API-documentated</id><content type="html" xml:base="https://12l1.com/update/scripting/2021/10/30/Lua-script-API-documentated.html">&lt;p&gt;The Lua script API has been more documentated, for any individual that wants to write script for debugging, analysing or patching specific applications/games.&lt;/p&gt;
+
+&lt;p&gt;The link to the API documentation can be found &lt;a href=&quot;https://12z1.com/docs/topics/scriptingnote.md.html&quot;&gt;here&lt;/a&gt;, along with some small notes about scripts and debugging with GDB.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="scripting" /><summary type="html">The Lua script API has been more documentated, for any individual that wants to write script for debugging, analysing or patching specific applications/games.</summary></entry><entry><title type="html">EKA2L1 version 0.0.4 released!</title><link href="https://12l1.com/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html" rel="alternate" type="text/html" title="EKA2L1 version 0.0.4 released!" /><published>2021-05-20T02:00:00+00:00</published><updated>2021-05-20T02:00:00+00:00</updated><id>https://12l1.com/update/android/playstore/2021/05/20/EKA2L1%200.0.4%20released</id><content type="html" xml:base="https://12l1.com/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html">&lt;p&gt;EKA2L1 has been bumped up to version 0.0.4 and is updated on Google Play Store.&lt;/p&gt;
+
+&lt;h2 id=&quot;adjusting-device-installation-methods&quot;&gt;Adjusting device installation methods&lt;/h2&gt;
+
+&lt;p&gt;There has been feedbacks about the struggles in the process of finding out what to do. For example, when facing the install screen, what device should be installed, what method to install it. Many users stop at these steps, and a lot of Android users are just normal consumers and don’t look around a lot like PC users.&lt;/p&gt;
+
+&lt;p&gt;As the results, we adjusted the device installation process. Note that it can not be removed at all.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We know a lot of people are console enthusiasts, not Symbian enthusiasts, so for them having two files or something like raw dump can be a bit struggle. So for &lt;strong&gt;S60v1&lt;/strong&gt; devices, like &lt;em&gt;N-Gage&lt;/em&gt;, you are now &lt;strong&gt;only required&lt;/strong&gt; to provide the &lt;strong&gt;System ROMS&lt;/strong&gt; for installation. We hope this ease the installation process.&lt;/li&gt;
+  &lt;li&gt;For S60v2 devices, there are transitions process that also involves ROFS in your systems, so it’s still required to use RPKG for it.&lt;/li&gt;
+  &lt;li&gt;For S60v3, S60v5 and S^3 devices, we provided you the option to &lt;strong&gt;install using firmwares&lt;/strong&gt;. This is more widely known around people, and should be recommended. You only need to &lt;strong&gt;provide path to the VPL file&lt;/strong&gt; for installation. &lt;em&gt;Note&lt;/em&gt; that this does not work with some late S60v2 firmwares, due to differences in ROM data positioning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;About what devices to install, we have added an expandable section that you can click on, which will recommend devices to install and which methods to be used for them.&lt;/p&gt;
+
+&lt;p&gt;Here is the images of the new installation screen:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/786228834638626867/844785034178986004/Screenshot_20210520-105346_EKA2L1.jpg&quot; /&gt;
+	&lt;figcaption&gt;Android device installation screen&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/25717050/118917060-445be380-b95a-11eb-8a70-6c4c8bb71578.png&quot; /&gt;
+	&lt;figcaption&gt;PC device installation screen&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;When the ROM is detected to not be S60v1, the RPKG field will be requested. Thanks the users on Play Store and on Discord on expressing their struggles.&lt;/p&gt;
+
+&lt;h2 id=&quot;add-fundamental-support-for-s60v2&quot;&gt;Add fundamental support for S60v2&lt;/h2&gt;
+
+&lt;p&gt;This is requested by a lot of people. The emulator implemented some parts of the S60v2 systems, but unfortunately not all, and a lot of apps and games are still heavily bugged or not launching at all. However, the compatibilities did improved.&lt;/p&gt;
+
+&lt;p&gt;The S60v2 has three feature packs, in which features the transition stages from legacy EPOC days. This including the attempt of the system folder structure removal, the removal of Windows-like DLL searchings, apprun removal, ROM changes like hard-coded the screen resolution inside ROM headers. As such, implementing S60v2 is very fun.&lt;/p&gt;
+
+&lt;p&gt;Compression of PETRAN DLLs and EXEs is also presented in a lot of applications. Some features that are still not working properly including games that use Direct Screen Access (DSA) properly.&lt;/p&gt;
+
+&lt;p&gt;Here are some screenshots of games currently working on the emulator, using N70 device dump.&lt;/p&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg&quot; /&gt;
+	&lt;figcaption&gt;Images provided by ericsonia and Ink321&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;img src=&quot;https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&amp;amp;height=593&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg&quot; /&gt;
+	&lt;figcaption&gt;Images provided by ericsonia and Ink321&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;adding-s60v5-support-on-32-bit&quot;&gt;Adding S60v5 support on 32-bit&lt;/h2&gt;
+
+&lt;p&gt;S60v5 and S^3 requires heavy VFP operations, so it was not implemented in emulator 32-bit JIT before. Recently we touch it again, since the host doesn’t use VFP registers at all, we trash the whole register bank, but still keep track of what registers are being loaded/written.&lt;/p&gt;
+
+&lt;p&gt;The performance getting with the 32-bit JIT is actually, same as on real phone. I don’t think there’s much room of expectation for ameturers like us… But we hope you can enjoy the good old days applications on new Android phone. There is nothing much to talk about this.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-small-fixes&quot;&gt;Other small fixes&lt;/h2&gt;
+
+&lt;p&gt;No unicode device dumps have been around before, but recently we was given a N70 Chinese ROMs, and it does not work very well, for the fact that it does not display anything to read. When digging into it, we tried to load Unicode characters, but not storing their coordinates information in the font texture atlas at all. So fixing this make a guy able to play Pocket Kingdom in Chinese, LOL.&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841236525442400256/Screenshot_20210510_165245_com.github.eka2l1.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841206165320237126/unknown.png&quot; /&gt;
+	&lt;figcaption&gt;The story seems to be able to display now, you can also play Card Decks&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Other requested things, included some games not able to read the emulator’s IMEI at all. This IMEI is randomly generated online, LOL. But there should not be anything wrong with it.&lt;/p&gt;
+
+&lt;p&gt;To get the IMEI, games must open phone information using an API, which requires you to provide the phone information’s getter name (this is instantiated from a DLL). But these old games sometimes just hardcoded that getter name to either “Calypso” for S60v1 (this is the codename of Nokia 7650), or “DefaultPhone” on S60v2. We don’t load these modules for the obivious reasons, that it’s getting things from driver. So we have to fake those names depend on the OS versions…&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png&quot; /&gt;
+	&lt;figcaption&gt;You can play Legacy now... And reading IMEI from X-plore also works&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Last thing to mention is that, some games have some race conditons, that does not ever trigger because of the way OS schedules thread. After a thread is created and resumed, the kernel will immediate reschedule, which may make child thread runs first. This creates some situations where the parent thread access data by the child thread that is only created when the child thread runs first. The emulator is corrected to follow this behaviour, which fixed crash in some games.&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840298370576810045/78.png&quot; /&gt;
+	&lt;figcaption&gt;Spider Man: Toxic City and Virtuous Devil Saga now works fine&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There are also some small fixes that improve more compabilities with S60v3 and S60v5 applications, but we won’t mention here.&lt;/p&gt;
+
+&lt;h2 id=&quot;goals-for-005&quot;&gt;Goals for 0.0.5&lt;/h2&gt;
+
+&lt;p&gt;We hope to implement N-Gage serivce support (people usually called it N-Gage 2.0) soon. There has been works in ng2 branch before, but it’s very hacky and only works with one game, and that only mentioning installation of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We also want to fix the problems of file operations taking enternity on Android 11 currently, or barely functional at all. A fix will be issued when we find the time.&lt;/p&gt;
+
+&lt;h2 id=&quot;closing-notes&quot;&gt;Closing notes&lt;/h2&gt;
+
+&lt;p&gt;The PC version will have the same quality of life changes as Android, this is being implemented at the moment. But for Android, you can find the stable version of the emulator on &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.eka2l1&quot;&gt;Play Store&lt;/a&gt;. Hope you have good time with the emulator.&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="android" /><category term="playstore" /><summary type="html">EKA2L1 has been bumped up to version 0.0.4 and is updated on Google Play Store.</summary></entry><entry><title type="html">Google Play Store version published!</title><link href="https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published.html" rel="alternate" type="text/html" title="Google Play Store version published!" /><published>2021-04-14T05:00:00+00:00</published><updated>2021-04-14T05:00:00+00:00</updated><id>https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published</id><content type="html" xml:base="https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published.html">&lt;p&gt;The Google Play Store version of the emulator has been approved and is published by &lt;strong&gt;Play Software&lt;/strong&gt;. Here is the &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.eka2l1&quot;&gt;Download link&lt;/a&gt;.
+The Download section of the website will be changed accordingly.&lt;/p&gt;
+
+&lt;p&gt;If you are not a fan of cutting-edge changes and regularly download then reinstall APK from Github again, this version on Google Play Store can be seen as a stable release channel for the emulator.
+We hope you will continue to support the emulator.&lt;/p&gt;
+
+&lt;p&gt;The version on the Play Store is based on commit &lt;a href=&quot;https://github.com/EKA2L1/EKA2L1/commit/5f1c68345e0ae4c8a84006fe86056a4fbb832c22&quot;&gt;5f1c683&lt;/a&gt; on &lt;em&gt;Master&lt;/em&gt; branch.&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="android" /><category term="playstore" /><summary type="html">The Google Play Store version of the emulator has been approved and is published by Play Software. Here is the Download link. The Download section of the website will be changed accordingly.</summary></entry><entry><title type="html">32-bit Android is now supported!</title><link href="https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support.html" rel="alternate" type="text/html" title="32-bit Android is now supported!" /><published>2021-01-25T14:30:00+00:00</published><updated>2021-01-25T14:30:00+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support.html">&lt;p&gt;The lastest version of EKA2L1 has added support for &lt;strong&gt;32-bit Android&lt;/strong&gt; platform. Please proceed to download the APK as usual in &lt;a href=&quot;/download&quot;&gt;&lt;strong&gt;Download&lt;/strong&gt;&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please take note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;At the moment, only S60v3 and S60v1 apps are supported.&lt;/li&gt;
+  &lt;li&gt;Not all 32-bit Android devices can run the emulator, although the expected specs are quite low.
+Please check the &lt;em&gt;minimum requirements&lt;/em&gt; for Android at &lt;a href=&quot;/quickstart&quot;&gt;&lt;strong&gt;Quickstart&lt;/strong&gt;&lt;/a&gt; page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It’s recommended to use &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.cpuid.cpu_z&quot;&gt;&lt;strong&gt;CPU-Z&lt;/strong&gt;&lt;/a&gt; to get your phone statistics and compare it with minimum requirements.&lt;/p&gt;
+
+&lt;h3 id=&quot;some-small-notes&quot;&gt;Some small notes&lt;/h3&gt;
+
+&lt;p&gt;Previously, the support was absent because there was no ARM CPU emulator present that support the &lt;strong&gt;32-bit ARM&lt;/strong&gt; architecture.&lt;/p&gt;
+
+&lt;p&gt;The CPU emulator we are using &lt;a href=&quot;https://github.com/MerryMage/Dynarmic&quot;&gt;(Dynarmic)&lt;/a&gt; currently on support &lt;strong&gt;64-bit ARM (AArch64)&lt;/strong&gt; and &lt;strong&gt;x86_64&lt;/strong&gt; architecture.
+We recently write our own CPU emulator, it’s not the most optimised, but it seems to perform decently.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">The lastest version of EKA2L1 has added support for 32-bit Android platform. Please proceed to download the APK as usual in Download section.</summary></entry><entry><title type="html">Translators welcome!</title><link href="https://12l1.com/jekyll/update/2021/01/25/translator_welcome.html" rel="alternate" type="text/html" title="Translators welcome!" /><published>2021-01-25T14:30:00+00:00</published><updated>2021-01-25T14:30:00+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/25/translator_welcome</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/25/translator_welcome.html">&lt;p&gt;The website welcomes people to translate its content to your language. To do so, please traverse to the &lt;a href=&quot;https://github.com/EKA2L1/eka2l1.github.io&quot;&gt;&lt;strong&gt;website source code&lt;/strong&gt;&lt;/a&gt;
+and follow the texts that are written in the README.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">The website welcomes people to translate its content to your language. To do so, please traverse to the website source code and follow the texts that are written in the README.</summary></entry><entry><title type="html">New video tutorials for setting up the emulator for N-Gage and using Preconfigured Packs</title><link href="https://12l1.com/jekyll/update/2021/01/19/New-tutorials-for-setting-up-N-Gage-and-Preconfigured-Packs.markdown.bak" rel="alternate" type="text/html" title="New video tutorials for setting up the emulator for N-Gage and using Preconfigured Packs" /><published>2021-01-19T10:30:52+00:00</published><updated>2021-01-19T10:30:52+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/19/New%20tutorials%20for%20setting%20up%20N-Gage%20and%20Preconfigured%20Packs.markdown</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/19/New-tutorials-for-setting-up-N-Gage-and-Preconfigured-Packs.markdown.bak">The emulator has changed very much in the last 2 years since its boom over N-Gage popularity, with some more quality-of-life changes to make using EKA2L1 as a N-Gage emulator easier than before.
+
+Many tutorials on Youtube are not as up-to-date as before since there's no incentive to renew it. And there are also many people that find difficulties in the aspect of installing N-Gage games into the emulator and don't want to join the Discord server.
+
+Understanding the struggle, I have tried to make 2 specific **tutorials** to **set up the emulator for N-Gage emulation** purpose, for desktop and Android version of the emulator. In addition, there's one another tutorial for installing **BLZ games**, and one for **installing the preconfigured packs**.
+
+Here is the [playlist](https://www.youtube.com/watch?v=rFUlsSGkRjc&amp;list=PLkrpMo4_xadtJ_Kqvc5BSTSi39ollsAbR)
+
+I hope it is helpful and hearable.
+
+Happy Lunar New Year!
+新年快乐！
+Chúc mừng năm mới!</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">The emulator has changed very much in the last 2 years since its boom over N-Gage popularity, with some more quality-of-life changes to make using EKA2L1 as a N-Gage emulator easier than before.</summary></entry><entry><title type="html">New website!</title><link href="https://12l1.com/jekyll/update/2021/01/19/new-website.html" rel="alternate" type="text/html" title="New website!" /><published>2021-01-19T10:30:52+00:00</published><updated>2021-01-19T10:30:52+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/19/new-website</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/19/new-website.html">&lt;p&gt;This is our website now. You can hear new announcements here!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">This is our website now. You can hear new announcements here!</summary></entry></feed>

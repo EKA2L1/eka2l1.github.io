@@ -1,0 +1,235 @@
+.dark-theme {
+    --background-color: #000000;
+    --text-color: #dfddddd2;
+    --border-bottom-color: #364f67;
+    --hyperlink-visited-text-color: #2b87c0;
+    --toc-background-color: #343030;
+    --border-pagination-color: #274a57;
+    --text-color-disabled: #6a6262;
+    --toggle-background-color: #343232;
+}
+
+.light-theme {
+    --background-color: #FFFFFF;
+    --text-color: #4e4d4d;
+    --border-bottom-color: #8297ec;
+    --hyperlink-visited-text-color: #3856a2;
+    --toc-background-color: #faf8f8;
+    --border-pagination-color: #4d829c;
+    --text-color-disabled: #6a6262;
+    --toggle-background-color: #cccccc;
+}
+
+@font-face {
+    font-family: "Nokia Pure Text";
+    src: url("/assets/fonts/NokiaPureText-Regular.ttf");
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Nokia Pure Text";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand, .nav-link {
+    font-weight: 500;
+    color: var(--text-color) !important;
+}
+
+.navbar-brand img {
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 1.0rem;
+}
+
+.navbar {
+    background-color: var(--background-color);
+    color: var(--text-color) !important;
+    border-bottom-color: var(--border-bottom-color);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+a:link {
+    color: var(--hyperlink-visited-text-color);
+}
+
+a:link.disabled {
+    color: var(--text-color-disabled);
+}
+
+.icons {
+    gap: 1rem;
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    color: var(--text-color)
+}
+
+.sidebar__right {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    border-style: solid;
+    border-color: var(--border-bottom-color);
+    background-color: var(--toc-background-color);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.nav__title {
+    padding-bottom: 10px;
+    border-bottom-color: var(--border-bottom-color);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.taxonomy__index {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+}
+
+.taxonomy__index a {
+    display: flex;
+    border-bottom-color: var(--border-bottom-color);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 0.25rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.pagination--pager {
+    display: block;
+    width: 50%;
+    background-color: var(--background-color);
+    border-color: var(--border-pagination-color);
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.toggle-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.toggle-label {
+    background-color: var(--toggle-background-color);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 4.5rem;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-label-ball {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: gray;
+    position: absolute;
+    left: 6px;
+    top: 1px;
+    transition: transform 0.2s linear;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-label-ball {
+    transform: translateX(2.25rem);
+}
+
+.navbar-divider {
+    border-left-color: var(--border-bottom-color);
+    border-left-width: 2px;
+    border-left-style: solid;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.archive__subtitle, .entries-list {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+}
+
+header {
+    display: block;
+    margin-left: 1rem;
+    margin-bottom: 2rem; 
+}
+
+.fa-bars {
+    color: var(--text-color);
+}
+
+.fa-sun {
+    color: #a45c2f;
+}
+
+.fa-moon {
+    color: yellow;
+}
+
+.back-to-top {
+    text-align: right;
+    display: block;
+    padding-bottom: 0.75rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 40rem;
+    object-fit: contain;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+ol, ul {
+    padding-left: 1.5rem;
+}
+
+figure.third > img {
+    width: 30%;
+    padding-right: 2%
+}
+
+figure.half > img {
+    width: 40%;
+    padding-right: 2%;
+}
+
+figure > figcaption {
+    padding-top: 2rem;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+i {
+    font-size: large;
+    padding-left: 8px;
+    margin-right: 8px;
+}
+
+h1, h2, h3, h4 {
+    padding-top: 80px;
+    margin-top: -80px;
+}

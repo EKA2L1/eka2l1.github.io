@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ru"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://12l1.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://12l1.com/" rel="alternate" type="text/html" hreflang="ru" /><updated>2023-08-08T09:23:12+00:00</updated><id>https://12l1.com/feed.xml</id><title type="html">EKA2L1 - Symbian OS Emulator/N-Gage emulator</title><subtitle>A Symbian OS Emulator/N-Gage emulator</subtitle><entry><title type="html">Обновлена документация для API скриптов Lua</title><link href="https://12l1.com/update/scripting/2021/10/30/Lua-script-API-documentated.html" rel="alternate" type="text/html" title="Обновлена документация для API скриптов Lua" /><published>2021-10-30T00:00:00+00:00</published><updated>2021-10-30T00:00:00+00:00</updated><id>https://12l1.com/update/scripting/2021/10/30/Lua-script-API-documentated</id><content type="html" xml:base="https://12l1.com/update/scripting/2021/10/30/Lua-script-API-documentated.html">&lt;p&gt;API скриптов Lua подробно документирован для любого человека, желающего написать скрипт для отладки, анализа или исправления определенных приложений/игр.&lt;/p&gt;
+
+&lt;p&gt;Ссылку на документацию по API можно найти &lt;a href=&quot;https://12z1.com/docs/topics/scriptingnote.md.html&quot;&gt;здесь&lt;/a&gt; вместе с некоторыми небольшими примечаниями о скриптах и отладке с помощью GDB.&lt;/p&gt;
+
+&lt;p&gt;Спасибо за чтение!&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="scripting" /><summary type="html">API скриптов Lua подробно документирован для любого человека, желающего написать скрипт для отладки, анализа или исправления определенных приложений/игр.</summary></entry><entry><title type="html">Выпущена версия EKA2L1 0.0.4!</title><link href="https://12l1.com/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html" rel="alternate" type="text/html" title="Выпущена версия EKA2L1 0.0.4!" /><published>2021-05-20T02:00:00+00:00</published><updated>2021-05-20T02:00:00+00:00</updated><id>https://12l1.com/update/android/playstore/2021/05/20/EKA2L1%200.0.4%20released</id><content type="html" xml:base="https://12l1.com/update/android/playstore/2021/05/20/EKA2L1-0.0.4-released.html">&lt;p&gt;EKA2L1 обновлен до версии 0.0.4.&lt;/p&gt;
+
+&lt;h2 id=&quot;коррректировка-способов-установки-устройства&quot;&gt;Коррректировка способов установки устройства&lt;/h2&gt;
+
+&lt;p&gt;Нами было получено множество отзывов о проблемах при использовании эмулятора. Например, если смотреть на экран установки, какое устройство следует установить, каким методом его установить. Многие пользователи останавливаются на этих шагах.&lt;/p&gt;
+
+&lt;p&gt;По результатам мы скорректировали процесс установки устройства. Учтите, что его вообще нельзя удалить.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Мы знаем, что многие люди - любители консолей, а не Symbian, поэтому для них наличие двух файлов или чего-то вроде сырого дампа может быть небольшой проблемой. Таким образом, для устройств &lt;strong&gt;S60v1&lt;/strong&gt;, таких как &lt;em&gt;N-Gage&lt;/em&gt;, вам для установки теперь &lt;strong&gt;требуется только&lt;/strong&gt; предоставить &lt;strong&gt;системные ROMы&lt;/strong&gt;. Мы надеемся, что это упростит процесс установки.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Для устройств S60v2 используется процесс обработки, который также включает в себя ROFS в ваших системах, поэтому для него по-прежнему необходимо использовать RPKG.&lt;/li&gt;
+  &lt;li&gt;Для устройств S60v3, S60v5 и S^3 мы предоставили вам возможность &lt;strong&gt;установки с помощью прошивок&lt;/strong&gt;, что гораздо проще для большинства пользователей. Вам нужно всего лишь &lt;strong&gt;указать путь к файлу VPL&lt;/strong&gt; для установки. &lt;em&gt;Обратите внимание&lt;/em&gt;, что этот способ не работает с некоторыми поздними прошивками S60v2 из-за различий в позиционировании данных ROM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Какие устройства устанавливать - мы добавили расширяемый раздел, на который вы можете щелкнуть, в нем будут указаны устройства для установки и какие методы для них используются.&lt;/p&gt;
+
+&lt;p&gt;Изображения нового экрана установки:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/786228834638626867/844785034178986004/Screenshot_20210520-105346_EKA2L1.jpg&quot; /&gt;
+	&lt;figcaption&gt;Экран установки устройства на Android&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+	&lt;img src=&quot;https://user-images.githubusercontent.com/25717050/118917060-445be380-b95a-11eb-8a70-6c4c8bb71578.png&quot; /&gt;
+	&lt;figcaption&gt;Экран установки устройства на ПК&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Если обнаруживается, что ROM не является S60v1, будет запрошено поле RPKG. Спасибо пользователям Play Store и Discord за их отзывы.&lt;/p&gt;
+
+&lt;h2 id=&quot;добавлена-фундаментальная-поддержка-s60v2&quot;&gt;Добавлена фундаментальная поддержка S60v2&lt;/h2&gt;
+
+&lt;p&gt;Об этом просило много людей. Эмулятор реализовал некоторые части систем S60v2, но, к сожалению, не все, и многие приложения и игры по-прежнему работают с ошибками или вообще не запускаются. Однако совместимость улучшилась.&lt;/p&gt;
+
+&lt;p&gt;S60v2 имеет три пакета функций, в которых представлены этапы перехода от EPOC. Они включают в себя попытку удаления структуры системных папок, удаление Windows-подобных поисков DLL, удаление приложений, изменения ROM, такие как жестко запрограммированное разрешение экрана внутри заголовков ROM. Таким образом, реализация S60v2 оказалась очень увлекательной.&lt;/p&gt;
+
+&lt;p&gt;Сжатие файлов DLL и EXE PETRAN также присутствует во многих приложениях. Некоторые функции все еще не работают должным образом, включая игры, которые правильно используют прямой доступ к экрану (DSA).&lt;/p&gt;
+
+&lt;p&gt;Вот несколько скриншотов игр, которые сейчас работают на эмуляторе, используя дамп устройства N70.&lt;/p&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840340705734033519/Screenshot_20210508-043257910.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835925072249618452/88.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835931179512496148/Screenshot_20210426-003110162.jpg&quot; /&gt;
+	&lt;figcaption&gt;Изображения предоставлены ericsonia и Ink321&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;img src=&quot;https://media.discordapp.net/attachments/703563521379663883/835942982699974686/Screenshot_20210426-011828204.jpg?width=285&amp;amp;height=593&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835918650602553424/7.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/835917090761342976/Screenshot_20210425-233538114.jpg&quot; /&gt;
+	&lt;figcaption&gt;Изображения предоставлены ericsonia и Ink321&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;добавлена-поддержка-s60v5-для-32-битной-версии&quot;&gt;Добавлена поддержка S60v5 для 32-битной версии&lt;/h2&gt;
+
+&lt;p&gt;S60v5 и S^3 требуют тяжелых операций VFP, поэтому раньше они не были реализованы в 32-битном JIT эмулятора. Недавно мы вернулись к этой теме, поскольку хост вообще не использует регистры VFP, мы уничтожаем весь банк регистров, но все равно отслеживаем, какие регистры загружаются/записываются.&lt;/p&gt;
+
+&lt;p&gt;Производительность 32-битного JIT фактически такая же, как и на реальном телефоне. Я не думаю, что у таких энтузиастов, как мы, были большие ожидания… Но мы надеемся, что вы сможете насладиться старыми добрыми приложениями на новом телефоне Android. Больше об этом и сказать нечего.&lt;/p&gt;
+
+&lt;h2 id=&quot;другие-мелкие-исправления&quot;&gt;Другие мелкие исправления&lt;/h2&gt;
+
+&lt;p&gt;Раньше не существовало дампов устройств с юникодом, но недавно нам дали китайские ROMы N70, и он работает не очень хорошо из-за того, что не отображает ничего для чтения. Копаясь в нем, мы пытались загрузить символы Unicode, но вообще не нашли информацию об их координатах в атласе текстур шрифта. Так что этот фикс позволил парню сыграть в Pocket Kingdom на китайском языке, лол.&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841236525442400256/Screenshot_20210510_165245_com.github.eka2l1.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/841206165320237126/unknown.png&quot; /&gt;
+	&lt;figcaption&gt;Кажется, история теперь может отображаться, вы также можете поиграть в Card Decks&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Другие запрошенные вещи включают игры, которые вообще не могут читать IMEI эмулятора. Этот IMEI генерируется случайным образом, лол. Но в этом не должно быть ничего плохого.&lt;/p&gt;
+
+&lt;p&gt;Чтобы получить IMEI, игры должны открыть информацию о телефоне с помощью API, который требует, чтобы вы указали имя получателя информации о телефоне (экземпляр создается из библиотеки DLL). Но эти старые игры иногда просто жестко программировали это имя получателя либо на «Calypso» для S60v1 (это кодовое имя Nokia 7650), либо на «DefaultPhone» на S60v2. Мы не загружаем эти модули по очевидной причине, что они получают информацию от драйвера. Таким образом, мы должны подделывать эти имена в зависимости от версии ОС…&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837025442631516170/111.png&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/837031936668467210/78.png&quot; /&gt;
+	&lt;figcaption&gt;Теперь вы можете играть в Legacy... И чтение IMEI из X-plore тоже работает&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;И последнее, о чем следует упомянуть, это то, что в некоторых играх наблюдается состояние гонки - они никогда не запускаются из-за того, как ОС планирует потоки. После того, как поток будет создан и возобновлен, ядро ​​немедленно изменит расписание, что может привести к запуску дочернего потока. Это приводит к ситуациям, когда родительский поток обращается к данным дочернего потока, который создается только тогда, когда дочерний поток запускается первым. Эмулятор исправлен, чтобы следовать этому поведению, что устраняет сбои в некоторых играх.&lt;/p&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840313459240992808/Screenshot_20210508-023938077.jpg&quot; /&gt;
+	&lt;img src=&quot;https://cdn.discordapp.com/attachments/703563521379663883/840298370576810045/78.png&quot; /&gt;
+	&lt;figcaption&gt;Spider Man: Toxic City и Virtuous Devil Saga теперь работают нормально&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Есть также несколько небольших исправлений, которые улучшают совместимость с приложениями S60v3 и S60v5, но мы не будем их здесь упоминать.&lt;/p&gt;
+
+&lt;h2 id=&quot;цели-для-005&quot;&gt;Цели для 0.0.5&lt;/h2&gt;
+
+&lt;p&gt;Мы надеемся в ближайшее время реализовать поддержку сервисов N-Gage (люди обычно называли это N-Gage 2.0). Раньше в ветке ng2 были наработки, но они очень костыльные и работают только с одной игрой, и это только речь об ее установке.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/25717050/118920571-de268f00-b960-11eb-8f52-87cb082dc09c.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Мы также хотим исправить проблемы с файловыми операциями, которые в настоящее время становятся вечными на Android 11 или почти не работают. Исправление будет выпущено, когда мы найдем время.&lt;/p&gt;
+
+&lt;h2 id=&quot;заключительные-примечания&quot;&gt;Заключительные примечания&lt;/h2&gt;
+
+&lt;p&gt;Версия для ПК будет иметь те же улучшения, что и Android, в настоящее время это реализуется. Но для Android вы можете найти стабильную версию эмулятора в &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.eka2l1&quot;&gt;Play Store&lt;/a&gt;. Надеюсь, вы хорошо проведете время с эмулятором.&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="android" /><category term="playstore" /><summary type="html">EKA2L1 обновлен до версии 0.0.4.</summary></entry><entry><title type="html">Эмулятор опубликован в Google Play Store!</title><link href="https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published.html" rel="alternate" type="text/html" title="Эмулятор опубликован в Google Play Store!" /><published>2021-04-14T05:00:00+00:00</published><updated>2021-04-14T05:00:00+00:00</updated><id>https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published</id><content type="html" xml:base="https://12l1.com/update/android/playstore/2021/04/14/Google-Play-Store-version-published.html">&lt;p&gt;Версия эмулятора для Google Play Store была одобрена и опубликована &lt;strong&gt;Play Software&lt;/strong&gt;. &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.github.eka2l1&quot;&gt;Ссылка для скачивания&lt;/a&gt;.
+Соответственно изменится и раздел «Скачать» на сайте.&lt;/p&gt;
+
+&lt;p&gt;Если вы не фанат передовых изменений и регулярных загрузок и переустановок APK из Github, эту версию в Google Play Store можно рассматривать как стабильный канал выпуска для эмулятора.
+Надеемся, вы и дальше будете поддерживать эмулятор.&lt;/p&gt;
+
+&lt;p&gt;Версия в Play Store основана на коммите &lt;a href=&quot;https://github.com/EKA2L1/EKA2L1/commit/5f1c68345e0ae4c8a84006fe86056a4fbb832c22&quot;&gt;5f1c683&lt;/a&gt; ветки &lt;em&gt;Master&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><category term="update" /><category term="android" /><category term="playstore" /><summary type="html">Версия эмулятора для Google Play Store была одобрена и опубликована Play Software. Ссылка для скачивания. Соответственно изменится и раздел «Скачать» на сайте.</summary></entry><entry><title type="html">Приглашаем переводчиков!</title><link href="https://12l1.com/jekyll/update/2021/01/25/translator_welcome.html" rel="alternate" type="text/html" title="Приглашаем переводчиков!" /><published>2021-01-25T14:30:00+00:00</published><updated>2021-01-25T14:30:00+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/25/translator_welcome</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/25/translator_welcome.html">&lt;p&gt;Сайт приглашает желающих перевести контент на свой язык. Для этого перейдите к &lt;a href=&quot;https://github.com/EKA2L1/eka2l1.github.io&quot;&gt;&lt;strong&gt;исходному коду веб-сайта&lt;/strong&gt;&lt;/a&gt;
+и прочтите README.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Сайт приглашает желающих перевести контент на свой язык. Для этого перейдите к исходному коду веб-сайта и прочтите README.</summary></entry><entry><title type="html">32-битный Android теперь поддерживается!</title><link href="https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support.html" rel="alternate" type="text/html" title="32-битный Android теперь поддерживается!" /><published>2021-01-25T14:30:00+00:00</published><updated>2021-01-25T14:30:00+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/25/32-bit-android-support.html">&lt;p&gt;В последней версии EKA2L1 добавлена ​​поддержка &lt;strong&gt;32-битного Android&lt;/strong&gt;. Перейдите к загрузке APK, как обычно, в разделе &lt;a href=&quot;/download&quot;&gt;&lt;strong&gt;Скачать&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Пожалуйста, обратите внимание:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;На данный момент поддерживаются только приложения S60v3 и S60v1.&lt;/li&gt;
+  &lt;li&gt;Не все 32-битные устройства Android могут запускать эмулятор, хотя ожидаемые характеристики довольно низкие.
+Пожалуйста, проверьте &lt;em&gt;минимальные требования&lt;/em&gt; для Android на странице &lt;a href=&quot;/quickstart&quot;&gt;&lt;strong&gt;Установка&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Рекомендуется использовать &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.cpuid.cpu_z&quot;&gt;&lt;strong&gt;CPU-Z&lt;/strong&gt;&lt;/a&gt;, чтобы получить статистику по телефону и сравнить ее с минимальными требованиями.&lt;/p&gt;
+
+&lt;h3 id=&quot;небольшие-примечания&quot;&gt;Небольшие примечания&lt;/h3&gt;
+
+&lt;p&gt;Ранее поддержка отсутствовала, потому что не было эмулятора процессора ARM, поддерживающего &lt;strong&gt;32-разрядную архитектуру ARM&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Эмулятор процессора, который мы используем &lt;a href=&quot;https://github.com/MerryMage/Dynarmic&quot;&gt;(Dynarmic)&lt;/a&gt;, в настоящее время поддерживает &lt;strong&gt;64-разрядную архитектуру ARM (AArch64)&lt;/strong&gt; и &lt;strong&gt;x86_64&lt;/strong&gt;.
+Недавно мы написали собственный эмулятор процессора, он не самый оптимизированный, но, похоже, работает прилично.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">В последней версии EKA2L1 добавлена ​​поддержка 32-битного Android. Перейдите к загрузке APK, как обычно, в разделе Скачать.</summary></entry><entry><title type="html">Новый сайт!</title><link href="https://12l1.com/jekyll/update/2021/01/19/new-website.html" rel="alternate" type="text/html" title="Новый сайт!" /><published>2021-01-19T10:30:52+00:00</published><updated>2021-01-19T10:30:52+00:00</updated><id>https://12l1.com/jekyll/update/2021/01/19/new-website</id><content type="html" xml:base="https://12l1.com/jekyll/update/2021/01/19/new-website.html">&lt;p&gt;Это наш сайт. Здесь вы можете узнать про новые анонсы!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Это наш сайт. Здесь вы можете узнать про новые анонсы!</summary></entry></feed>

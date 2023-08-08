@@ -1,0 +1,418 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <script>
+    let isLightSaved = localStorage.getItem('isThemeLight');
+    if (isLightSaved != null && isLightSaved != undefined) {
+        document.documentElement.className = (isLightSaved == "true") ? "light-theme" : "dark-theme";
+    }
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="/css/main.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3203591900745886" crossorigin="anonymous"></script>
+
+<meta name="author" content="EKA2L1">
+<meta name="copyright" content="EKA2L1">
+<meta name="description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:title" content="An experimental Symbian OS Emulator/N-Gage emulator">
+<meta property="og:description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:image" content="/assets/main/duck_tank.png">
+<meta property="og:url" content="/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EKA2L1 - A Symbian OS/N-Gage emulator">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/assets/main/duck_tank.png"></link>
+
+
+<title>Quickstart - EKA2L1 - Symbian OS Emulator/N-Gage emulator</title>
+
+
+<script>
+    function setTheme(themeLight) {
+      localStorage.setItem('isThemeLight', themeLight);
+      document.documentElement.className = themeLight ? 'light-theme' : 'dark-theme';
+      $('#toggle-checkbox').prop('checked', themeLight);
+    }
+    $(function(){
+        $(document).on('change', '.langpick', function(obj) {
+            obj.preventDefault();
+            window.location = $(this).find('option:selected').val();
+        });
+        $('#toggle-checkbox').change(function(evt) {
+          setTheme(evt.target.checked);
+        })
+        let isLightSaved = localStorage.getItem('isThemeLight');
+        let darkScheme = null;
+        if (window.matchMedia) {
+          darkScheme = window.matchMedia('(prefer-color-scheme: dark)');
+        }
+        if (isLightSaved == null || isLightSaved == undefined) {
+          if (darkScheme && darkScheme.matches) {
+            setTheme(false);
+          } else {
+            setTheme(true);
+          }
+        } else {
+          setTheme(isLightSaved == "true");
+        }
+        if (darkScheme) {
+          try {
+            darkScheme.addEventListener('change', event => {
+              setTheme(event.matches ? false : true);
+            });
+          } catch (e) {
+            darkScheme.addListener(event => {  
+              setTheme(event.matches ? false : true);
+            });
+          }
+        }
+    });
+</script>
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <nav class="navbar navbar-dark bg-faded justify-content-center sticky-top navbar-expand-lg">
+  <div class="container pl-3">
+    <div class="d-inline col-md-4 col-sm-8 justify-content-left">
+      <a class="navbar-brand d-inline" href="/zh-cn">
+          <img class="brand-logo lazy" src="/assets/main/duck_tank.png">EKA2L1</img>
+      </a>
+    
+      <select class="langpick col-md-3" style="margin-left: 2px"; data-width="fit">
+        
+          <option value='/quickstart/'
+            >English</option>
+        
+          <option value='/zh-cn/quickstart/'
+            selected>简体中文</option>
+        
+          <option value='/vi/quickstart/'
+            >Tiếng Việt</option>
+        
+          <option value='/es/quickstart/'
+            >Español</option>
+        
+          <option value='/pt-br/quickstart/'
+            >Português</option>
+        
+          <option value='/ru/quickstart/'
+            >Русский</option>
+        
+          <option value='/id/quickstart/'
+            >Indonesia</option>
+        
+          <option value='/it/quickstart/'
+            >Italiano</option>
+        
+      </select>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Expand">
+        <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"><li class="nav-item">
+                    <a class="nav-link" href="/zh-cn/">
+                    
+                        首页
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/zh-cn/download/">
+                    
+                        下载
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/zh-cn/quickstart/">
+                    
+                        快速开始
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/zh-cn/screenshots/">
+                    
+                        截图
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/zh-cn/posts/">
+                    
+                        帖子
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/zh-cn/docs/">
+                    
+                        Documents
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://eka2l1.miraheze.org/wiki/Main_Page">
+                    
+                        Wiki
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://github.com/EKA2L1/EKA2L1">
+                    
+                        GitHub
+                    </a>
+                </li></ul>
+
+        <div class="navbar-divider d-none d-lg-block">&nbsp;</div>
+        <ul class="navbar-nav nav-right justify-content-end">
+          <li class="nav-item nav-link d-flex align-items-center">
+            <input type="checkbox" class="toggle-checkbox" id="toggle-checkbox" autocompleted>
+            <label for="toggle-checkbox" class="toggle-label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <span class="toggle-label-ball"></span>
+            </label>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container mt-3 d-block flex-grow-1">
+        
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Quickstart">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://12l1.com/quickstart/" class="u-url" itemprop="url">Quickstart
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <div class="container d-block">
+            <div class="row justify-content-left">
+                <!--I can't find order-sm!!!!! It simply does not exist online :o-->
+                <div class="col-md-3 col-sm-12 order-md-2">
+                    <aside class="sidebar__right sticky">
+                        <nav class="toc">
+                            <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+                            <ul class="toc__menu">
+  <li><a href="#设备要求">设备要求</a>
+    <ul>
+      <li><a href="#电脑版本">电脑版本:</a>
+        <ul>
+          <li><a href="#最低要求">最低要求</a></li>
+          <li><a href="#推荐配置">推荐配置</a></li>
+        </ul>
+      </li>
+      <li><a href="#android版本">Android版本:</a>
+        <ul>
+          <li><a href="#最低要求-1">最低要求</a></li>
+          <li><a href="#推荐配置-1">推荐配置</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#安装">安装</a>
+    <ul>
+      <li><a href="#您需要">您需要:</a></li>
+      <li><a href="#设置">设置:</a></li>
+      <li><a href="#在eka2l1上安装新设备">在EKA2L1上安装新设备</a></li>
+      <li><a href="#改变数据目录">改变数据目录:</a></li>
+    </ul>
+  </li>
+</ul>
+
+                        </nav>
+                    </aside>
+                </div>
+                <div class="col-md-9 col-sm-12 order-md-1 pe-md-5">
+                    <p>请使用 <em>目录</em> 来找到您所需要的部分.</p>
+
+<h1 id="设备要求"><strong>设备要求</strong></h1>
+
+<h2 id="电脑版本">电脑版本:</h2>
+
+<h3 id="最低要求">最低要求</h3>
+
+<ul>
+  <li><strong>操作系统:</strong> 请使用 <strong>64-bit 操作系统</strong>. 对于<strong>Windows</strong>, 你必须有<em>Windows 7</em>及以上版本</li>
+  <li><strong>处理器:</strong> 任何生产于2007年之后的CPU，比如说<strong>Core 2 Duo E4300</strong></li>
+  <li><strong>内存:</strong> 至少2GB内存</li>
+  <li><strong>显卡:</strong> 任何兼容OpenGL 3.1或更高版本的GPU.</li>
+</ul>
+
+<h3 id="推荐配置">推荐配置</h3>
+
+<ul>
+  <li><strong>OS:</strong> Using a <strong>64-bit OS</strong>. For <strong>Windows</strong>, 建议使用<em>Windows 10</em></li>
+  <li><strong>处理器:</strong> 任何4核以上的英特尔或AMD CPU</li>
+  <li><strong>内存:</strong> 4GB以上内存</li>
+  <li><strong>显卡:</strong> 任何兼容OpenGL 3.3或更高版本的GPU.</li>
+</ul>
+
+<h2 id="android版本">Android版本:</h2>
+
+<h3 id="最低要求-1">最低要求</h3>
+
+<ul>
+  <li><strong>操作系统:</strong> Android5.0 32位</li>
+  <li><strong>处理器:</strong> 任何ARMv7 CPU或更高. <strong>不支持ARMv6以下!</strong></li>
+  <li><strong>内存:</strong> 至少2GB内存</li>
+  <li><strong>显卡:</strong> 任何兼容OpenGL ES 3.0的GPU或更高版本</li>
+</ul>
+
+<h3 id="推荐配置-1">推荐配置</h3>
+<ul>
+  <li><strong>操作系统:</strong> Android 7.0 64位(32位是实验性的)</li>
+  <li><strong>处理器:</strong> ARMv8 CPU</li>
+  <li><strong>内存:</strong> 4GB以上内存</li>
+  <li><strong>显卡:</strong> 任何兼容OpenGL ES 3.2或更高版本的GPU</li>
+</ul>
+
+<h1 id="安装">安装</h1>
+<h2 id="您需要">您需要:</h2>
+<ul>
+  <li>ROM (任何设备).</li>
+  <li>要想从Z驱动器打包(与ROM被转储的设备相同)。请参阅<a href="https://github.com/EKA2L1/EKA2L1/wiki/Dumping-the-ROM-and-ROFS">Dumping section on Wiki</a> 了解如何转储。</li>
+</ul>
+
+<h2 id="设置">设置:</h2>
+<ul>
+  <li>构建一个或者 <a href="https://12z1.com/download/">下载</a> EKA2L1.</li>
+  <li>你可以直接启动 EKA2L1  并通过GUI与模拟器交互, 或者直接通过命令行交互。</li>
+  <li>如果您想通过命令行交互，并且需要命令列表，请使用–help命令.</li>
+  <li>通过Files/Install device安装新设备。</li>
+</ul>
+
+<h2 id="在eka2l1上安装新设备">在EKA2L1上安装新设备</h2>
+<ul>
+  <li>EKA2L1有一个用于安装新设备的GUI。您可以使用GUI，从菜单栏转到Files/Install device。
+<img src="https://camo.githubusercontent.com/08fa49e5578f4045abc98a0cec22bd4bb8cc52480eb3ffab5ed3bee28f7b0e0c/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3536353139363435373433353539343735352f3730303235303631373233383635303937312f756e6b6e6f776e2e706e67" alt="installdevice" /></li>
+  <li>你的同伴En会指导你完成安装. 如果由于<strong>闪退</strong>出现<strong>突然崩溃</strong>或<strong>设备恢复安装</strong>，请<strong>联系开发人员</strong>以获得支持和修复。</li>
+  <li>如果确定Symbian版本失败了，您还应该联系开发人员帮助改进这个自动化过程。</li>
+</ul>
+
+<h2 id="改变数据目录">改变数据目录:</h2>
+<ul>
+  <li>尝试将数据存储在单个文件夹中。默认情况下，它是一个名为“data”的文件夹，与可执行文件在同一目录下。您可以通过文件/首选项中的GUI更改路径，或更改路径 <strong>config.yml</strong> 与关键 <strong>数据存储</strong>。
+—注意不会移动数据文件夹。你只能自行移动。</li>
+</ul>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+      </div>
+
+      <footer class="container mt-3">
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+         <div class="row pt-2 d-flex pb-4 ms-1">
+   <div class="col-md-6 col-sm-12 d-flex">
+      <p><b>&copy; 2023 EKA2L1. Powered by <a href="https://jekyllrb.com" rel="nofollow"> Jekyll</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://mdbootstrap.com/" rel="nofollow">MDBootstrap</a></b></p>
+   </div>
+   <div class="col-md-6 col-sm-12 d-flex justify-content-md-end icons">
+      <strong></strong>
+
+      
+        
+          
+            <a href="https://github.com/eka2l1/eka2l1" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-fw fa-github" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://discord.gg/5Bm5SJ9" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-discord" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://www.youtube.com/channel/UCCdPQT6Le2xw_z9cutkVwyA" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-youtube" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="mailto:cc@12l1.com" rel="nofollow noopener noreferrer"><i class="footer-icon fas fa-envelope" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://github.com/EKA2L1/eka2l1.github.io" rel="nofollow noopener noreferrer"><i class="footer-icon fa fa-globe" aria-hidden="true"></i></a>
+          
+        
+      
+    
+      <a href="/feed.xml"><i class="footer-icon fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
+   </div>
+</div>
+      </footer>
+
+      
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

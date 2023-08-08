@@ -1,0 +1,675 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <script>
+    let isLightSaved = localStorage.getItem('isThemeLight');
+    if (isLightSaved != null && isLightSaved != undefined) {
+        document.documentElement.className = (isLightSaved == "true") ? "light-theme" : "dark-theme";
+    }
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="/css/main.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3203591900745886" crossorigin="anonymous"></script>
+
+<meta name="author" content="EKA2L1">
+<meta name="copyright" content="EKA2L1">
+<meta name="description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:title" content="An experimental Symbian OS Emulator/N-Gage emulator">
+<meta property="og:description" content="A Symbian OS Emulator/N-Gage emulator. Allow you to play all Symbian, N-Gage and N-Gage 2.0 apps or games on your desktop or your morden smartphone (Android).">
+<meta property="og:image" content="/assets/main/duck_tank.png">
+<meta property="og:url" content="/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EKA2L1 - A Symbian OS/N-Gage emulator">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/assets/main/duck_tank.png"></link>
+
+
+<title>Quickstart - EKA2L1 - Symbian OS Emulator/N-Gage emulator</title>
+
+
+<script>
+    function setTheme(themeLight) {
+      localStorage.setItem('isThemeLight', themeLight);
+      document.documentElement.className = themeLight ? 'light-theme' : 'dark-theme';
+      $('#toggle-checkbox').prop('checked', themeLight);
+    }
+    $(function(){
+        $(document).on('change', '.langpick', function(obj) {
+            obj.preventDefault();
+            window.location = $(this).find('option:selected').val();
+        });
+        $('#toggle-checkbox').change(function(evt) {
+          setTheme(evt.target.checked);
+        })
+        let isLightSaved = localStorage.getItem('isThemeLight');
+        let darkScheme = null;
+        if (window.matchMedia) {
+          darkScheme = window.matchMedia('(prefer-color-scheme: dark)');
+        }
+        if (isLightSaved == null || isLightSaved == undefined) {
+          if (darkScheme && darkScheme.matches) {
+            setTheme(false);
+          } else {
+            setTheme(true);
+          }
+        } else {
+          setTheme(isLightSaved == "true");
+        }
+        if (darkScheme) {
+          try {
+            darkScheme.addEventListener('change', event => {
+              setTheme(event.matches ? false : true);
+            });
+          } catch (e) {
+            darkScheme.addListener(event => {  
+              setTheme(event.matches ? false : true);
+            });
+          }
+        }
+    });
+</script>
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">    
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <nav class="navbar navbar-dark bg-faded justify-content-center sticky-top navbar-expand-lg">
+  <div class="container pl-3">
+    <div class="d-inline col-md-4 col-sm-8 justify-content-left">
+      <a class="navbar-brand d-inline" href="/ru">
+          <img class="brand-logo lazy" src="/assets/main/duck_tank.png">EKA2L1</img>
+      </a>
+    
+      <select class="langpick col-md-3" style="margin-left: 2px"; data-width="fit">
+        
+          <option value='/quickstart/'
+            >English</option>
+        
+          <option value='/zh-cn/quickstart/'
+            >简体中文</option>
+        
+          <option value='/vi/quickstart/'
+            >Tiếng Việt</option>
+        
+          <option value='/es/quickstart/'
+            >Español</option>
+        
+          <option value='/pt-br/quickstart/'
+            >Português</option>
+        
+          <option value='/ru/quickstart/'
+            selected>Русский</option>
+        
+          <option value='/id/quickstart/'
+            >Indonesia</option>
+        
+          <option value='/it/quickstart/'
+            >Italiano</option>
+        
+      </select>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Expand">
+        <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"><li class="nav-item">
+                    <a class="nav-link" href="/ru/">
+                    
+                        Главная
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/download/">
+                    
+                        Скачать
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/quickstart/">
+                    
+                        Установка
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/screenshots/">
+                    
+                        Скриншоты
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/posts/">
+                    
+                        Блог
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="/ru/docs/">
+                    
+                        Documents
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://eka2l1.miraheze.org/wiki/Main_Page">
+                    
+                        Wiki
+                    </a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="https://github.com/EKA2L1/EKA2L1">
+                    
+                        GitHub
+                    </a>
+                </li></ul>
+
+        <div class="navbar-divider d-none d-lg-block">&nbsp;</div>
+        <ul class="navbar-nav nav-right justify-content-end">
+          <li class="nav-item nav-link d-flex align-items-center">
+            <input type="checkbox" class="toggle-checkbox" id="toggle-checkbox" autocompleted>
+            <label for="toggle-checkbox" class="toggle-label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <span class="toggle-label-ball"></span>
+            </label>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container mt-3 d-block flex-grow-1">
+        
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Quickstart">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://12l1.com/quickstart/" class="u-url" itemprop="url">Quickstart
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <div class="container d-block">
+            <div class="row justify-content-left">
+                <!--I can't find order-sm!!!!! It simply does not exist online :o-->
+                <div class="col-md-3 col-sm-12 order-md-2">
+                    <aside class="sidebar__right sticky">
+                        <nav class="toc">
+                            <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+                            <ul class="toc__menu">
+  <li><a href="#требования">Требования</a>
+    <ul>
+      <li><a href="#для-пк-версии">Для ПК версии:</a>
+        <ul>
+          <li><a href="#минимум">Минимум</a></li>
+          <li><a href="#рекомендуемые">Рекомендуемые</a></li>
+        </ul>
+      </li>
+      <li><a href="#для-android-версии">Для Android версии:</a>
+        <ul>
+          <li><a href="#минимум-1">Минимум</a></li>
+          <li><a href="#рекомендуемые-1">Рекомендуемые</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#установка">Установка</a>
+    <ul>
+      <li><a href="#подготовка-файлов">Подготовка файлов</a>
+        <ul>
+          <li><a href="#для-устройств-s60v1-и-s60v2-n-gage-n70-и-тд">Для устройств S60v1 и S60v2 (N-Gage, N70, и т.д.)</a></li>
+          <li><a href="#для-s60v3-и-выше-5320-5800-n97-устройства-совместимые-с-n-gage-20-и-тд">Для S60v3 и выше (5320, 5800, N97, устройства, совместимые с N-Gage 2.0, и т.д.)</a></li>
+        </ul>
+      </li>
+      <li><a href="#установка-устройства">Установка устройства</a>
+        <ul>
+          <li><a href="#для-пк-windows-macos-linux">Для ПК (Windows, MacOS, Linux)</a></li>
+          <li><a href="#для-android">Для Android</a></li>
+        </ul>
+      </li>
+      <li><a href="#установка-пакета-sis">Установка пакета (SIS)</a>
+        <ul>
+          <li><a href="#важное-примечание">Важное примечание</a></li>
+          <li><a href="#для-пк">Для ПК</a></li>
+          <li><a href="#для-android-1">Для Android</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#управление-устройствами">Управление устройствами</a>
+    <ul>
+      <li><a href="#для-пк-windows-macos-linux-1">Для ПК (Windows, MacOS, Linux)</a></li>
+      <li><a href="#для-android-2">Для Android</a></li>
+    </ul>
+  </li>
+  <li><a href="#изменение-каталога-данных">Изменение каталога данных</a></li>
+  <li><a href="#другие-вопросы">Другие вопросы</a>
+    <ul>
+      <li><a href="#где-я-могу-найти-больше-руководств">Где я могу найти больше руководств?</a></li>
+      <li><a href="#я-не-могу-найти-romrpkg-или-установить-их-всегда-происходят-ошибки">Я не могу найти ROM/RPKG или установить их, всегда происходят ошибки!</a></li>
+      <li><a href="#у-вас-есть-видео-с-пошаговой-настройкой">У вас есть видео с пошаговой настройкой?</a></li>
+    </ul>
+  </li>
+</ul>
+
+                        </nav>
+                    </aside>
+                </div>
+                <div class="col-md-9 col-sm-12 order-md-1 pe-md-5">
+                    <p>Воспользуйтесь <em>оглавлением</em>, чтобы перейти к нужному разделу.</p>
+
+<h1 id="требования">Требования</h1>
+
+<h2 id="для-пк-версии">Для ПК версии:</h2>
+
+<h3 id="минимум">Минимум</h3>
+
+<ul>
+  <li><strong>ОС:</strong> <strong>64-разрядная ОС</strong>. Для <strong>Windows</strong> необходимо иметь версию <em>Windows 7</em> и выше.</li>
+  <li><strong>Процессор:</strong> Любой 64-битный CPU примерно с 2007 года, начиная с <strong>Core 2 Duo E4300</strong></li>
+  <li><strong>Память:</strong> минимум 2 ГБ ОЗУ</li>
+  <li><strong>Видеокарта:</strong> Любой GPU, совместимый с OpenGL 3.1 или выше.</li>
+</ul>
+
+<h3 id="рекомендуемые">Рекомендуемые</h3>
+
+<ul>
+  <li><strong>ОС:</strong> <strong>64-разрядная ОС</strong>. Для <strong>Windows</strong> рекомендуется использовать <em>Windows 10</em>.</li>
+  <li><strong>Процессор:</strong> Любой CPU Intel или AMD с 4 ядрами и выше</li>
+  <li><strong>Память:</strong> 4 ГБ ОЗУ или больше</li>
+  <li><strong>Видеокарта:</strong> Любой GPU, совместимый с OpenGL 3.3 или выше.</li>
+</ul>
+
+<h2 id="для-android-версии">Для Android версии:</h2>
+
+<h3 id="минимум-1">Минимум</h3>
+
+<ul>
+  <li><strong>ОС:</strong> Android 5.0 32-разрядный</li>
+  <li><strong>Процессор:</strong> Любой CPU ARMv7 или выше. <strong>ARMv6 и более ранние версии не поддерживаются!</strong></li>
+  <li><strong>Память:</strong> минимум 2 ГБ ОЗУ</li>
+  <li><strong>Видеокарта:</strong> Любой GPU, совместимый с OpenGL ES 3.0 или выше</li>
+</ul>
+
+<h3 id="рекомендуемые-1">Рекомендуемые</h3>
+<ul>
+  <li><strong>ОС:</strong> Android 7.0 64-разрядный (32-разрядная версия эмулятора является экспериментальной)</li>
+  <li><strong>Процессор:</strong> CPU ARMv8</li>
+  <li><strong>Память:</strong> 4 ГБ ОЗУ или больше</li>
+  <li><strong>Видеокарта:</strong> Любой GPU, совместимый с OpenGL ES 3.2 или выше</li>
+</ul>
+
+<h1 id="установка">Установка</h1>
+
+<h2 id="подготовка-файлов">Подготовка файлов</h2>
+
+<h3 id="для-устройств-s60v1-и-s60v2-n-gage-n70-и-тд">Для устройств S60v1 и S60v2 (N-Gage, N70, и т.д.)</h3>
+<ul>
+  <li>ROM (любые устройства).</li>
+  <li>RPKG
+    <ul>
+      <li>Это кастомный контейнер диска Z (того же девайса, с которого был скачан ROM). См. <a href="https://github.com/EKA2L1/EKA2L1/wiki/Dumping-the-ROM-and-ROFS">раздел Дампинг в Wiki</a>, чтобы узнать, как его получить.</li>
+      <li>Файл может понадобиться только для устройств S60v2. Эмулятор запросит его во время установки, если обнаружит, что файла ROM недостаточно.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="для-s60v3-и-выше-5320-5800-n97-устройства-совместимые-с-n-gage-20-и-тд">Для S60v3 и выше (5320, 5800, N97, устройства, совместимые с N-Gage 2.0, и т.д.)</h3>
+
+<p>Вы можете выбрать один из двух вариантов:</p>
+
+<ul>
+  <li>ROM и RPKG устройства (так же, как для S60v1 и S60v2)</li>
+  <li>Прошивка целевого устройства. <strong>Убедитесь</strong>, что в полученной вами прошивке также есть файл VPL.</li>
+</ul>
+
+<p>На данный момент для пользователей, интересующихся только N-Gage 2.0, Nokia 5320 является наиболее поддерживаемым устройством для этой цели.</p>
+
+<h2 id="установка-устройства">Установка устройства</h2>
+
+<ul>
+  <li>Сначала соберите или <a href="https://12z1.com/download/">скачайте</a> EKA2L1 для вашей платформы.</li>
+</ul>
+
+<h3 id="для-пк-windows-macos-linux">Для ПК (Windows, MacOS, Linux)</h3>
+
+<ul>
+  <li>Запустите эмулятор с аргументом командной строки  <strong>–help</strong>, если вы хотите взаимодействовать через командную строку и вам нужен список команд.</li>
+  <li>Чтобы установить новое устройство, перейдите в <em>Файл/Установить/Устройство</em> или следуйте диалоговому окну, которое появляется при первом запуске эмулятора.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog.png" alt="Диалог установки устройства" /><figcaption>
+      Диалог установки устройства
+
+    </figcaption></figure>
+
+<ul>
+  <li>В этом диалоге:
+    <ul>
+      <li>Если вы подготовили ROM (и RPKG, если необходимо), выберите метод установки <strong>Дамп устройства</strong> и щелкните первый <em>Обзор</em>, чтобы выбрать ROM. Если эмулятор обнаружит, что одного ROM недостаточно, появится поле выбора RPKG.</li>
+    </ul>
+    <figure class="">
+<img src="/assets/quickstart/en/device_dialog_with_rpkg.png" alt="Поле RPKG отображается с выбранным ROM 5320" /><figcaption>
+    Поле RPKG отображается с выбранным ROM 5320
+
+  </figcaption></figure>
+
+    <ul>
+      <li>Если вы подготовили прошивку, выберите метод установки <strong>Прошивка (VPL)</strong>. Метка ROM будет переименована в VPL, и затем вы можете нажать <em>Обзор</em>, чтобы выбрать VPL, поставляемый вместе с прошивкой.</li>
+    </ul>
+    <figure class="">
+<img src="/assets/quickstart/en/device_dialog_vpl.png" alt="Диалог установки VPL" /><figcaption>
+    Диалог установки VPL
+
+  </figcaption></figure>
+
+    <ul>
+      <li><strong>Примечание</strong>: Рекомендуется, чтобы ваш путь не содержал Unicode или других специальных символов, разработчики пытаются сделать эмулятор более совместимым с путями Unicode, но пока эмулятор не будет работать с ними должным образом.</li>
+    </ul>
+  </li>
+  <li>После того, как вы заполнили все пути, нажмите <em>Установить</em>. Если вы хотите отменить установку, вы можете нажать кнопку <em>Отмена</em> рядом с <em>Установить</em>.
+    <ul>
+      <li>Для метода установки <strong>Дамп устройства</strong> можно дождаться завершения индикатора выполнения и появления диалогового окна об успешной установке.</li>
+      <li>Для метода <strong>Прошивка(VPL)</strong> может потребоваться выбрать вариант прошивки. Обычно это связано с регионом устройства и его стилем (черный или красный) и не имеет большого значения для эмулятора. После этого происходит тот же процесс, что и в <strong>Дамп устройства</strong>.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_dialog_install_success.png" alt="Диалог успешной установки" /><figcaption>
+      Диалог успешной установки
+
+    </figcaption></figure>
+
+<ul>
+  <li>Если у вас появилось диалоговое окно, как на скриншоте выше, это означает, что установка устройства завершена.</li>
+</ul>
+
+<h3 id="для-android">Для Android</h3>
+
+<ul>
+  <li>При первом запуске эмулятора должно появиться диалоговое окно с запросом на установку устройства. Нажмите кнопку <em>Установить</em>, чтобы быстро перейти к <strong>Диспетчеру устройств</strong>.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_device_install_request.jpg" alt="Диалог запроса установки" /><figcaption>
+      Диалог запроса установки
+
+    </figcaption></figure>
+
+<ul>
+  <li>Если диалоговое окно не появляется, нажмите три точки в правом верхнем углу экрана и выберите <strong>Устройства</strong>.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_devices_activity.jpg" alt="Экран устройств Android" /><figcaption>
+      Экран устройств Android
+
+    </figcaption></figure>
+
+<ul>
+  <li>На этом экране:
+    <ul>
+      <li>
+        <p>Если вы подготовили ROM (и RPKG, если необходимо), выберите метод установки <strong>Дамп устройства</strong> и нажмите кнопку <em>ROM</em>, чтобы выбрать подготовленный ROM. Если эмулятор обнаружит, что одного ROM недостаточно, появится поле RPKG.</p>
+      </li>
+      <li>
+        <p>Если вы подготовили прошивку, выберите метод установки <strong>Прошивка (VPL)</strong>. Кнопка ROM будет переименована в VPL, и затем вы можете нажать кнопку <em>VPL</em>, чтобы выбрать VPL, который поставляется вместе с прошивкой.</p>
+      </li>
+    </ul>
+
+    <figure class="">
+<img src="/assets/quickstart/en/android_device_all_choosen.jpg" alt="Все пути к файлам заполнены" /><figcaption>
+    Все пути к файлам заполнены
+
+  </figcaption></figure>
+  </li>
+  <li>После того, как вы заполнили все пути, нажмите <em>Установить</em>. Вы можете отменить эту операцию, только выйдя из приложения. Никаких дальнейших действий не потребуется, пока во всплывающем уведомлении не появиться сообщение, что установка прошла успешно или возникла ошибка.</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_new_device_appears.jpg" alt="Новое устройство появилось после установки" /><figcaption>
+      Новое устройство появилось после установки
+
+    </figcaption></figure>
+
+<ul>
+  <li><strong>Примечание:</strong> На Android 11 и более поздних версиях эмулятор может сильно замедлиться при установке устройства из-за ограничений, которые Google применяет к файлам за пределами приватной папки приложения (операции с файлами очень медленные). Мы все еще придумываем подходящее решение для эмулятора.</li>
+</ul>
+
+<p>Если вы столкнулись с ошибкой во время установки, посетите сервер <a href="https://discord.gg/5Bm5SJ9">Discord</a>, чтобы получить поддержку.</p>
+
+<h2 id="установка-пакета-sis">Установка пакета (SIS)</h2>
+
+<h3 id="важное-примечание">Важное примечание</h3>
+
+<ul>
+  <li>Обратите внимание, что перед выполнением этих шагов настоятельно рекомендуется сначала установить и выбрать целевое устройство, на котором вы хотите установить SIS.</li>
+</ul>
+
+<h3 id="для-пк">Для ПК</h3>
+
+<ul>
+  <li>Перейдите в <em>Файл/Установить/Пакет</em> и выберите SIS, который вы хотите установить.</li>
+</ul>
+
+<h3 id="для-android-1">Для Android</h3>
+
+<ul>
+  <li>Нажмите <strong>большую зеленую кнопку <code class="language-plaintext highlighter-rouge">+</code></strong> в правом нижнем углу главного экрана (списка приложений) и выберите SIS, который вы хотите установить.</li>
+</ul>
+
+<h1 id="управление-устройствами">Управление устройствами</h1>
+
+<p>Эмулятор позволяет пользователям устанавливать несколько устройств, а также поддерживает переключение между устройствами. Это необходимо, если вы хотите использовать приложения на разных платформах <em>(S60v1, S60v3)</em> без необходимости в новом экземпляре эмулятора с новым экземпляром папки данных.</p>
+
+<h2 id="для-пк-windows-macos-linux-1">Для ПК (Windows, MacOS, Linux)</h2>
+
+<p>Перейдите в <em>Файл/Настройки</em> и выберите вкладку <em>Система</em>. В разделе <em>Устройства</em> перечислены все установленные устройства.</p>
+
+<figure class="">
+  <img src="/assets/quickstart/en/device_manager.png" alt="Раздел диспетчера устройств" /><figcaption>
+      Раздел диспетчера устройств
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Нажмите на поле со списком и выберите устройство, которое хотите запустить. Изменения вступят в силу немедленно.</p>
+  </li>
+  <li>
+    <p>Вы также можете переименовать устройство. Нажмите кнопку <strong>Переименовать</strong> и введите новое имя в диалоговом окне ввода.</p>
+  </li>
+  <li>
+    <p>Используйте функцию <strong>Пересканировать устройства</strong>, чтобы обнаружить установленные устройства, которые не отображаются в поле со списком.</p>
+  </li>
+  <li>
+    <p>Используйте <strong>Проверить текущее устройство</strong>, чтобы обнаружить любые ошибки в устройстве и исправить их, чтобы устройство работало в эмуляторе. Если устройство по-прежнему не запускается, это означает, что оно либо еще не поддерживается, либо возникла другая ошибка, вы можете связаться с нами для получения дополнительной информации.</p>
+  </li>
+</ul>
+
+<h2 id="для-android-2">Для Android</h2>
+
+<p>Предыдущий экран, на котором вы устанавливали устройства, также является экраном диспетчера устройств. Давайте посмотрим на него еще раз.</p>
+
+<figure class="">
+  <img src="/assets/quickstart/en/android_new_device_appears.jpg" alt="Экран устройств" /><figcaption>
+      Экран устройств
+
+    </figcaption></figure>
+
+<ul>
+  <li>
+    <p>Нажмите на список и выберите устройство, которое хотите запустить. Изменения вступят в силу немедленно.</p>
+  </li>
+  <li>
+    <p>Вы также можете переименовать устройство. Нажмите кнопку <strong>Переименовать</strong> и введите новое имя в диалоговом окне ввода.</p>
+  </li>
+  <li>
+    <p>В настоящее время отсутствуют кнопки повторного сканирования или кнопки для проверки устройства, как на ПК.</p>
+  </li>
+</ul>
+
+<h1 id="изменение-каталога-данных">Изменение каталога данных</h1>
+
+<p><strong>Примечание:</strong> Поддерживается только на ПК. Любые сбои, возникшие в результате этого на Android, нами не рассматриваются.</p>
+
+<p>По умолчанию EKA2L1 хранит данные в папке <strong>data</strong>, находящейся в том же месте, что и исполняемый файл <em>(eka2l1_qt.exe)</em>. Однако, если места мало или вы просто хотите переместить данные в более удобное место, вы можете сделать это, выполнив следующие действия:</p>
+
+<ol>
+  <li>
+    <p>Переместите текущую папку с данными в желаемое место. <strong>Убедитесь</strong>, что эмулятор закрыт.</p>
+  </li>
+  <li>
+    <p>Измените путь к сохраненным данным эмулятора.</p>
+
+    <ul>
+      <li>Через пользовательский интерфейс: перейдите в <em>Файл/Настройки/Общее</em>. Вы увидите раздел <strong>Данные</strong> вверху, нажмите кнопку <strong>Обзор</strong>, чтобы выбрать новое местоположение, а затем эмулятор запросит перезапуск. После этого ваш путь к хранилищу данных изменится.</li>
+    </ul>
+
+    <figure class="">
+  <img src="/assets/quickstart/en/change_data_folder_pc.png" alt="Настройка данных" /><figcaption>
+   Настройка данных
+
+ </figcaption></figure>
+
+    <ul>
+      <li>Через файл <em>config.yml</em>: этот файл находится в той же папке, что и исполняемый файл EKA2L1. Измените переменную <em>data-storage</em> на новый путь к данным, который вы предпочитаете.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="другие-вопросы">Другие вопросы</h1>
+
+<h2 id="где-я-могу-найти-больше-руководств">Где я могу найти больше руководств?</h2>
+
+<p>Это руководство служит только для быстрого старта и не дает подробной информации о дальнейшем использовании. Посетите <a href="https://eka2l1.miraheze.org/wiki/Main_Page">вики-страницу эмулятора</a> для получения дополнительных руководств и информации.</p>
+
+<h2 id="я-не-могу-найти-romrpkg-или-установить-их-всегда-происходят-ошибки">Я не могу найти ROM/RPKG или установить их, всегда происходят ошибки!</h2>
+
+<p>Для получения поддержки рекомендуется посетить <a href="https://discord.gg/5Bm5SJ9">Discord</a>.</p>
+
+<p>Вы можете использовать предварительно настроенный сборник прошивок, следуя инструкциям на <a href="https://eka2l1.miraheze.org/wiki/How_To_Use_The_Preconfigured_Pack">wiki</a>, однако он очень большой, если вам нужно играть только в определенную игру/приложение, то устанавливайте устройство отдельно, как описано выше.</p>
+
+<h2 id="у-вас-есть-видео-с-пошаговой-настройкой">У вас есть видео с пошаговой настройкой?</h2>
+
+<p>У нас нет, но в интернете есть много видео с отличными инструкциями. Настоятельно рекомендуется поискать эти видео на Youtube, поскольку мы признаем, что настройка эмулятора довольно сложна.</p>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+      </div>
+
+      <footer class="container mt-3">
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+         <div class="row pt-2 d-flex pb-4 ms-1">
+   <div class="col-md-6 col-sm-12 d-flex">
+      <p><b>&copy; 2023 EKA2L1. Powered by <a href="https://jekyllrb.com" rel="nofollow"> Jekyll</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://mdbootstrap.com/" rel="nofollow">MDBootstrap</a></b></p>
+   </div>
+   <div class="col-md-6 col-sm-12 d-flex justify-content-md-end icons">
+      <strong></strong>
+
+      
+        
+          
+            <a href="https://github.com/eka2l1/eka2l1" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-fw fa-github" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://discord.gg/5Bm5SJ9" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-discord" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://www.youtube.com/channel/UCCdPQT6Le2xw_z9cutkVwyA" rel="nofollow noopener noreferrer"><i class="footer-icon fab fa-youtube" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="mailto:cc@12l1.com" rel="nofollow noopener noreferrer"><i class="footer-icon fas fa-envelope" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://github.com/EKA2L1/eka2l1.github.io" rel="nofollow noopener noreferrer"><i class="footer-icon fa fa-globe" aria-hidden="true"></i></a>
+          
+        
+      
+    
+      <a href="/feed.xml"><i class="footer-icon fas fa-fw fa-rss-square" aria-hidden="true"></i></a></li>
+   </div>
+</div>
+      </footer>
+
+      
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
