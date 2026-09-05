@@ -2,6 +2,12 @@
 
 ![release_shot](/assets/download/release_page.png)
 
+iOS 版本也可以在 **App Store** 下载了!
+
+[![App Store Badge](/assets/download/appstore-badge.svg)](https://apps.apple.com/cn/app/eka2l1/id6774709624?itscg=30200&itsct=apps_box_badge&mttnsubad=6774709624)
+[![Testflight Badge](/assets/download/testflight-badge.svg)](https://testflight.apple.com/join/N1UKvCTv)
+
+
 ## Windows用户注意
 如果您的Windows系统出现缺少DLL的错误，请尝试从这个[链接](https://support.microsoft.com/zh-CN/help/2977003/the-latest-supported-visual-c-downloads)下载安装最新的 Microsoft Visual C ++ 运行库.
 

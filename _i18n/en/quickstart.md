@@ -34,6 +34,10 @@ Please utilise the *Table of Contents* by the right to traverse to the section y
 - **Memory:** 4GB of RAM or more
 - **Graphics card:** Any OpenGL ES 3.2 compatible GPU or greater
 
+## For iOS version:
+
+- Devices running iOS 16 or above is required
+
 # Setup
 
 ## Files to prepare
